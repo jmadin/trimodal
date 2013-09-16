@@ -1,0 +1,80 @@
+<h2>Size structure colony</h2>
+
+<p id="notice"><%= notice %></p>
+
+<table><tr class='top'>
+<td style='padding:0px; background-color: white;'>
+
+<% thumb = @files.find_all{|item| item.include? @ss_coral.outline_filename }[0] %>
+
+	<table style="background-color: black;">
+		<tr class='image'><td><%= image_tag @file_path + 'size_structure_thumbs/' + thumb.split('/').last %></td></tr>
+		<tr class='image'><td><font color="white" size=1><%= thumb.split('/').last.split('_tn').first %></font></td></tr>
+		<tr class='image'><td><font color="white"><%= link_to 'IMG', @file_path + 'size_structure_corrected/' + thumb.split('/').last.split('_tn').first + '.JPG', :class => 'image' %> | <%= link_to 'OUTLINE', @file_path + 'size_structure_outlines/' + thumb.split('/').last.split('_tn').first + '.jpeg', :class => 'image' %>
+		</font></td></tr>
+	</table>
+
+
+</td>
+<td class='top'>
+
+
+
+<p>
+  <b>Fieldtrip:</b>
+  <%= link_to "F#{@ss_coral.fieldtrip_id}", :controller => :fieldtrips, :action => :show, :id => @ss_coral.fieldtrip_id %>
+</p>
+
+<p>
+  <b>Species:</b>
+  <i><%= @ss_coral.species %></i>
+</p>
+
+<p>
+  <b>Species code:</b>
+  <%= @ss_coral.species_code %>
+</p>
+
+<p>
+  <b>Dim 1:</b>
+  <%= @ss_coral.dim_1 %>
+</p>
+
+<p>
+  <b>Dim 2:</b>
+  <%= @ss_coral.dim_2 %>
+</p>
+
+<p>
+  <b>Habitat:</b>
+  <%= @ss_coral.habitat %>
+</p>
+
+<p>
+  <b>Outliner name:</b>
+  <%= @ss_coral.outliner_name %>
+</p>
+
+<p>
+  <b>Outline filename:</b>
+  <%= @ss_coral.outline_filename %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%= @ss_coral.area %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @ss_coral.notes %>
+</p>
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<%= link_to 'Edit colony', edit_ss_coral_path(@ss_coral) %> |
+<%= link_to 'Back to size structure list', ss_corals_path %>

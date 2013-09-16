@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  transect: 1
+  map_x: 1
+  map_y: 1
+  dim_1: 1
+  dim_2: 1
+  species: MyString
+  species_code: MyString
+  notes: MyText
+
+two:
+  transect: 1
+  map_x: 1
+  map_y: 1
+  dim_1: 1
+  dim_2: 1
+  species: MyString
+  species_code: MyString
+  notes: MyText

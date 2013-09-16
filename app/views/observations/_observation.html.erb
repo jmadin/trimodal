@@ -1,0 +1,47 @@
+<tr>
+	<td><a href="javascript:jchange('div<%= observation.id %>');">Images</a></td>
+	<td><%= observation.id %></td>
+	<td><%= observation.coral_id %></td>
+	<!-- <td>F<%= observation.fieldtrip_id %></td> -->
+	<td><%= link_to observation.fieldtrip.name_code, :controller => :fieldtrips, :action => :show, :id => observation.fieldtrip_id %></td>
+	<td><% if observation.mother_id != 0 %><%= observation.mother_id %><% end %></td>
+	<td><%= '%04d' % observation.tag_number %></td>
+	<td><% if !observation.active_tag.blank? %><%= '%04d' % observation.active_tag %><% end %></td>
+	<td><%= observation.action %></td>
+	<td><%= observation.notes %></td>
+	<% if observation.areas.any? { |i| (i.acceptable_outline == false || i.acceptable == false) } %><td style="background-color:red;"><% else %><td><% end %><%= observation.areas.count %></td>
+	<td style="background-color:white;"><%= link_to 'Show areas', coral_observation_path(observation.coral, observation) %> | <%= link_to 'Edit observation', edit_coral_observation_path(observation.coral, observation) %> | <%= link_to 'Delete', coral_observation_path(observation.coral, observation), confirm: 'Are you sure?', method: :delete %></td>
+</tr>
+
+<tr>
+	<% img = @coral.species_code + "%04d" % observation.tag_number + '_' + observation.fieldtrip.name_code + '_T' %>
+	<% imgS = @coral.species_code + "%04d" % observation.tag_number + '_' + observation.fieldtrip.name_code + '_S' %>
+    <% @thumbs = @files.find_all{|item| item.include? img } + @files.find_all{|item| item.include? imgS } %>
+    <td colspan=11 style="background-color:white;">
+	<table id="div<%= observation.id %>" style="display:none;"><tr>
+	<% mark = 0 %>
+	<% @thumbs.each do |aa| %>
+		<% if mark == 3 || mark == 6  || mark == 9  || mark == 12 %></tr><tr><% end %>
+		<td style='padding:0px; background-color: white;'>
+			<% if aa.match(/_T/) %>
+				<table style="background-color: black;">
+				<tr class='image'><td><%= image_tag @file_path + 'tagged_thumbs/' + aa.split('/').last %></td></tr>
+				<tr class='image'><td><font color="white"><%= aa.split('/').last.split('_tn').first %></font></td></tr>
+				<tr class='image'><td><font color="white">
+			<% else %>
+				<table style="background-color: blue;">
+				<tr class='imageS'><td><%= image_tag @file_path + 'tagged_thumbs/' + aa.split('/').last %></td></tr>
+				<tr class='imageS'><td><font color="white"><%= aa.split('/').last.split('_tn').first %></font></td></tr>
+				<tr class='imageS'><td><font color="white">
+			<% end %>
+				<%= link_to 'RAW IMAGE', @file_path + 'tagged_raw/' + aa.split('/').last.split('_tn').first + '.JPG', :class => 'image' %> | 
+				<%= link_to 'CORRECTED', @file_path + 'tagged_corrected/' + aa.split('/').last.split('_tn').first + '_C.JPG', :class => 'image' %></font>
+			</td></tr>
+			
+		</table>
+		</td>		
+		<% mark = mark + 1 %>
+	<% end %>
+	
+	</tr></table></td>
+</tr>

@@ -1,0 +1,57 @@
+<%= form_for(@ss_coral) do |f| %>
+  <% if @ss_coral.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ss_coral.errors.count, "error") %> prohibited this ss_coral from being saved:</h2>
+
+      <ul>
+      <% @ss_coral.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fieldtrip %><br />
+	<%= collection_select :ss_coral, :fieldtrip_id, @fieldtrips, :id, :name_code %>
+  </div>
+  <div class="field">
+    <%= f.label :species %><br />
+    <%= f.text_field :species %>
+  </div>
+  <div class="field">
+    <%= f.label :species_code %><br />
+    <%= f.text_field :species_code %>
+  </div>
+  <div class="field">
+    <%= f.label :dim_1 %><br />
+    <%= f.number_field :dim_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :dim_2 %><br />
+    <%= f.number_field :dim_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :habitat %><br />
+    <%= f.text_field :habitat %>
+  </div>
+  <div class="field">
+    <%= f.label :outliner_name %><br />
+    <%= f.text_field :outliner_name %>
+  </div>
+  <div class="field">
+    <%= f.label :outline_filename %><br />
+    <%= f.text_field :outline_filename %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br />
+    <%= f.text_field :area %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Save" %>
+  </div>
+<% end %>

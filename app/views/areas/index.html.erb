@@ -1,0 +1,36 @@
+<h1>Listing areas</h1>
+
+<%= @coral.id %>
+<%= @observation.id %>
+
+<table>
+  <tr>
+    <th>Observation</th>
+    <th>Outliner name</th>
+    <th>Outline filename</th>
+    <th>Area</th>
+    <th>Flag</th>
+    <th>Notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @areas.each do |area| %>
+  <tr>
+    <td><%= area.observation %></td>
+    <td><%= area.outliner_name %></td>
+    <td><%= area.outline_filename %></td>
+    <td><%= area.area %></td>
+    <td><%= area.flag %></td>
+    <td><%= area.notes %></td>
+    <td><%= link_to 'Show', area %></td>
+    <td><%= link_to 'Edit', edit_area_path(area) %></td>
+    <td><%= link_to 'Destroy', area, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Area', new_coral_observation_area_path(@area.observation, @area) %>

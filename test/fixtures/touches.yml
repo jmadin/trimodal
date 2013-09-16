@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  area: 
+  outliner_name: MyString
+  outline_filename: MyString
+  taxon1: MyString
+  taxon2: MyString
+  type: 
+  length: 9.99
+  flag: false
+  notes: MyText
+
+two:
+  area: 
+  outliner_name: MyString
+  outline_filename: MyString
+  taxon1: MyString
+  taxon2: MyString
+  type: 
+  length: 9.99
+  flag: false
+  notes: MyText

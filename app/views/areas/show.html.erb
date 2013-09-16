@@ -1,0 +1,102 @@
+<h2>Tagged colony observation outline</h2>
+
+<p id="notice"><%= notice %></p>
+
+<div style="border: dotted 1px grey; padding: 10px;">
+<table><tr class='top'>
+<td>
+	<table style="background-color: black;"><tr class='image'>
+
+	<% img = @area.outline_filename + '_' + @area.outliner_name %>
+	<% @temp = @files.find_all{|item| item.include? img }.last %>
+	<% if !@temp.nil? %>
+	<td><%= link_to image_tag(@file_path + 'tagged_thumbs_touch/' + @temp.split('/').last), @file_path + 'tagged_touch/' + @temp.split('/').last.split('jpg').first + 'jpeg' %>
+	</td></tr>
+	<tr class='image'><td>
+	<font color="white">(Latest image)</font>
+	<% else %>
+	<td style="height: 270px; width: 320px;"><font color="white">(The last observation has no images)</font>
+	<% end %>
+	</td></tr>
+	</table>
+</td>
+
+<td class='top'>
+<p>
+  <b>Species:</b> <i><%= @coral.species %></i>
+  , <b>Tag:</b> <%= @coral.species_code %><%= '%03d' % @observation.tag_number %>
+  , <b>Fieldtrip:</b> F<%= @observation.fieldtrip_id %>
+</p>
+
+<p>
+  <b>Action:</b>
+  <%= @observation.action %>
+</p>
+
+<p>
+  <b>Outliner name:</b> <%= @area.outliner_name %>
+  , <b>Outline filename:</b> <%= @area.outline_filename %>
+  , <b>Area:</b> <%= @area.area %>
+</p>
+
+<p>
+  <b>Area notes:</b>
+  <font color="orange"><%= @area.notes %></font>
+</p>
+</td>
+</tr>
+</table>
+
+
+<%= link_to 'Edit area', edit_coral_observation_area_path(@area.observation.coral, @area.observation, @area) %> |
+<%= link_to 'Back to observation', coral_observation_path(@area.observation.coral, @area.observation) %> |
+<%= link_to 'Back to coral', coral_path(@area.observation.coral) %>
+</div>
+
+
+<h2>Tagged colony observation area touches</h2>
+
+<table class='data' width='1320px'>
+<tr>
+	<th></th>
+	<th>Touch number</th>
+	<th>Area ID</th>
+	<th>Observation ID</th>
+	<th>Coral ID</th>
+	<th>Outliner</th>
+	<th>Outline filename</th>
+	<th>Touch Length</th>
+	<th>Taxon</th>
+	<th>Growth form</th>
+	<th>Interaction type</th>
+	<th>Taxon ID</th>
+	<th>Touch notes</th>
+	<th width="250px"></th>
+</tr>
+
+<%= render @area.touches.sort_by{|e| e[:outline_filename]}  %>
+
+<tr style='background-color:white;'>
+	<%= form_for([@area, @area.touches.build]) do |f| %>
+
+	  <td></td>
+	  <td><%= f.number_field :touch_number, :style=>'width: 50px;' %></td>
+	  <td><%= @area.id %></td>
+	  <td><%= @area.observation_id %></td>
+	  <td><%= @area.observation.coral_id %></td>
+	  <td><%= f.text_field :outliner_name, :style=>'width: 70px;' %></td>
+	  <td><%= f.text_field :outline_filename, :style=>'width: 150px;', :value=> @area.outline_filename + '_' + @area.outliner_name + '.cp' %></td>
+	  <td><%= f.number_field :length, :style=>'width: 80px;' %></td>
+	  <td><%= f.select :taxon1, ['', 'Acropora', 'Montipora', '"Isopora"', 'Pocilloporid', 'Poritid', 'Favid', 'Mussid', 'Other hard coral', 'Soft coral', 'Fleshy macroalga', 'Erect calcareous macroalga', 'Hydrocoral', 'Hydroid', 'Uncertain'] %></td>
+	  <td><%= f.select :growth_form, ['', 'Massive', 'Branching', 'Corymbose', 'Cuneiform', 'Encrusting', 'Tabular', 'Digitate', 'Foliose', 'Non-coral', 'Uncertain'] %></td>
+	  <td><%= f.select :touch_type, ['', 'Digested', 'Digesting', 'Mutual digestion', 'Overtopped', 'Overtopping', 'Overgrown', 'Overgrowing', 'Other direct contact', 'Uncertain'] %></td>
+	  <td><%= f.select :taxon2, ['', 'TBD'] %></td>
+	  <td><%= f.text_field :notes, :style=>'width: 200px;' %></td>
+
+	  <td><%= f.submit %></td>
+	<% end %>
+</tr>
+</table>
+<p id="notice"><%= notice %></p>
+<br/>
+

@@ -1,0 +1,194 @@
+1	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC04_T_C	5604.40534795245				
+2	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC05_T_C	1741.2746766508				
+3	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC09_T_C	17659.550430934				
+4	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC10_T_C	1815.95286046951				
+5	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC17_T_C	10045.7494025265				
+6	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC18_T_C	502.549445925094				
+7	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC19_T_C	3903.04938475505				
+8	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC22_T_C	778.240727377696				
+9	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC23_T_C	4034.38705529355				
+10	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC24_T_C	2873.65213082259				
+11	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC26_T_C	1174.61000123319				
+12	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC27_T_C	3072.88868940752				
+13	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD01_T_C	163.866869814079				
+14	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD02_T_C	336.73668614473				
+15	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD03_T_C	782.479092752151				
+16	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD04_T_C	736.226701343731				
+17	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD05_T_C	615.159951875621				
+18	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD06_T_C	437.553601422781				
+19	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD07_T_C	501.39431396786				
+20	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD08_T_C	684.562579452213				
+21	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD10_T_C	582.237315427044				
+22	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD11_T_C	1074.84247162841				
+23	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD12_T_C	696.253044055796				
+24	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD13_T_C	160.265677532525				
+25	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD14_T_C	102.783513535485				
+26	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD16_T_C	186.83120948406				
+27	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD17_T_C	577.027845784801				
+28	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD18_T_C	534.948538065681				
+29	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD19_T_C	706.707127734651				
+30	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD20_T_C	481.234706362151				
+31	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD21_T_C	357.239729476942				
+32	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD22_T_C	127.577307500659				
+33	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD23_T_C	1057.1302286059				
+34	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD24_T_C	1017.6455741549				
+35	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD25_T_C	464.194647816205				
+36	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD27_T_C	407.383980702281				
+37	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD28_T_C	771.284678927678				
+38	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD29_T_C	404.201900310567				
+39	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD30_T_C	691.05585988735				
+40	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH01_T_C	1097.81115088975				
+41	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH02_T_C	7155.47796181901				
+42	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH03_T_C	3912.32951289398				
+43	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH04_T_C	1480.37967197603				
+44	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH05_T_C	10583.056603774				
+45	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH06_T_C	1985.19570898926				
+46	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH07_T_C	535.612046058455				
+47	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH08_T_C	3355.71096201705				
+48	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH09_T_C	6298.65937499992				
+49	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH10_T_C	860.493328218766				
+50	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH12_T_C	10798.0557996487				
+51	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH13_T_C	3247.40209080977				
+52	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH14_T_C	696.983131487887				
+53	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH15_T_C	472.834354973528				
+54	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH16_T_C	5232.44314069109				
+55	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH19_T_C	1046.39285714287				
+56	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH21_T_C	1762.24554539207				
+57	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH22_T_C	1301.7335674862				
+58	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH23_T_C	3335.02171780863				
+59	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH24_T_C	1506.35991894044				
+60	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH25_T_C	4312.26026515633				
+61	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH26_T_C	3288.36924762606				
+62	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH27_T_C	1648.95104895106				
+63	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH28_T_C	1246.03689854955				
+64	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH29_T_C	1826.54865782986				
+65	4	Acropora millepora	AM	NA	NA		alisha	F4_AM01_T_C	1423.11221384765				
+66	4	Acropora millepora	AM	NA	NA		alisha	F4_AM02_T_C	646.956137324253				
+67	4	Acropora millepora	AM	NA	NA		alisha	F4_AM04_T_C	722.704506573013				
+68	4	Acropora millepora	AM	NA	NA		alisha	F4_AM06_T_C	416.285347214825				
+69	4	Acropora millepora	AM	NA	NA		alisha	F4_AM07_T_C	448.423601637106				
+70	4	Acropora millepora	AM	NA	NA		alisha	F4_AM08_T_C	850.692307692303				
+71	4	Acropora millepora	AM	NA	NA		alisha	F4_AM11_T_C	381.310563292536				
+72	4	Acropora millepora	AM	NA	NA		alisha	F4_AM12_T_C	267.37553123555				
+73	4	Acropora millepora	AM	NA	NA		alisha	F4_AM13_T_C	173.373133657132				
+74	4	Acropora millepora	AM	NA	NA		alisha	F4_AM14_T_C	203.396736868392				
+75	4	Acropora millepora	AM	NA	NA		alisha	F4_AM15_T_C	376.402780915605				
+76	4	Acropora millepora	AM	NA	NA		alisha	F4_AM16_T_C	1096.10025380712				
+77	4	Acropora millepora	AM	NA	NA		alisha	F4_AM17_T_C	1085.07518396076				
+78	4	Acropora millepora	AM	NA	NA		alisha	F4_AM18_T_C	404.329207920792				
+79	4	Acropora millepora	AM	NA	NA		alisha	F4_AM19_T_C	945.564575537018				
+80	4	Acropora millepora	AM	NA	NA		alisha	F4_AM23_T_C	357.070653661451				
+81	4	Acropora millepora	AM	NA	NA		alisha	F4_AM24_T_C	1065.52749920406				
+82	4	Acropora millepora	AM	NA	NA		alisha	F4_AM25_T_C	1034.30492912371				
+83	4	Acropora millepora	AM	NA	NA		alisha	F4_AM26_T_C	280.133813349568				
+84	4	Acropora millepora	AM	NA	NA		alisha	F4_AM27_T_C	145.950232447995				
+85	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN01_T_C	289.630601322281				
+86	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN03_T_C	307.946018679753				
+87	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN04_T_C	921.137403488696				
+88	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN05_T_C	291.360182641887				
+89	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN06_T_C	214.011335012594				
+90	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN07_T_C	265.586937537345				
+91	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN08_T_C	429.96940543982				
+92	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN09_T_C	683.156802474698				
+93	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN10_T_C	772.146656898032				
+94	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN11_T_C	248.130332385352				
+95	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN13_T_C	286.417346500645				
+96	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN14_T_C	370.680217558049				
+97	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN15_T_C	78.2567492264603				
+98	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN21_T_C	223.058475478024				
+99	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN22_T_C	204.784327699722				
+100	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN25_T_C	294.194077391277				
+101	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN26_T_C	496.140832595214				
+102	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN27_T_C	374.48632712614				
+103	4	Acropora nasuta	AN	NA	NA		alisha	F4_AN29_T_C	425.713532085269				
+104	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP01_T_C	484.675168347229				
+105	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP02_T_C	611.914079422387				
+106	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP03_T_C	319.601382437268				
+107	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP04_T_C	369.596714453789				
+108	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP07_T_C	374.543019594942				
+109	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP08_T_C	268.439352938836				
+110	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP09_T_C	608.04432794615				
+111	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP10_T_C	1058.62261032054				
+112	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP15_T_C	868.428644267931				
+113	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP16_T_C	952.749323715054				
+114	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP17_T_C	1407.7251049218				
+115	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP18_T_C	137.323217182761				
+116	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP19_T_C	179.343946237744				
+117	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP23_T_C	267.486493830319				
+118	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP24_T_C	192.832755056844				
+119	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP25_T_C	401.59471695937				
+120	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP28_T_C	715.092777181406				
+121	4	Acropora spathulata	AP	NA	NA		alisha	F4_AP30_T_C	412.796578527546				
+122	4	Acropora robusta	AR	NA	NA		alisha	F4_AR05_T_C	337.085953878406				
+123	4	Acropora robusta	AR	NA	NA		alisha	F4_AR09_T_C	422.074890136719				
+124	4	Acropora robusta	AR	NA	NA		alisha	F4_AR14_T_C	1202.78141109486				
+125	4	Acropora robusta	AR	NA	NA		alisha	F4_AR19_T_C	255.412929167956				
+126	4	Acropora robusta	AR	NA	NA		alisha	F4_AR20_T_C	407.54858829426				
+127	4	Acropora robusta	AR	NA	NA		alisha	F4_AR21_T_C	4507.46734397678				
+128	4	Acropora robusta	AR	NA	NA		alisha	F4_AR25_T_C	6534.1206688154				
+129	4	Acropora robusta	AR	NA	NA		alisha	F4_AR27_T_C	255.525186825352				
+130	4	Acropora robusta	AR	NA	NA		alisha	F4_AR28_T_C	577.903701023464				
+131	4	Acropora robusta	AR	NA	NA		alisha	F4_AR30_T_C	1901.24250214225				
+132	4	Acropora humilis	AS	NA	NA		alisha	F4_AS04_T_C	869.210445409473				
+133	4	Acropora humilis	AS	NA	NA		alisha	F4_AS07_T_C	203.182311571426				
+134	4	Acropora humilis	AS	NA	NA		alisha	F4_AS08_T_C	208.654574530763				
+135	4	Acropora humilis	AS	NA	NA		alisha	F4_AS09_T_C	248.668927030271				
+136	4	Acropora humilis	AS	NA	NA		alisha	F4_AS10_T_C	205.788230240549				
+137	4	Acropora humilis	AS	NA	NA		alisha	F4_AS11_T_C	166.072582103822				
+138	4	Acropora humilis	AS	NA	NA		alisha	F4_AS18_T_C	263.895833794279				
+139	4	Acropora humilis	AS	NA	NA		alisha	F4_AS20_T_C	253.21977950148				
+140	4	Acropora humilis	AS	NA	NA		alisha	F4_AS23_T_C	454.628328704459				
+141	4	Acropora humilis	AS	NA	NA		alisha	F4_AS28_T_C	121.153108599112				
+142	4	Acropora humilis	AS	NA	NA		alisha	F4_AS29_T_C	308.85260635111				
+143	4	Acropora humilis	AS	NA	NA		alisha	F4_AS30_T_C	334.126905763448				
+144	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP01_T_C	123.073430904478				
+145	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP02_T_C	97.566021807113				
+146	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP03_T_C	53.2263101713957				
+147	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP04_T_C	77.7935728501902				
+148	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP05_T_C	76.0713431678941				
+149	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP06_T_C	216.709846850353				
+150	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP07_T_C	39.2237554625772				
+151	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP08_T_C	43.8363703281899				
+152	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP12_T_C	119.084503325239				
+153	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP13_T_C	262.865335452222				
+154	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP14_T_C	240.622054275742				
+155	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP15_T_C	12.4786848387627				
+156	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP16_T_C	171.062227866474				
+157	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP17_T_C	69.7430628403913				
+158	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP18_T_C	109.457816604558				
+159	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP19_T_C	196.895770060301				
+160	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP20_T_C	200.970307984833				
+161	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP21_T_C	201.946406799888				
+162	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP22_T_C	99.6679013120724				
+163	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP23_T_C	139.088426866115				
+164	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP24_T_C	66.3248637882158				
+165	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP27_T_C	131.882679849609				
+166	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP28_T_C	110.399053901572				
+167	4	Goniastrea pectinata	GP	NA	NA		alisha	F4_GP29_T_C	89.5839132154522				
+168	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR01_T_C	131.270074205339				
+169	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR02_T_C	416.439165632567				
+170	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR03_T_C	384.086023325488				
+171	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR04_T_C	1377.03474288877				
+172	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR05_T_C	113.380695671018				
+173	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR06_T_C	312.933713418813				
+174	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR07_T_C	288.756363827218				
+175	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR08_T_C	286.152203439756				
+176	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR09_T_C	554.311112911062				
+177	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR10_T_C	523.618936795693				
+178	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR11_T_C	61.5080943371886				
+179	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR12_T_C	403.77049180328				
+180	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR13_T_C	550.734360399643				
+181	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR14_T_C	1094.53117389188				
+182	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR17_T_C	69.3011217090857				
+183	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR18_T_C	382.936429593802				
+184	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR19_T_C	31.8441944761829				
+185	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR20_T_C	288.536903329323				
+186	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR21_T_C	36.724571311617				
+187	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR22_T_C	133.182423686426				
+188	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR23_T_C	113.801308744794				
+189	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR24_T_C	247.616433292748				
+190	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR25_T_C	396.221605478296				
+191	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR26_T_C	23.5750878131191				
+192	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR28_T_C	147.761086753396				
+193	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR29_T_C	320.298208481367				
+194	4	Goniastrea retiformis	GR	NA	NA		alisha	F4_GR30_T_C	527.860040567947				

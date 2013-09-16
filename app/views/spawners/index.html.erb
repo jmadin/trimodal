@@ -1,0 +1,42 @@
+<h1>Spawned colonies</h1>
+
+<div style="border: dotted 1px grey; padding: 10px;">
+<p>Dataset: <%= link_to 'Export spawner data (csv for Excel or R)', '/export_spawners', :action => 'export_spawners' %></p>
+</div>
+
+
+<table class='data'>
+  <tr>
+    <th width="50px">Id</th>
+    <th width="50px">Fieldtrip</th>
+    <th width="150px">Species</th>
+    <th width="50px">Species code</th>
+    <th width="50px">Tag number</th>
+    <th width="50px">Outliner name</th>
+    <th width="50px">Area</th>
+    <th width="300px">Notes</th>
+    <th width="100px"></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @spawners.each do |spawner| %>
+  <tr style='background-color:#EEEEEE;'>
+    <td><%= spawner.id %></td>
+	<td><%= link_to spawner.fieldtrip.name_code, :controller => :fieldtrips, :action => :show, :id => spawner.fieldtrip_id %></td>
+    <td><%= spawner.species %></td>
+    <td><%= spawner.species_code %></td>
+    <td><%= '%03d' % spawner.tag_number %></td>
+    <td><%= spawner.outliner_name %></td>
+    <td><%= spawner.area %></td>
+    <td><%= spawner.notes %></td>
+    <td><%= link_to 'Show', spawner %> | <%= link_to 'Edit', edit_spawner_path(spawner) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Spawner', new_spawner_path %>
+
+

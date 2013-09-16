@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fieldtrip: 
+  species: MyString
+  species_code: MyString
+  dim_1: 1
+  dim_2: 1
+  habitat: MyString
+  outliner_name: MyString
+  outline_filename: 
+  tring: MyString
+  area: 9.99
+  flag: false
+  notes: MyText
+
+two:
+  fieldtrip: 
+  species: MyString
+  species_code: MyString
+  dim_1: 1
+  dim_2: 1
+  habitat: MyString
+  outliner_name: MyString
+  outline_filename: 
+  tring: MyString
+  area: 9.99
+  flag: false
+  notes: MyText

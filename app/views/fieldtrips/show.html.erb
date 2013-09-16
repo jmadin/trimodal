@@ -1,0 +1,95 @@
+<h2>Field trip</h2>
+
+<p id="notice"><%= notice %></p>
+
+<div style="border: dotted 1px grey; padding: 10px;">
+
+<p>
+  <b>Name:</b>
+  <%= @fieldtrip.name %>
+</p>
+
+<p>
+  <b>Name code:</b>
+  <%= @fieldtrip.name_code %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @fieldtrip.date %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @fieldtrip.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_fieldtrip_path(@fieldtrip) %> |
+<%= link_to 'Back', fieldtrips_path %>
+
+</div>
+<br/>
+<h2>Tagged colony status for <%= @fieldtrip.name %></h2>
+
+<table>
+<tr><td style="border:green 2px solid;background-color:white;font-size:80%;padding:0px;">XXX</td><td style="text-align:left;background-color:white;">Found</td></tr>
+<tr><td style="border:red 2px solid;background-color:white;font-size:80%;padding:0px;">XXX</td><td style="text-align:left;background-color:white;">Not found</td></tr>
+<tr><td style="border:black 1px dotted;background-color:white;font-size:80%;padding:0px;"></td><td style="text-align:left;background-color:white;">Reported lost or dead in earlier trip (or if in earlier fieldtrips, future new colony)</td></tr>
+</table>
+<p style="color:red">*Downloadable mudmaps (in parentheses) are generated manually with an R script, and so will not reflect database mudmap following updates until the script is re-run.</p>
+
+<% if params[:id] == "11" %>
+<% before = 5 %>
+<% else %>
+<% before = params[:id].to_i - 1 %>
+<% end %>
+
+<% (0..7).each do |t| %>
+	<h3>Transect <%= t %> (<%= link_to "mudmap", @file_path + "tagged_mudmaps/transect_" + t.to_s + ".pdf" %>)</h3>
+	<table>
+	<% 13.downto(1).each do |y| %>
+		<tr>
+		<% (1..60).each do |x| %>
+		
+				<% temp = Coral.where('transect == ? AND map_x == ? AND map_y == ?', t, x, y) %>
+				<% if temp.count > 0 %>
+					<% obs = Observation.where('coral_id == ? AND fieldtrip_id == ?', temp.first.id, params[:id]) %>
+					<% if !obs.empty? %>
+						<td style="border:green 2px solid;background-color:white;font-size:80%;padding:0px;">
+						<%= link_to temp.first.species_code.to_s + obs.first.tag_number.to_s, coral_path(obs.first.coral_id) %><br/>
+						
+						<% img = temp.first.species_code + "%04d" % obs.last.tag_number + '_' + obs.last.fieldtrip.name_code %>
+						
+						<% @thumbs = @files.find_all{|item| item.include? img } %>
+						<% @observers = [] %>
+						<% @thumbs.each do |tn| %>
+							<% @observers << tn.split('_')[4] %>
+						<% end %>
+						<% @observers.uniq.each do |oo| %>
+							<%= oo %>
+						<% end %>
+						
+					<% else %>
+						<% obsx = Observation.where('coral_id == ? AND fieldtrip_id == ?', temp.first.id, before.to_s) %>
+						<% if !obsx.empty? && obsx.first.action != "dead" && obsx.first.action != "gone" %>
+							<td style="border:red 2px solid;background-color:white;font-size:80%;padding:0px;">
+							<%= link_to temp.first.species_code.to_s + obsx.first.tag_number.to_s, coral_path(obsx.first.coral_id) %>
+						<% else %>
+							<% obsa = Observation.where('coral_id == ?', temp.first.id) %>
+							<td style="border:black 1px dotted;background-color:white;font-size:80%;padding:0px;">
+							<%= link_to temp.last.species_code + obsa.last.tag_number.to_s, coral_path(obsa.last.coral_id) %>
+						<% end %>
+					<% end %>
+				
+				<% else %>
+					<td>
+				<% end %>
+				
+			</td>
+		<% end %>
+		</tr>
+	<% end %>
+	</table>
+<% end %>
+<br/>

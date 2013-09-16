@@ -1,0 +1,54 @@
+<%= form_for(@touch) do |f| %>
+  <% if @touch.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@touch.errors.count, "error") %> prohibited this touch from being saved:</h2>
+
+      <ul>
+      <% @touch.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :area %><br />
+    <%= @touch.area_id %>
+    <!-- <%= f.text_field :area %> -->
+  </div>
+  <div class="field">
+    <%= f.label :outliner_name %><br />
+    <%= f.text_field :outliner_name %>
+  </div>
+  <div class="field">
+    <%= f.label :outline_filename %><br />
+    <%= f.text_field :outline_filename %>
+  </div>
+  <div class="field">
+    <%= f.label :length %><br />
+    <%= f.text_field :length %>
+  </div>
+  <div class="field">
+    <%= f.label :taxon1 %><br />
+	<%= f.select :taxon1, ['', 'Acropora', 'Montipora', '"Isopora"', 'Pocilloporid', 'Poritid', 'Favid', 'Mussid', 'Other hard coral', 'Soft coral', 'Fleshy macroalga', 'Erect calcareous macroalga', 'Hydrocoral', 'Hydroid', 'Uncertain'] %>
+  </div>
+  <div class="field">
+    <%= f.label :growth_form %><br />
+    <%= f.select :growth_form, ['', 'Massive', 'Branching', 'Corymbose', 'Cuneiform', 'Encrusting', 'Tabular', 'Digitate', 'Foliose', 'Non-coral', 'Uncertain'] %>
+  </div>
+  <div class="field">
+    <%= f.label :touch_type %><br />
+	<%= f.select :touch_type, ['', 'Digested', 'Digesting', 'Mutual digestion', 'Overtopped', 'Overtopping', 'Overgrown', 'Overgrowing', 'Other direct contact', 'Uncertain'] %>
+  </div>
+  <div class="field">
+    <%= f.label :taxon2 %><br />
+	<%= f.select :taxon2, ['', 'TBD'] %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

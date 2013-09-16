@@ -1,0 +1,781 @@
+1	3	Acropora cytherea	AC	NA	NA		erin	F3_AC01_T1_C	2786.464424	0			
+2	3	Acropora cytherea	AC	NA	NA		erin	F3_AC02_T_C	2464.966388	0			
+3	3	Acropora cytherea	AC	NA	NA		erin	F3_AC03_T_C	1586.511963	0			
+4	3	Acropora cytherea	AC	NA	NA		erin	F3_AC04_T_C	1583.242465	0			
+5	3	Acropora cytherea	AC	NA	NA		erin	F3_AC05_T_C	931.5076859	0			
+6	3	Acropora cytherea	AC	NA	NA		erin	F3_AC07_T1_C	3429.852586	1			
+7	3	Acropora cytherea	AC	NA	NA		erin	F3_AC07_T2_C	1041.883137	1			
+8	3	Acropora cytherea	AC	NA	NA		erin	F3_AC07_T5_C	1880.62584	1			
+9	3	Acropora cytherea	AC	NA	NA		erin	F3_AC08_T_C	326.2660982	0			
+10	3	Acropora cytherea	AC	NA	NA		erin	F3_AC09_T_C	1262.530416	0			
+11	3	Acropora cytherea	AC	NA	NA		erin	F3_AC10_T_C	915.1662209	0			
+12	3	Acropora cytherea	AC	NA	NA		erin	F3_AC11_T_C	12235.328	0			
+13	3	Acropora cytherea	AC	NA	NA		erin	F3_AC12_T_C	778.5795983	0			
+14	3	Acropora cytherea	AC	NA	NA		erin	F3_AC13_T_C	2220.039285	0			
+15	3	Acropora cytherea	AC	NA	NA		erin	F3_AC14_T1_C	4044.093362	0			
+16	3	Acropora cytherea	AC	NA	NA		erin	F3_AC15_T_C	6565.228983	1			
+17	3	Acropora cytherea	AC	NA	NA		erin	F3_AC15_T2_C	3379.462253	1			
+18	3	Acropora cytherea	AC	NA	NA		erin	F3_AC15_T3_C	2286.200868	1			
+19	3	Acropora cytherea	AC	NA	NA		erin	F3_AC16_T_C	4155.907051	0			
+20	3	Acropora cytherea	AC	NA	NA		erin	F3_AC17_T_C	4196.397146	0			
+21	3	Acropora cytherea	AC	NA	NA		erin	F3_AC18_T1_C	708.0173791	0			
+22	3	Acropora cytherea	AC	NA	NA		erin	F3_AC19_T_C	2676.206227	0			
+23	3	Acropora cytherea	AC	NA	NA		erin	F3_AC20_T_C	205.2317502	0			
+24	3	Acropora cytherea	AC	NA	NA		erin	F3_AC21_T_C	7792.85686	0			
+25	3	Acropora cytherea	AC	NA	NA		erin	F3_AC22_T_C	280.3999785	0			
+26	3	Acropora cytherea	AC	NA	NA		erin	F3_AC23_T_C	801.5411582	0			
+27	3	Acropora cytherea	AC	NA	NA		erin	F3_AC24_T2_C	7658.877149	0			
+28	3	Acropora cytherea	AC	NA	NA		erin	F3_AC25_T_C	10081.98737	0			
+29	3	Acropora cytherea	AC	NA	NA		erin	F3_AC26_T1_C	5641.471743	1			
+30	3	Acropora cytherea	AC	NA	NA		erin	F3_AC26_T2_C	4202.218297	1			
+31	3	Acropora cytherea	AC	NA	NA		erin	F3_AC27_T1_C	10244.43769	1			
+32	3	Acropora cytherea	AC	NA	NA		erin	F3_AC27_T2_C	5075.028489	1			
+33	3	Acropora cytherea	AC	NA	NA		erin	F3_AC28_T1_C	2388.208522	1			
+34	3	Acropora cytherea	AC	NA	NA		erin	F3_AC28_T2_C	6254.187283	1			
+35	3	Acropora cytherea	AC	NA	NA		erin	F3_AC28_T3_C	1741.218591	1			
+36	3	Acropora cytherea	AC	NA	NA		erin	F3_AC29_T2_C	2731.005631	0			
+37	3	Acropora cytherea	AC	NA	NA		erin	F3_AC30_T1_C	648.3761458	1			
+38	3	Acropora cytherea	AC	NA	NA		erin	F3_AC30_T2_C	4763.374896	1			
+39	3	Acropora fat dig	AD	NA	NA		erin	F3_AD01A_T2_C	513.4169439	0			
+40	3	Acropora fat dig	AD	NA	NA		erin	F3_AD02B_T_C	338.5591789	0			
+41	3	Acropora fat dig	AD	NA	NA		erin	F3_AD03A_T_C	347.3256	0			
+42	3	Acropora fat dig	AD	NA	NA		erin	F3_AD04A_T_C	342.8665629	0			
+43	3	Acropora fat dig	AD	NA	NA		erin	F3_AD05A_T_C	529.3372485	0			
+44	3	Acropora fat dig	AD	NA	NA		erin	F3_AD06A_T_C	350.3048	0			
+45	3	Acropora fat dig	AD	NA	NA		erin	F3_AD07A_T_C	328.4479187	0			
+46	3	Acropora fat dig	AD	NA	NA		erin	F3_AD09A_T_C	153.7800773	0			
+47	3	Acropora fat dig	AD	NA	NA		erin	F3_AD10B_T_C	391.5472194	0			
+48	3	Acropora fat dig	AD	NA	NA		erin	F3_AD11B_T2_C	230.2403203	0			
+49	3	Acropora fat dig	AD	NA	NA		erin	F3_AD12A_T2_C	1262.899852	0			
+50	3	Acropora fat dig	AD	NA	NA		erin	F3_AD13A_T_C	548.6722608	0			
+51	3	Acropora fat dig	AD	NA	NA		erin	F3_AD14B_T_C	578.7382385	0			
+52	3	Acropora fat dig	AD	NA	NA		erin	F3_AD15B_T_C	130.3945991	0			
+53	3	Acropora fat dig	AD	NA	NA		erin	F3_AD16A_T_C	377.097145	0			
+54	3	Acropora fat dig	AD	NA	NA		erin	F3_AD17A_T_C	181.8762967	0			
+55	3	Acropora fat dig	AD	NA	NA		erin	F3_AD18B_T_C	170.7496791	0			
+56	3	Acropora fat dig	AD	NA	NA		erin	F3_AD19B_T_C	553.4497882	0			
+57	3	Acropora fat dig	AD	NA	NA		erin	F3_AD20A_T_C	284.6851802	0			
+58	3	Acropora fat dig	AD	NA	NA		erin	F3_AD21A_T2_C	372.7041295	0			
+59	3	Acropora fat dig	AD	NA	NA		erin	F3_AD22B_T_C	149.0172674	0			
+60	3	Acropora fat dig	AD	NA	NA		erin	F3_AD23A_T2_C	104.1420947	0			
+61	3	Acropora fat dig	AD	NA	NA		erin	F3_AD24A_T_C	411.038103	0			
+62	3	Acropora fat dig	AD	NA	NA		erin	F3_AD25A_T_C	519.7318817	0			
+63	3	Acropora fat dig	AD	NA	NA		erin	F3_AD26A_T_C	600.7002789	0			
+64	3	Acropora fat dig	AD	NA	NA		erin	F3_AD27A_T2_C	191.4052777	0			
+65	3	Acropora fat dig	AD	NA	NA		erin	F3_AD28A_T2_C	492.4651903	0			
+66	3	Acropora fat dig	AD	NA	NA		erin	F3_AD29B_T_C	172.7838942	0			
+67	3	Acropora fat dig	AD	NA	NA		erin	F3_AD30A_T_C	572.2905067	0			
+68	3	Acropora fat dig	AD	NA	NA		erin	F3_AD31_T1_C	719.2088206	0			
+69	3	Acropora fat dig	AD	NA	NA		erin	F3_AD32_T1_C	200.6619692	0			
+70	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH05_T_C	974.1495584	0			
+71	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH06_T_C	1926.275877	0			
+72	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH07_T_C	1053.513058	0			
+73	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH08_T_C	2716.325377	0			
+74	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH09_T_C	6999.55018	0			
+75	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH10_T_C	3475.891041	0			
+76	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH11_T1_C	4922.289632	0			
+77	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH12_T_C	1011.321282	0			
+78	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH13_T_C	7557.091163	0			
+79	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH14_T_C	2067.043899	0			
+80	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH15_T1_C	1006.298856	0			
+81	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH16_T_C	2149.05649	0			
+82	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH17_T_C	3385.429199	0			
+83	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH18_T2_C	2146.320972	0			
+84	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH19_T2_C	3070.441238	0			
+85	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH20_T2_C	2160.051819	0			
+86	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH21_T_C	2022.410601	0			
+87	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH22_T_C	1158.276283	0			
+88	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH23_T_C	743.303565	0			
+89	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH24_T3_C	2780.644873	0			
+90	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH25_T_C	909.1267088	0			
+91	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH26_T_C	3393.667942	0			
+92	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH27_T_C	2102.950265	0			
+93	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH28_T_C	1183.538188	0			
+94	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH29_T_C	420.769894	0			
+95	3	Acropora hyacinthus	AH	NA	NA		paulina	F3_AH30_T_C	627.0555311	0			
+96	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL01_T1_C	299.8599532	0			
+97	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL02_T2_C	378.0822282	0			
+98	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL03_T_C	182.7036458	0			
+99	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL04_T1_C	697.3021567	0			
+100	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL05_T2_C	163.1774013	0			
+101	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL06_T_C	197.6574371	0			
+102	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL08_T_C	304.306583	0			
+103	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL09_T_C	265.2059462	0			
+104	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL10_T_C	590.3607789	0			
+105	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL11_T2_C	190.4734936	0			
+106	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL12_T1_C	270.0997752	0			
+107	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL13_T1_C	329.1821561	0			
+108	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL14_T_C	1035.379416	0			
+109	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL15_T_C	107.7424696	0			
+110	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL16_T_C	110.2740831	0			
+111	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL17_T2_C	177.0263676	0			
+112	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL18_T_C	359.3621168	0			
+113	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL19_T_C	266.6258176	0			
+114	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL20_T_C	634.0547027	0			
+115	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL21_T2_C	1836.690943	0			
+116	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL22_T2_C	189.9207486	0			
+117	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL23_T_C	268.6452206	0			
+118	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL24_T_C	534.6737834	0			
+119	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL25_T_C	1251.407955	0			
+120	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL26_T_C	417.8531361	0			
+121	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL27_T_C	280.1995695	0			
+122	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL28_T_C	374.376121	0			
+123	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL29_T_C	276.6781799	0			
+124	3	Acropora spathulata	AL	NA	NA		paulina	F3_AL30_T_C	421.2696255	0			
+125	3	Acropora millepora	AM	NA	NA		paulina	F3_AM01_T_C	1525.664638	0			
+126	3	Acropora millepora	AM	NA	NA		paulina	F3_AM02_T_C	154.1983967	0			
+127	3	Acropora millepora	AM	NA	NA		paulina	F3_AM03_T1_C	162.0400031	0			
+128	3	Acropora millepora	AM	NA	NA		paulina	F3_AM04_T1_C	1905.075082	0			
+129	3	Acropora millepora	AM	NA	NA		paulina	F3_AM06_T_C	358.0569286	0			
+130	3	Acropora millepora	AM	NA	NA		paulina	F3_AM07_T_C	275.7457924	0			
+131	3	Acropora millepora	AM	NA	NA		paulina	F3_AM08_T_C	550.0499052	0			
+132	3	Acropora millepora	AM	NA	NA		paulina	F3_AM09_T_C	248.05119	0			
+133	3	Acropora millepora	AM	NA	NA		paulina	F3_AM10_T1_C	361.23558	0			
+134	3	Acropora millepora	AM	NA	NA		paulina	F3_AM11_T_C	1258.800617	0			
+135	3	Acropora millepora	AM	NA	NA		paulina	F3_AM12_T1_C	881.8258713	0			
+136	3	Acropora millepora	AM	NA	NA		paulina	F3_AM13_T_C	113.3228615	0			
+137	3	Acropora millepora	AM	NA	NA		paulina	F3_AM14_T_C	170.887274	0			
+138	3	Acropora millepora	AM	NA	NA		paulina	F3_AM15_T_C	706.6903412	0			
+139	3	Acropora millepora	AM	NA	NA		paulina	F3_AM16_T_C	117.0459504	0			
+140	3	Acropora millepora	AM	NA	NA		paulina	F3_AM17_T_C	571.4573681	0			
+141	3	Acropora millepora	AM	NA	NA		paulina	F3_AM18_T_C	243.306005	0			
+142	3	Acropora millepora	AM	NA	NA		paulina	F3_AM19_T1_C	448.6072625	0			
+143	3	Acropora millepora	AM	NA	NA		paulina	F3_AM20_T_C	391.5967719	0			
+144	3	Acropora millepora	AM	NA	NA		paulina	F3_AM21_T_C	987.4377369	0			
+145	3	Acropora millepora	AM	NA	NA		paulina	F3_AM22_T1_C	352.498194	0			
+146	3	Acropora millepora	AM	NA	NA		paulina	F3_AM23_T1_C	597.1577298	0			
+147	3	Acropora millepora	AM	NA	NA		paulina	F3_AM24_T1_C	1014.538399	0			
+148	3	Acropora millepora	AM	NA	NA		paulina	F3_AM25_T_C	513.3237717	0			
+149	3	Acropora millepora	AM	NA	NA		paulina	F3_AM26_T1_C	416.8247661	0			
+150	3	Acropora millepora	AM	NA	NA		paulina	F3_AM27_T1_C	208.700977	0			
+151	3	Acropora millepora	AM	NA	NA		paulina	F3_AM28_T_C	504.4206984	0			
+152	3	Acropora millepora	AM	NA	NA		paulina	F3_AM29_T_C	502.2214863	0			
+153	3	Acropora millepora	AM	NA	NA		paulina	F3_AM30_T1_C	180.5641003	0			
+154	3	Acropora millepora	AM	NA	NA		paulina	F3_AM31_T1_C	229.2108237	0			
+155	3	Acropora millepora	AM	NA	NA		paulina	F3_AM32_T1_C	808.1978695	0			
+156	3	Acropora millepora	AM	NA	NA		paulina	F3_AM33_T1_C	527.6190031	0			
+157	3	Acropora millepora	AM	NA	NA		paulina	F3_AM34_T1_C	424.5027038	0			
+158	3	Acropora millepora	AM	NA	NA		paulina	F3_AM35_T1_C	667.274529	0			
+159	3	Acropora millepora	AM	NA	NA		paulina	F3_AM36_T1_C	359.1679223	0			
+160	3	Acropora millepora	AM	NA	NA		paulina	F3_AM37_T1_C	217.7410436	0			
+161	3	Acropora millepora	AM	NA	NA		paulina	F3_AM38_T1_C	822.3473277	0			
+162	3	Acropora millepora	AM	NA	NA		paulina	F3_AM39_T1_C	451.5079723	0			
+163	3	Acropora millepora	AM	NA	NA		paulina	F3_AM40_T1_C	280.5410047	0			
+164	3	Acropora millepora	AM	NA	NA		paulina	F3_AM41_T1_C	249.9121265	0			
+165	3	Acropora millepora	AM	NA	NA		paulina	F3_AM42_T1_C	796.1981991	0			
+166	3	Acropora millepora	AM	NA	NA		paulina	F3_AM43_T1_C	398.7361663	0			
+167	3	Acropora millepora	AM	NA	NA		paulina	F3_AM44_T1_C	885.3778857	0			
+168	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN01_T_C	573.7335029	0			
+169	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN02_T1_C	442.0221894	0			
+170	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN03_T_C	964.1850874	0			
+171	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN04_T_C	951.9086566	0			
+172	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN05_T_C	74.21212904	0			
+173	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN06_T_C	492.2551948	0			
+174	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN08_T_C	480.7958854	0			
+175	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN09_T_C	361.239017	0			
+176	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN10_T2_C	361.0635844	0			
+177	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN11_T2_C	761.6499376	0			
+178	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN12_T3_C	742.1988743	0			
+179	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN13_T_C	839.0766952	0			
+180	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN14_T2_C	1306.084666	0			
+181	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN15_T_C	382.3766977	0			
+182	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN16_T_C	192.7362796	0			
+183	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN17_T_C	873.6186928	0			
+184	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN18_T1_C	499.4627978	0			
+185	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN19_T_C	717.9378353	0			
+186	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN20_T_C	1118.817721	0			
+187	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN23_T2_C	429.697358	0			
+188	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN24_T_C	1784.806614	0			
+189	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN25_T_C	533.4860989	0			
+190	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN26_T_C	66.93122956	0			
+191	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN26_T2_C	1507.855193	0			
+192	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN28_T1_C	296.1221006	0			
+193	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN29_T_C	196.8957804	0			
+194	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN30_T3_C	485.5425288	0			
+195	3	Acropora nasuta	AN	NA	NA		paulina	F3_AN31_T_C	296.4934683	0			
+196	3	Acropora robusta	AR	NA	NA		paulina	F3_AR01_T1_C	399.9493112	0			
+197	3	Acropora robusta	AR	NA	NA		paulina	F3_AR02_T1_C	477.6982022	0			
+198	3	Acropora robusta	AR	NA	NA		paulina	F3_AR03_T1_C	1689.258104	0			
+199	3	Acropora robusta	AR	NA	NA		paulina	F3_AR04_T1_C	273.5946926	0			
+200	3	Acropora robusta	AR	NA	NA		paulina	F3_AR05_T1_C	225.0962577	0			
+201	3	Acropora robusta	AR	NA	NA		paulina	F3_AR06_T1_C	895.861896	0			
+202	3	Acropora robusta	AR	NA	NA		paulina	F3_AR07_T1_C	1830.378378	0			
+203	3	Acropora robusta	AR	NA	NA		paulina	F3_AR08_T1_C	564.5230113	0			
+204	3	Acropora robusta	AR	NA	NA		paulina	F3_AR09_T1_C	1569.923811	0			
+205	3	Acropora robusta	AR	NA	NA		paulina	F3_AR11_T1_C	539.4203775	0			
+206	3	Acropora robusta	AR	NA	NA		paulina	F3_AR12_T1_C	175.4380946	0			
+207	3	Acropora robusta	AR	NA	NA		paulina	F3_AR13_T1_C	776.2571977	0			
+208	3	Acropora robusta	AR	NA	NA		paulina	F3_AR14_T1_C	248.5030322	0			
+209	3	Acropora robusta	AR	NA	NA		paulina	F3_AR15_T1_C	3005.81654	0			
+210	3	Acropora robusta	AR	NA	NA		paulina	F3_AR17_T1_C	222.121481	0			
+211	3	Acropora robusta	AR	NA	NA		paulina	F3_AR18_T1A_C	1052.913661	0			
+212	3	Acropora robusta	AR	NA	NA		paulina	F3_AR19_T1_C	4242.682167	0			
+213	3	Acropora robusta	AR	NA	NA		paulina	F3_AR20_T1_C	2590.546968	0			
+214	3	Acropora robusta	AR	NA	NA		paulina	F3_AR21_T1_C	853.99796	0			
+215	3	Acropora robusta	AR	NA	NA		paulina	F3_AR23_T1_C	431.9108753	0			
+216	3	Acropora robusta	AR	NA	NA		paulina	F3_AR25_T1_C	429.271529	0			
+217	3	Acropora robusta	AR	NA	NA		paulina	F3_AR26_T1_C	263.6696754	0			
+218	3	Acropora robusta	AR	NA	NA		paulina	F3_AR27_T1_C	179.7448467	0			
+219	3	Acropora robusta	AR	NA	NA		paulina	F3_AR29_T1_C	349.1378744	0			
+220	3	Acropora robusta	AR	NA	NA		paulina	F3_AR30_T1_C	401.9606367	0			
+221	3	Acropora humilis	AS	NA	NA		paulina	F3_AS01_T_C	211.3926188	0			
+222	3	Acropora humilis	AS	NA	NA		paulina	F3_AS02_T1_C	134.7650527	0			
+223	3	Acropora humilis	AS	NA	NA		paulina	F3_AS03_T1_C	327.7013881	0			
+224	3	Acropora humilis	AS	NA	NA		paulina	F3_AS04_T1_C	321.6946825	0			
+225	3	Acropora humilis	AS	NA	NA		paulina	F3_AS05_T_C	201.2965354	0			
+226	3	Acropora humilis	AS	NA	NA		paulina	F3_AS06_T1_C	197.7745665	0			
+227	3	Acropora humilis	AS	NA	NA		paulina	F3_AS07_T1_C	740.8217339	0			
+228	3	Acropora humilis	AS	NA	NA		paulina	F3_AS08_T_C	145.144044	0			
+229	3	Acropora humilis	AS	NA	NA		paulina	F3_AS10_T_C	68.95867727	0			
+230	3	Acropora humilis	AS	NA	NA		paulina	F3_AS11_T_C	537.929145	0			
+231	3	Acropora humilis	AS	NA	NA		paulina	F3_AS12_T2_C	62.00029123	0			
+232	3	Acropora humilis	AS	NA	NA		paulina	F3_AS13_T1_C	101.0910989	0			
+233	3	Acropora humilis	AS	NA	NA		paulina	F3_AS14_T_C	536.5499167	0			
+234	3	Acropora humilis	AS	NA	NA		paulina	F3_AS15_T_C	74.70601304	0			
+235	3	Acropora humilis	AS	NA	NA		paulina	F3_AS16_T_C	136.3935323	0			
+236	3	Acropora humilis	AS	NA	NA		paulina	F3_AS17_T2_C	363.1773162	0			
+237	3	Acropora humilis	AS	NA	NA		paulina	F3_AS18_T_C	111.2922954	0			
+238	3	Acropora humilis	AS	NA	NA		paulina	F3_AS19_T1_C	92.98713382	0			
+239	3	Acropora humilis	AS	NA	NA		paulina	F3_AS22_T2_C	156.1744561	0			
+240	3	Acropora humilis	AS	NA	NA		paulina	F3_AS23_T_C	120.5982047	0			
+241	3	Acropora humilis	AS	NA	NA		paulina	F3_AS24_T_C	94.91218008	0			
+242	3	Acropora humilis	AS	NA	NA		paulina	F3_AS25_T2_C	120.0813578	0			
+243	3	Acropora humilis	AS	NA	NA		paulina	F3_AS26_T2_C	211.3840262	0			
+244	3	Acropora humilis	AS	NA	NA		paulina	F3_AS27_T_C	271.5338942	0			
+245	3	Acropora humilis	AS	NA	NA		paulina	F3_AS28_T_C	39.17600413	0			
+246	3	Acropora humilis	AS	NA	NA		paulina	F3_AS29_T_C	185.7761665	0			
+247	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP01_T1_C	67.49214367	0			
+248	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP02_T1_C	226.1585657	0			
+249	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP03_T1_C	121.8345873	0			
+250	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP05_T1_C	104.2295302	0			
+251	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP06_T1_C	214.893367	0			
+252	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP08_T1_C	193.3531546	0			
+253	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP08_T2_C	49.2723224	0			
+254	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP09_T1_C	165.2518801	0			
+255	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP10_T1_C	162.5619694	0			
+256	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP12_T1_C	68.43085306	0			
+257	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP13_T1_C	45.83428965	0			
+258	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP14_T1_C	129.0372678	0			
+259	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP15_T1_C	131.8800616	0			
+260	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP16_T1_C	123.6438128	0			
+261	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP17_T1_C	56.60745397	0			
+262	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP18_T1_C	236.8666641	0			
+263	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP21_T1_C	252.9671737	0			
+264	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP22_T1_C	241.6430221	0			
+265	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP24_T1_C	114.1059904	0			
+266	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP25_T1_C	84.03639283	0			
+267	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP26_T1_C	356.1258383	0			
+268	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP27_T1_C	127.032803	0			
+269	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP28_T1_C	56.28962871	0			
+270	3	Goniastrea pectinata	GP	NA	NA		paulina	F3_GP30_T1_C	305.3942939	0			
+271	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR01_T1_C	189.9427592	0			
+272	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR02_T1_C	253.670275	0			
+273	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR03_T1_C	110.9033461	0			
+274	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR04_T1_C	189.6383474	0			
+275	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR05_T1_C	197.8333853	0			
+276	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR06_T1_C	193.5061986	0			
+277	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR07_T1_C	262.3496375	0			
+278	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR08_T1_C	273.7750017	0			
+279	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR09_T1_C	157.4261245	0			
+280	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR10_T1_C	210.6973439	0			
+281	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR11_T1_C	227.4047944	0			
+282	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR12_T1_C	122.6120783	0			
+283	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR13_T1_C	252.4674649	0			
+284	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR14_T1_C	246.7982461	0			
+285	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR15_T1_C	160.4476159	0			
+286	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR16_T1_C	558.8495379	0			
+287	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR17_T1_C	390.8473976	0			
+288	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR18_T1_C	146.4848767	0			
+289	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR19_T1_C	62.80761427	0			
+290	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR20_T1_C	191.6558569	0			
+291	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR21_T1_C	275.9529737	0			
+292	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR22_T1_C	30.70846765	0			
+293	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR23_T1_C	233.4209847	0			
+294	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR25_T1_C	551.5630207	0			
+295	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR26_T1_C	186.3861986	0			
+296	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR27_T1_C	439.9493725	0			
+297	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR28_T1_C	133.6669868	0			
+298	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR29_T1_C	354.3570277	0			
+299	3	Goniastrea retiformis	GR	NA	NA		paulina	F3_GR30_T1_C	580.5487721	0			
+300	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC04_T_C	5604.405348	0			
+301	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC05_T_C	1741.274677	0			
+302	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC09_T_C	17659.55043	0			
+303	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC10_T_C	1815.95286	0			
+304	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC17_T_C	10045.7494	0			
+305	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC18_T_C	502.5494459	0			
+306	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC19_T_C	3903.049385	0			
+307	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC22_T_C	778.2407274	0			
+308	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC23_T_C	4034.387055	0			
+309	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC24_T_C	2873.652131	0			
+310	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC26_T_C	1174.610001	0			
+311	4	Acropora cytherea	AC	NA	NA		alisha	F4_AC27_T_C	3072.888689	0			
+312	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD01_T_C	163.8668698	0			
+313	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD02_T_C	336.7366861	0			
+314	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD03_T_C	782.4790928	0			
+315	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD04_T_C	736.2267013	0			
+316	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD05_T_C	615.1599519	0			
+317	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD06_T_C	437.5536014	0			
+318	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD07_T_C	501.394314	0			
+319	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD08_T_C	684.5625795	0			
+320	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD10_T_C	582.2373154	0			
+321	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD11_T_C	1074.842472	0			
+322	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD12_T_C	696.2530441	0			
+323	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD13_T_C	160.2656775	0			
+324	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD14_T_C	102.7835135	0			
+325	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD16_T_C	186.8312095	0			
+326	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD17_T_C	577.0278458	0			
+327	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD18_T_C	534.9485381	0			
+328	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD19_T_C	706.7071277	0			
+329	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD20_T_C	481.2347064	0			
+330	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD21_T_C	357.2397295	0			
+331	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD22_T_C	127.5773075	0			
+332	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD23_T_C	1057.130229	0			
+333	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD24_T_C	1017.645574	0			
+334	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD25_T_C	464.1946478	0			
+335	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD27_T_C	407.3839807	0			
+336	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD28_T_C	771.2846789	0			
+337	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD29_T_C	404.2019003	0			
+338	4	Acropora fat dig	AD	NA	NA		alisha	F4_AD30_T_C	691.0558599	0			
+339	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH01_T_C	1097.811151	0			
+340	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH02_T_C	7155.477962	0			
+341	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH03_T_C	3912.329513	0			
+342	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH04_T_C	1480.379672	0			
+343	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH05_T_C	10583.0566	0			
+344	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH06_T_C	1985.195709	0			
+345	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH07_T_C	535.6120461	0			
+346	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH08_T_C	3355.710962	0			
+347	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH09_T_C	6298.659375	0			
+348	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH10_T_C	860.4933282	0			
+349	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH12_T_C	10798.0558	0			
+350	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH13_T_C	3247.402091	0			
+351	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH14_T_C	696.9831315	0			
+352	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH15_T_C	472.834355	0			
+353	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH16_T_C	5232.443141	0			
+354	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH19_T_C	1046.392857	0			
+355	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH21_T_C	1762.245545	0			
+356	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH22_T_C	1301.733567	0			
+357	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH23_T_C	3335.021718	0			
+358	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH24_T_C	1506.359919	0			
+359	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH25_T_C	4312.260265	0			
+360	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH26_T_C	3288.369248	0			
+361	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH27_T_C	1648.951049	0			
+362	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH28_T_C	1246.036899	0			
+363	4	Acropora hyacinthus	AH	NA	NA		alisha	F4_AH29_T_C	1826.548658	0			
+364	4	Acropora millepora	AM	NA	NA		alisha	F4_AM01_T_C	1423.112214	0			
+365	4	Acropora millepora	AM	NA	NA		alisha	F4_AM02_T_C	646.9561373	0			
+366	4	Acropora millepora	AM	NA	NA		alisha	F4_AM04_T_C	722.7045066	0			
+367	4	Acropora millepora	AM	NA	NA		alisha	F4_AM06_T_C	416.2853472	0			
+368	4	Acropora millepora	AM	NA	NA		alisha	F4_AM07_T_C	448.4236016	0			
+369	4	Acropora millepora	AM	NA	NA		alisha	F4_AM08_T_C	850.6923077	0			
+370	4	Acropora millepora	AM	NA	NA		alisha	F4_AM11_T_C	381.3105633	0			
+371	4	Acropora millepora	AM	NA	NA		alisha	F4_AM12_T_C	267.3755312	0			
+372	4	Acropora millepora	AM	NA	NA		alisha	F4_AM13_T_C	173.3731337	0			
+373	4	Acropora millepora	AM	NA	NA		alisha	F4_AM14_T_C	203.3967369	0			
+374	4	Acropora millepora	AM	NA	NA		alisha	F4_AM15_T_C	376.4027809	0			
+375	4	Acropora millepora	AM	NA	NA		alisha	F4_AM16_T_C	1096.100254	0			
+376	4	Acropora millepora	AM	NA	NA		alisha	F4_AM17_T_C	1085.075184	0			
+377	4	Acropora millepora	AM	NA	NA		alisha	F4_AM18_T_C	404.3292079	0			
+378	4	Acropora millepora	AM	NA	NA		alisha	F4_AM19_T_C	945.5645755	0			
+379	4	Acropora millepora	AM	NA	NA		alisha	F4_AM23_T_C	357.0706537	0			
+380	4	Acropora millepora	AM	NA	NA		marcela	F4_AM24_T_C	1065.527499	0			
+381	4	Acropora millepora	AM	NA	NA		marcela	F4_AM25_T_C	1034.304929	0			
+382	4	Acropora millepora	AM	NA	NA		marcela	F4_AM26_T_C	280.1338133	0			
+383	4	Acropora millepora	AM	NA	NA		marcela	F4_AM27_T_C	145.9502324	0			
+384	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN01_T_C	289.6306013	0			
+385	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN03_T_C	307.9460187	0			
+386	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN04_T_C	921.1374035	0			
+387	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN05_T_C	291.3601826	0			
+388	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN06_T_C	214.011335	0			
+389	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN07_T_C	265.5869375	0			
+390	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN08_T_C	429.9694054	0			
+391	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN09_T_C	683.1568025	0			
+392	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN10_T_C	772.1466569	0			
+393	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN11_T_C	248.1303324	0			
+394	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN13_T_C	286.4173465	0			
+395	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN14_T_C	370.6802176	0			
+396	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN15_T_C	78.25674923	0			
+397	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN21_T_C	223.0584755	0			
+398	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN22_T_C	204.7843277	0			
+399	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN25_T_C	294.1940774	0			
+400	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN26_T_C	496.1408326	0			
+401	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN27_T_C	374.4863271	0			
+402	4	Acropora nasuta	AN	NA	NA		marcela	F4_AN29_T_C	425.7135321	0			
+403	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP01_T_C	484.6751683	0			
+404	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP02_T_C	611.9140794	0			
+405	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP03_T_C	319.6013824	0			
+406	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP04_T_C	369.5967145	0			
+407	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP07_T_C	374.5430196	0			
+408	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP08_T_C	268.4393529	0			
+409	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP09_T_C	608.0443279	0			
+410	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP10_T_C	1058.62261	0			
+411	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP15_T_C	868.4286443	0			
+412	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP16_T_C	952.7493237	0			
+413	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP17_T_C	1407.725105	0			
+414	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP18_T_C	137.3232172	0			
+415	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP19_T_C	179.3439462	0			
+416	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP23_T_C	267.4864938	0			
+417	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP24_T_C	192.8327551	0			
+418	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP25_T_C	401.594717	0			
+419	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP28_T_C	715.0927772	0			
+420	4	Acropora spathulata	AL	NA	NA		marcela	F4_AP30_T_C	412.7965785	0			
+421	4	Acropora robusta	AR	NA	NA		marcela	F4_AR05_T_C	337.0859539	0			
+422	4	Acropora robusta	AR	NA	NA		marcela	F4_AR09_T_C	422.0748901	0			
+423	4	Acropora robusta	AR	NA	NA		marcela	F4_AR14_T_C	1202.781411	0			
+424	4	Acropora robusta	AR	NA	NA		marcela	F4_AR19_T_C	255.4129292	0			
+425	4	Acropora robusta	AR	NA	NA		marcela	F4_AR20_T_C	407.5485883	0			
+426	4	Acropora robusta	AR	NA	NA		marcela	F4_AR21_T_C	4507.467344	0			
+427	4	Acropora robusta	AR	NA	NA		marcela	F4_AR25_T_C	6534.120669	0			
+428	4	Acropora robusta	AR	NA	NA		marcela	F4_AR27_T_C	255.5251868	0			
+429	4	Acropora robusta	AR	NA	NA		marcela	F4_AR28_T_C	577.903701	0			
+430	4	Acropora robusta	AR	NA	NA		marcela	F4_AR30_T_C	1901.242502	0			
+431	4	Acropora humilis	AS	NA	NA		marcela	F4_AS04_T_C	869.2104454	0			
+432	4	Acropora humilis	AS	NA	NA		marcela	F4_AS07_T_C	203.1823116	0			
+433	4	Acropora humilis	AS	NA	NA		marcela	F4_AS08_T_C	208.6545745	0			
+434	4	Acropora humilis	AS	NA	NA		marcela	F4_AS09_T_C	248.668927	0			
+435	4	Acropora humilis	AS	NA	NA		marcela	F4_AS10_T_C	205.7882302	0			
+436	4	Acropora humilis	AS	NA	NA		marcela	F4_AS11_T_C	166.0725821	0			
+437	4	Acropora humilis	AS	NA	NA		marcela	F4_AS18_T_C	263.8958338	0			
+438	4	Acropora humilis	AS	NA	NA		marcela	F4_AS20_T_C	253.2197795	0			
+439	4	Acropora humilis	AS	NA	NA		marcela	F4_AS23_T_C	454.6283287	0			
+440	4	Acropora humilis	AS	NA	NA		marcela	F4_AS28_T_C	121.1531086	0			
+441	4	Acropora humilis	AS	NA	NA		marcela	F4_AS29_T_C	308.8526064	0			
+442	4	Acropora humilis	AS	NA	NA		marcela	F4_AS30_T_C	334.1269058	0			
+443	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP01_T_C	123.0734309	0			
+444	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP02_T_C	97.56602181	0			
+445	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP03_T_C	53.22631017	0			
+446	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP04_T_C	77.79357285	0			
+447	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP05_T_C	76.07134317	0			
+448	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP06_T_C	216.7098469	0			
+449	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP07_T_C	39.22375546	0			
+450	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP08_T_C	43.83637033	0			
+451	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP12_T_C	119.0845033	0			
+452	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP13_T_C	262.8653355	0			
+453	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP14_T_C	240.6220543	0			
+454	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP15_T_C	12.47868484	0			
+455	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP16_T_C	171.0622279	0			
+456	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP17_T_C	69.74306284	0			
+457	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP18_T_C	109.4578166	0			
+458	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP19_T_C	196.8957701	0			
+459	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP20_T_C	200.970308	0			
+460	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP21_T_C	201.9464068	0			
+461	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP22_T_C	99.66790131	0			
+462	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP23_T_C	139.0884269	0			
+463	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP24_T_C	66.32486379	0			
+464	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP27_T_C	131.8826798	0			
+465	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP28_T_C	110.3990539	0			
+466	4	Goniastrea pectinata	GP	NA	NA		marcela	F4_GP29_T_C	89.58391322	0			
+467	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR01_T_C	131.2700742	0			
+468	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR02_T_C	416.4391656	0			
+469	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR03_T_C	384.0860233	0			
+470	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR04_T_C	1377.034743	0			
+471	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR05_T_C	113.3806957	0			
+472	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR06_T_C	312.9337134	0			
+473	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR07_T_C	288.7563638	0			
+474	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR08_T_C	286.1522034	0			
+475	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR09_T_C	554.3111129	0			
+476	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR10_T_C	523.6189368	0			
+477	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR11_T_C	61.50809434	0			
+478	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR12_T_C	403.7704918	0			
+479	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR13_T_C	550.7343604	0			
+480	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR14_T_C	1094.531174	0			
+481	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR17_T_C	69.30112171	0			
+482	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR18_T_C	382.9364296	0			
+483	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR19_T_C	31.84419448	0			
+484	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR20_T_C	288.5369033	0			
+485	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR21_T_C	36.72457131	0			
+486	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR22_T_C	133.1824237	0			
+487	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR23_T_C	113.8013087	0			
+488	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR24_T_C	247.6164333	0			
+489	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR25_T_C	396.2216055	0			
+490	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR26_T_C	23.57508781	0			
+491	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR28_T_C	147.7610868	0			
+492	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR29_T_C	320.2982085	0			
+493	4	Goniastrea retiformis	GR	NA	NA		marcela	F4_GR30_T_C	527.8600406	0			
+494	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC01_T_C	9905.220768	0			
+495	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC02_T_C	13991.86155	0			
+496	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC03_T_C	1862.475643	0			
+497	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC04_T_C	5701.643095	0			
+498	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC05_T_C	2193.863202	0			
+499	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC06_T_C	3038.13806	0			
+500	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC07_T_C	8563.138379	0			
+501	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC08_T_C	1850.042803	0			
+502	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC09_T_C	5852.394228	0			
+503	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC10_T_C	2855.485682	0			
+504	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC11_T_C	17428.57887	0			
+505	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC12_T_C	5603.780507	0			
+506	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC13_T_C	19741.65124	0			
+507	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC14_T_C	2336.081174	0			
+508	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC15_T_C	6158.51296	0			
+509	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC16_T_C	1046.40175	0			
+510	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC17_T_C	882.6105909	0			
+511	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC18_T_C	3545.989139	0			
+512	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC19_T_C	830.1974365	0			
+513	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC20_T_C	4220.250335	0			
+514	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC21_T_C	7157.566622	0			
+515	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC22_T_C	2645.478465	0			
+516	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC23_T_C	6342.268153	0			
+517	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC24_T_C	5598.482293	0			
+518	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC25_Ta_C	19915.76416	0			
+519	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC26_T_C	10600.55776	0			
+520	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC27_T_C	14969.23839	0			
+521	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC28_T_C	0.39340577	0			
+522	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC29_T_C	4898.79952	0			
+523	5	Acropora cytherea	AC	NA	NA		maddy	F5_AC30_T_C	16590.97701	0			
+524	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD01_T_C	1593.073535	0			
+525	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD03_T_C	291.6365442	0			
+526	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD04_T_C	465.3732215	0			
+527	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD05_T_C	0.055152395	0			
+528	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD06_T_C	409.2483094	0			
+529	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD07_T_C	387.9406003	0			
+530	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD08_T_C	207.0432805	0			
+531	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD09_T_C	295.7129543	0			
+532	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD10_T_C	799.29378	0			
+533	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD11_T_C	389.3458304	0			
+534	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD12_T_C	181.75145	0			
+535	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD13_T_C	376.5305034	0			
+536	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD14_T_C	250.3196123	0			
+537	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD15_T_C	269.0538645	0			
+538	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD16_T_C	756.091318	0			
+539	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD17_T_C	677.1581526	0			
+540	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD19_T_C	656.31804	0			
+541	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD20_T_C	412.4093922	0			
+542	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD21_T_C	247.9906094	0			
+543	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD22_T_C	370.4050941	0			
+544	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD23_T_C	958.9407752	0			
+545	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD24_T_C	296.8365694	0			
+546	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD25_T_C	1082.402473	0			
+547	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD26_T_C	797.4497691	0			
+548	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD27_T_C	65.45980948	0			
+549	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD28_T_C	543.1988001	0			
+550	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD29_T_C	69.46323998	0			
+551	5	Acropora fat dig	AD	NA	NA		maddy	F5_AD30_T_C	305.6986066	0			
+552	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH01_T_C	5814.847574	0			
+553	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH02_T_C	2452.402188	0			
+554	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH03_T_C	1527.473973	0			
+555	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH04_T_C	1169.438705	0			
+556	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH05_T_C	3354.617042	0			
+557	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH06_T_C	8562.380333	0			
+558	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH07_T_C	4867.372697	0			
+559	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH08_T_C	6417.730349	0			
+560	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH09_T_C	3118.782526	0			
+561	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH10_T_C	1361.518954	0			
+562	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH11_T_C	3655.503413	0			
+563	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH12_T_C	1132.522093	0			
+564	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH13_T_C	4212.581688	0			
+565	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH14_T_C	2602.974338	0			
+566	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH15_T_C	1814.674556	0			
+567	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH16_T_C	2335.637465	0			
+568	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH17_T_C	1074.099704	0			
+569	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH18_T_C	780.6563195	0			
+570	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH19_T_C	3612.083093	0			
+571	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH20_T_C	1999.070308	0			
+572	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH21_T_C	1952.539337	0			
+573	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH22_T_C	1912.601336	0			
+574	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH23_T_C	1206.418793	0			
+575	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH24_T_C	1013.042092	0			
+576	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH25_T_C	4133.244871	0			
+577	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH26_T_C	7582.735219	0			
+578	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH27_T_C	4300.686197	0			
+579	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH29_T_C	2122.927992	0			
+580	5	Acropora hyacinthus	AH	NA	NA		maddy	F5_AH30_T_C	2337.981586	0			
+581	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL01_T_C	406.9524097	0			
+582	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL02_T_C	858.8971522	0			
+583	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL03_T_C	223.6745554	0			
+584	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL04_T_C	374.1260739	0			
+585	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL05_T_C	618.5905422	0			
+586	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL06_T_C	457.3510269	0			
+587	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL07_T_C	284.735224	0			
+588	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL08_T_C	271.2425685	0			
+589	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL09_T_C	528.4485267	0			
+590	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL10_T_C	152.4287119	0			
+591	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL11_T_C	373.5463089	0			
+592	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL12_T_C	468.9675983	0			
+593	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL13_T_C	534.7164452	0			
+594	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL14_T_C	410.1354669	0			
+595	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL15_T_C	1386.604419	0			
+596	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL16_T_C	1474.085391	0			
+597	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL17_T_C	762.2478514	0			
+598	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL18_T_C	362.0935357	0			
+599	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL19_T_C	1020.786087	0			
+600	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL20_T_C	2313.823225	0			
+601	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL21_T_C	196.683902	0			
+602	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL22_T_C	144.2098361	0			
+603	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL23_T_C	494.1626517	0			
+604	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL24_T_C	412.0843562	0			
+605	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL25_T_C	693.0747456	0			
+606	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL26_T_C	330.6238495	0			
+607	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL27_T_C	701.0887288	0			
+608	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL28_T_C	385.1638026	0			
+609	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL29_T_C	620.7675883	0			
+610	5	Acropora spathulata	AL	NA	NA		maddy	F5_AL30_T_C	810.000661	0			
+611	5	Acropora millepora	AM	NA	NA		maddy	F5_AM01_T_C	253.0220207	0			
+612	5	Acropora millepora	AM	NA	NA		maddy	F5_AM02_T_C	54.91059771	0			
+613	5	Acropora millepora	AM	NA	NA		maddy	F5_AM03_T_C	113.6429414	0			
+614	5	Acropora millepora	AM	NA	NA		maddy	F5_AM04_T_C	108.6924313	0			
+615	5	Acropora millepora	AM	NA	NA		maddy	F5_AM05_T_C	532.8282016	0			
+616	5	Acropora millepora	AM	NA	NA		maddy	F5_AM06_T_C	812.7038343	0			
+617	5	Acropora millepora	AM	NA	NA		maddy	F5_AM07_T_C	1018.651418	0			
+618	5	Acropora millepora	AM	NA	NA		maddy	F5_AM08_T_C	168.076644	0			
+619	5	Acropora millepora	AM	NA	NA		maddy	F5_AM09_T_C	878.2142993	0			
+620	5	Acropora millepora	AM	NA	NA		maddy	F5_AM10_T_C	1162.364621	0			
+621	5	Acropora millepora	AM	NA	NA		maddy	F5_AM11_T_C	430.2604688	0			
+622	5	Acropora millepora	AM	NA	NA		maddy	F5_AM12_T_C	263.2243019	0			
+623	5	Acropora millepora	AM	NA	NA		maddy	F5_AM13_T_C	1445.490072	0			
+624	5	Acropora millepora	AM	NA	NA		maddy	F5_AM14_T_C	328.4065748	0			
+625	5	Acropora millepora	AM	NA	NA		maddy	F5_AM15_T_C	355.9591735	0			
+626	5	Acropora millepora	AM	NA	NA		maddy	F5_AM16_T_C	289.6182713	0			
+627	5	Acropora millepora	AM	NA	NA		maddy	F5_AM17_T_C	702.9950413	0			
+628	5	Acropora millepora	AM	NA	NA		maddy	F5_AM18_T_C	810.3302752	0			
+629	5	Acropora millepora	AM	NA	NA		maddy	F5_AM19_T_C	453.5503466	0			
+630	5	Acropora millepora	AM	NA	NA		maddy	F5_AM20_T_C	192.6189234	0			
+631	5	Acropora millepora	AM	NA	NA		maddy	F5_AM21_T_C	250.9233529	0			
+632	5	Acropora millepora	AM	NA	NA		maddy	F5_AM22_T_C	223.1242265	0			
+633	5	Acropora millepora	AM	NA	NA		maddy	F5_AM23_T_C	264.0276923	0			
+634	5	Acropora millepora	AM	NA	NA		maddy	F5_AM24_T_C	250.0385591	0			
+635	5	Acropora millepora	AM	NA	NA		maddy	F5_AM25_T_C	389.6402625	0			
+636	5	Acropora millepora	AM	NA	NA		maddy	F5_AM26_T_C	379.2608919	0			
+637	5	Acropora millepora	AM	NA	NA		maddy	F5_AM27_T_C	99.09346194	0			
+638	5	Acropora millepora	AM	NA	NA		maddy	F5_AM28_T_C	71.93702165	0			
+639	5	Acropora millepora	AM	NA	NA		maddy	F5_AM29_T_C	479.8299923	0			
+640	5	Acropora millepora	AM	NA	NA		maddy	F5_AM30_T_C	258.9760862	0			
+641	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN01_T_C	902.1546451	0			
+642	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN02_T_C	488.6248744	0			
+643	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN03_T_C	599.4903001	0			
+644	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN04_T_C	446.1373686	0			
+645	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN05_T_C	344.4306222	0			
+646	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN06_T_C	1497.771507	0			
+647	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN07_T_C	339.575771	0			
+648	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN08_T_C	610.9741794	0			
+649	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN09_T_C	224.0955418	0			
+650	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN11_T_C	345.5880698	0			
+651	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN12_T_C	455.9093533	0			
+652	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN13_T_C	191.6728207	0			
+653	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN14_T_C	499.1356516	0			
+654	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN15_T_C	156.5831826	0			
+655	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN16_T_C	312.5657635	0			
+656	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN17_T_C	517.8172589	0			
+657	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN18_T_C	408.702614	0			
+658	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN19_T_C	132.4358266	0			
+659	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN21_T_C	416.1959726	0			
+660	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN22_T_C	1997.127394	0			
+661	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN23_T_C	206.6254881	0			
+662	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN24_T_C	239.9824937	0			
+663	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN25_T_C	655.1669316	0			
+664	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN26_T_C	616.5131627	0			
+665	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN27_T_C	917.414652	0			
+666	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN28_T_C	506.5685949	0			
+667	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN29_T_C	268.4381141	0			
+668	5	Acropora nasuta	AN	NA	NA		maddy	F5_AN30_T_C	410.7780068	0			
+669	5	Acropora robusta	AR	NA	NA		maddy	F5_AR02_T_C	758.5928715	0			
+670	5	Acropora robusta	AR	NA	NA		maddy	F5_AR03_T_C	1888.975375	0			
+671	5	Acropora robusta	AR	NA	NA		maddy	F5_AR04_T_C	1761.297956	0			
+672	5	Acropora robusta	AR	NA	NA		maddy	F5_AR06_T1_C	396.8654221	0			
+673	5	Acropora robusta	AR	NA	NA		maddy	F5_AR07_T_C	2217.046698	0			
+674	5	Acropora robusta	AR	NA	NA		maddy	F5_AR08_T_C	626.7169763	0			
+675	5	Acropora robusta	AR	NA	NA		maddy	F5_AR09_T_C	506.1205479	0			
+676	5	Acropora robusta	AR	NA	NA		maddy	F5_AR10_T1_C	4718.823529	0			
+677	5	Acropora robusta	AR	NA	NA		maddy	F5_AR10_T2_C	1413.228523	0			
+678	5	Acropora robusta	AR	NA	NA		maddy	F5_AR11_T_C	1520.367642	0			
+679	5	Acropora robusta	AR	NA	NA		maddy	F5_AR12_T1_C	4395.377432	0			
+680	5	Acropora robusta	AR	NA	NA		maddy	F5_AR12_T2_C	1959.671533	0			
+681	5	Acropora robusta	AR	NA	NA		maddy	F5_AR13_T_C	1540.518198	0			
+682	5	Acropora robusta	AR	NA	NA		maddy	F5_AR14_T_C	1870.856959	0			
+683	5	Acropora robusta	AR	NA	NA		maddy	F5_AR15_T_C	7485.252617	0			
+684	5	Acropora robusta	AR	NA	NA		maddy	F5_AR16_T_C	2773.615658	0			
+685	5	Acropora robusta	AR	NA	NA		maddy	F5_AR17_T_C	330.9276018	0			
+686	5	Acropora robusta	AR	NA	NA		maddy	F5_AR18_T_C	720.5447996	0			
+687	5	Acropora robusta	AR	NA	NA		maddy	F5_AR19_T_C	2052.506542	0			
+688	5	Acropora robusta	AR	NA	NA		maddy	F5_AR20_T_C	1655.809292	0			
+689	5	Acropora robusta	AR	NA	NA		maddy	F5_AR21_T_C	2181.158032	0			
+690	5	Acropora robusta	AR	NA	NA		maddy	F5_AR22_T_C	2545.687077	0			
+691	5	Acropora robusta	AR	NA	NA		maddy	F5_AR23_T_C	2485.807825	0			
+692	5	Acropora robusta	AR	NA	NA		maddy	F5_AR24_T_C	3325.377113	0			
+693	5	Acropora robusta	AR	NA	NA		maddy	F5_AR25_T_C	602.8470006	0			
+694	5	Acropora robusta	AR	NA	NA		maddy	F5_AR26_T_C	2785.322701	0			
+695	5	Acropora robusta	AR	NA	NA		maddy	F5_AR27_T_C	1414.860216	0			
+696	5	Acropora robusta	AR	NA	NA		maddy	F5_AR28_T_C	653.5508302	0			
+697	5	Acropora robusta	AR	NA	NA		maddy	F5_AR29_T_C	5284.718345	0			
+698	5	Acropora humilis	AS	NA	NA		maddy	F5_AS01_T_C	337.1796423	0			
+699	5	Acropora humilis	AS	NA	NA		maddy	F5_AS02_T_C	359.1434675	0			
+700	5	Acropora humilis	AS	NA	NA		maddy	F5_AS04_T_C	509.3498979	0			
+701	5	Acropora humilis	AS	NA	NA		maddy	F5_AS06_T_C	183.3843714	0			
+702	5	Acropora humilis	AS	NA	NA		maddy	F5_AS07_T_C	136.3243377	0			
+703	5	Acropora humilis	AS	NA	NA		maddy	F5_AS08_T_C	101.5905811	0			
+704	5	Acropora humilis	AS	NA	NA		maddy	F5_AS09_T_C	223.1855404	0			
+705	5	Acropora humilis	AS	NA	NA		maddy	F5_AS10_T_C	278.7088021	0			
+706	5	Acropora humilis	AS	NA	NA		maddy	F5_AS11_T_C	533.62355	0			
+707	5	Acropora humilis	AS	NA	NA		maddy	F5_AS12_T_C	146.7993896	0			
+708	5	Acropora humilis	AS	NA	NA		maddy	F5_AS13_T_C	61.29684351	0			
+709	5	Acropora humilis	AS	NA	NA		maddy	F5_AS14_T_C	577.4544863	0			
+710	5	Acropora humilis	AS	NA	NA		maddy	F5_AS16_T_C	153.4979653	0			
+711	5	Acropora humilis	AS	NA	NA		maddy	F5_AS18_T_C	231.5184546	0			
+712	5	Acropora humilis	AS	NA	NA		maddy	F5_AS19_T_C	126.9566006	0			
+713	5	Acropora humilis	AS	NA	NA		maddy	F5_AS20_T_C	263.0811367	0			
+714	5	Acropora humilis	AS	NA	NA		maddy	F5_AS21_T_C	988.6778471	0			
+715	5	Acropora humilis	AS	NA	NA		maddy	F5_AS22_T_C	411.2196958	0			
+716	5	Acropora humilis	AS	NA	NA		maddy	F5_AS23_T_C	452.0432692	0			
+717	5	Acropora humilis	AS	NA	NA		maddy	F5_AS24_T_C	152.1701148	0			
+718	5	Acropora humilis	AS	NA	NA		maddy	F5_AS25_T_C	265.2737353	0			
+719	5	Acropora humilis	AS	NA	NA		maddy	F5_AS26_T_C	204.7015594	0			
+720	5	Acropora humilis	AS	NA	NA		maddy	F5_AS27_T_C	370.2491568	0			
+721	5	Acropora humilis	AS	NA	NA		maddy	F5_AS28_T_C	264.4851562	0			
+722	5	Acropora humilis	AS	NA	NA		maddy	F5_AS29_T_C	257.8525957	0			
+723	5	Acropora humilis	AS	NA	NA		maddy	F5_AS30_T_C	655.2205494	0			
+724	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP01_T_C	136.2545978	0			
+725	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP02_T_C	111.5129055	0			
+726	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP03_T_C	131.6609233	0			
+727	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP04_T_C	254.6275859	0			
+728	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP05_T_C	135.1160181	0			
+729	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP06_T_C	138.7648741	0			
+730	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP07_T_C	51.65598727	0			
+731	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP08_T_C	119.1087295	0			
+732	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP09_T_C	135.1965425	0			
+733	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP10_T_C	193.0936087	0			
+734	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP11_T_C	205.0950001	0			
+735	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP12_T_C	162.3081959	0			
+736	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP13_T_C	140.6960858	0			
+737	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP14_T_C	71.87358482	0			
+738	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP15_T_C	43.11873347	0			
+739	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP16_T_C	73.15323112	0			
+740	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP17_T_C	201.9350588	0			
+741	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP18_T_C	194.8958442	0			
+742	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP19_T_C	506.0099696	0			
+743	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP20_T_C	115.0384179	0			
+744	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP21_T_C	68.5183786	0			
+745	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP22_T_C	499.2913948	0			
+746	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP23_T_C	29.62793246	0			
+747	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP25_T_C	137.8255866	0			
+748	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP26_T_C	247.9745706	0			
+749	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP27_T_C	303.1910261	0			
+750	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP28_T_C	119.9032364	0			
+751	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP29_T_C	83.92085621	0			
+752	5	Goniastrea pectinata	GP	NA	NA		erin	F5_GP30_T_C	244.4117386	0			
+753	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR01_T_C	145.7030332	0			
+754	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR02_T_C	598.71317	0			
+755	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR03_T_C	143.4627518	0			
+756	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR04_T_C	189.7634577	0			
+757	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR05_T_C	80.2148966	0			
+758	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR06_T_C	61.82942939	0			
+759	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR07_T_C	312.1934167	0			
+760	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR08_T_C	108.8674958	0			
+761	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR09_T_C	486.9534545	0			
+762	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR10_T_C	298.7330719	0			
+763	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR11_T_C	116.7327476	0			
+764	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR12_T_C	380.2918907	0			
+765	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR13_T_C	53.81663631	0			
+766	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR14_T_C	201.8151601	0			
+767	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR15_T_C	168.44466	0			
+768	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR16_T_C	333.3863898	0			
+769	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR17_T_C	145.1791292	0			
+770	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR18_T_C	605.4873806	0			
+771	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR19_T_C	96.13655345	0			
+772	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR20_T_C	148.5792153	0			
+773	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR21_T_C	213.2095769	0			
+774	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR22_T_C	608.5228332	0			
+775	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR23_T_C	215.5907154	0			
+776	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR24_T_C	230.8865644	0			
+777	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR25_T_C	192.1556355	0			
+778	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR26_T_C	296.305677	0			
+779	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR27_T_C	64.57961016	0			
+780	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR28_T_C	342.7855304	0			
+781	5	Goniastrea retiformis	GR	NA	NA		erin	F5_GR30_T_C	328.4602834	0			

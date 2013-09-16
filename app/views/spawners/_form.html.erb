@@ -1,0 +1,51 @@
+<%= form_for(@spawner) do |f| %>
+  <% if @spawner.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@spawner.errors.count, "error") %> prohibited this spawner from being saved:</h2>
+
+      <ul>
+      <% @spawner.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fieldtrip %><br />
+	<%= collection_select :spawner, :fieldtrip_id, @fieldtrips, :id, :name_code %>
+
+    <!-- <%= f.text_field :fieldtrip %> -->
+  </div>
+  <div class="field">
+    <%= f.label :species %><br />
+    <%= f.text_field :species %>
+  </div>
+  <div class="field">
+    <%= f.label :species_code %><br />
+    <%= f.text_field :species_code %>
+  </div>
+  <div class="field">
+    <%= f.label :tag_number %><br />
+    <%= f.number_field :tag_number %>
+  </div>
+  <div class="field">
+    <%= f.label :outliner_name %><br />
+    <%= f.text_field :outliner_name %>
+  </div>
+  <div class="field">
+    <%= f.label :person_id %><br />
+    <%= f.text_field :person_id %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br />
+    <%= f.text_field :area %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

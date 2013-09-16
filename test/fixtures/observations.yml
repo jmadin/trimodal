@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  coral: 
+  fieldtrip: 
+  mother_id: 1
+  tag_number: 1
+  action: MyString
+
+two:
+  coral: 
+  fieldtrip: 
+  mother_id: 1
+  tag_number: 1
+  action: MyString

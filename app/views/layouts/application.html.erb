@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trimodal</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= link_to 'Home', '/' %> | <%= link_to 'Fieldtrips', fieldtrips_path %> | <%= link_to 'Tagged corals', corals_path %> | <%= link_to 'Fecundity', fecund_corals_path %> | <%= link_to 'Spawners', spawners_path %> | <%= link_to 'Size structure', ss_corals_path %> | <%= link_to 'Image repository', @file_path %>
+
+<%= yield %>
+
+</body>
+</html>

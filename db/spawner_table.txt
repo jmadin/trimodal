@@ -1,0 +1,47 @@
+1	1	Acropora cytheria	AC	005	15924.4761848957			
+2	1	Acropora cytheria	AC	214	1282.04623619617			
+3	1	Acropora cytheria	AC	245	1253.13305339476			
+4	1	Acropora cytheria	AC	273	2545.17986132939			
+5	1	Acropora fat dig	AD	145	903.501877268001			
+6	1	Acropora fat dig	AD	149	144.526711524084			
+7	1	Acropora fat dig	AD	218	527.747084247374			
+8	1	Acropora fat dig	AD	287	1134.38942648426			
+9	1	Acropora hyacinthus	AH	076	728.612508557456			
+10	1	Acropora hyacinthus	AH	078	8493.09182821713			
+11	1	Acropora hyacinthus	AH	082	856.93407307732			
+12	1	Acropora hyacinthus	AH	215	3182.65494830134			
+13	1	Goniastrea pectinata	GP	004	86.7222837621907			
+14	1	Goniastrea retiformis	GR	002	316.194934239997			
+15	3	Acropora fat dig	AD	003	1011.64485450921			
+16	3	Acropora fat dig	AD	146	737.278991873496			
+17	3	Acropora fat dig	AD	151	589.791451600101			
+18	3	Acropora fat dig	AD	249	370.074683162342			
+19	3	Acropora hyacinthus	AH	064	3404.12468973574			
+20	3	Acropora hyacinthus	AH	522	3019.00357877269			
+21	3	Acropora hyacinthus	AH	527	6959.14115263408			
+22	3	Acropora hyacinthus	AH	825	3712.49970379855			
+23	3	Acropora intermedia	AI	523	3079.06428375217			
+24	3	Acropora intermedia	AI	832	1715.07086431227			
+25	3	Acropora nasuta	AN	080	613.468142577918			
+26	3	Acropora nasuta	AN	165	479.538434684943			
+27	3	Acropora nasuta	AN	167	373.597055387659			
+28	3	Acropora nasuta	AN	524	393.499631359049			
+29	3	Acropora spathulata	AP	182	902.827833989959			
+30	3	Acropora spathulata	AP	274	1019.91491703353			
+31	3	Acropora spathulata	AP	809	718.730800323363			
+32	3	Acropora humilis	AS	512	147.713692946058			
+33	3	Acropora humilis	AS	526	264.317590017907			
+34	3	Acropora humilis	AS	882	189.635350388345			
+35	4	Acropora cytheria	AC	598	6510.19793881882			
+36	4	Acropora hyacinthus	AH	318	8030.93308550171			
+37	4	Acropora hyacinthus	AH	451	494.801795778012			
+38	4	Acropora hyacinthus	AH	461	1901.78320112589			
+39	4	Acropora hyacinthus	AH	469	7434.9860205031			
+40	4	Acropora humilis	AS	391	110.795941807045			
+41	4	Acropora humilis	AS	450	701.181571815713			
+42	4	Goniastrea pectinata	GP	312	53.1169193393669			
+43	4	Goniastrea pectinata	GP	313	123.103314048452			
+44	4	Goniastrea pectinata	GP	347	91.9026339945945			
+45	4	Goniastrea pectinata	GP	469	895.374596264571			
+46	4	Goniastrea retiformis	GR	307	167.918925470494			
+47	4	Goniastrea retiformis	GR	460	108.305310108059			

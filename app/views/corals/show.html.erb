@@ -1,0 +1,131 @@
+<h2>Tagged colony</h2>
+
+<p id="notice"><%= notice %></p>
+
+<div style="border: dotted 1px grey; padding: 10px;">
+<table>
+	<tr class='top'>
+	<td><table style="background-color: black;"><tr class='image'>
+		<% if !@coral.observations.blank? %>
+			<% img = @coral.species_code + "%04d" % @coral.observations.last.tag_number + '_' + @coral.observations.last.fieldtrip.name_code + '_T' %>
+			<% imgS = @coral.species_code + "%04d" % @coral.observations.last.tag_number + '_' + @coral.observations.last.fieldtrip.name_code + '_S' %>
+			<% @temp = @files.find_all{|item| item.include? img }.last %>
+			<% @tempS = @files.find_all{|item| item.include? imgS }.last %>
+			
+			<% if !@temp.nil? %>
+				<td><%= link_to image_tag(@file_path + 'tagged_thumbs/' + @temp.split('/').last), @file_path + 'tagged_raw/' + @temp.split('/').last.split('_tn').first + '.JPG' %>
+				</td></tr>
+				<tr class='image'><td>
+				<font color="white">(Latest image)</font>
+			<% else %>
+				<% if !@tempS.nil? %>
+					<td><%= link_to image_tag(@file_path + 'tagged_thumbs/' + @tempS.split('/').last), @file_path + 'tagged_raw/' + @tempS.split('/').last.split('_tn').first + '.JPG' %>
+					</td></tr>
+					<tr class='image'><td>
+					<font color="white">(Latest image)</font>
+				<% else %>
+					<td style="height: 270px; width: 320px;"><font color="white">(The last observation has no images)</font>
+				<% end %>
+			<% end %>
+			</td></tr>
+		<% else %>
+			<td style="height: 270px; width: 320px;"><font color="white">(The last observation has no images)</font>
+		<% end %>
+	</table></td>
+	
+	<td class='top'>
+		<p>
+		  <b>Species:</b> <i><%= @coral.species %></i>
+		</p>
+
+		<p><% if !@coral.observations.blank? %>
+			<b>Current tag:</b> <%= @coral.species_code %><%= '%04d' % @coral.observations.last.tag_number %>
+		</p><% end %>
+		<p>
+		  <b>Transect:</b>
+		  <%= @coral.transect %> (x = <%= @coral.map_x %>, y = <%= @coral.map_y %>)
+		</p>
+
+		<p>
+		  <b>Dimensions:</b> <%= @coral.dim_1 %>, <%= @coral.dim_2 %>
+		</p>
+
+		<p style="border:1px;">
+		  <b>Colony notes:</b>
+		  <font color="orange"><%= @coral.notes %></font>
+		</p>
+	</td></tr>
+</table>
+
+<p>
+<%= link_to 'Edit coral', edit_coral_path(@coral) %> | <a href="javascript:jchange('div0');">Show mudmap and tag search</a>
+</p>
+
+<%= form_tag observations_path, :method => 'get' do %>
+  <p>
+    Tag search: <%= text_field_tag :osearch, params[:osearch] %>
+    <%= submit_tag "Search", :name => nil %></td>
+  </p>
+<% end %>
+
+<div id="div0" style="display:none;">
+	<p>*You can click on the mudmap colonies.</p>
+	<p style="color:red;">*Note that the mudmap is static and might not necessarily reflect the current state of the transect.</p>
+	<% map = "#{@coral.species_code}#{@coral.id}.png" %>
+	<%= image_tag @file_path + 'tagged_maps/' + map, :usemap => "#transect#{@coral.transect}", :style => "border:1px solid #333;" %>
+	<%= render :file => "public/transect#{@coral.transect }.html" %>	
+</div>
+
+
+</div>
+
+
+<h2>Tagged colony observations</h2>
+
+<a href="javascript:<% @coral.observations.each do |oo| %>jchange('div<%= oo.id %>')<% if oo != @coral.observations.last %>,<% end %><% end %>;">Show/hide all images</a>
+
+<table class='data'>
+<tr>
+	<th></th>
+	<th>Observation ID</th>
+	<th>Coral ID</th>
+	<th>Fieldtrip ID</th>
+	<th>Mother</th>
+	<th>Image tag</th>
+	<th>Active tag</th>
+	<th>Action</th>
+	<th>Observation notes</th>
+	<th>Areas</th>
+	<th></th>
+</tr>
+
+<%= render @coral.observations.sort_by{|e| e[:fieldtrip_id]} %>
+
+<tr style='background-color:white;'>
+	<% if !@coral.observations.blank? %>
+		<% temp = @coral.observations.last.active_tag %>
+		<% if temp.blank? %>	
+			<% temp = @coral.observations.last.tag_number %>
+		<% end %>		
+	<% end %>
+	
+	<%= form_for([@coral, @coral.observations.build]) do |f| %>
+	  <td></td>
+	  <td></td>
+	  <td><%= @coral.id %></td>
+	  <td><%= collection_select :observation, :fieldtrip_id, @fieldtrips, :id, :name_code, { :selected => @fieldtrips.last.id } %> </td>
+	  <td><%= f.text_field :mother_id, :size => 6 %></td>
+	  <td><%= f.text_field :tag_number, :value => temp, :size => 6 %></td>
+	  <td><%= f.text_field :active_tag, :size => 6 %></td>
+	  <td><%= f.select :action, ['', 'photographed', 'not found', 'no scale', 'not real', 'dead', 'gone'] %></td>
+	  <td><%= f.text_field :notes %></td>
+	  <td></td>
+	  <td><%= f.submit %></td>
+	<% end %>
+</tr>
+</table>
+<p id="notice"><%= notice %></p>
+
+<br/>
+
+

@@ -1,0 +1,43 @@
+<h1>Size structure colonies</h1>
+
+<div style="border: dotted 1px grey; padding: 10px;">
+<p>Dataset: <%= link_to 'Export size structure data (csv for Excel or R)', '/export_size_structure', :action => 'export_size_structure' %></p>
+</div>
+
+<table class='data'>
+  <tr>
+    <th>Fieldtrip</th>
+    <th>Species</th>
+    <th>Species code</th>
+    <th>Dim 1</th>
+    <th>Dim 2</th>
+    <th>Habitat</th>
+    <th>Outliner name</th>
+    <th>Outline filename</th>
+    <th>Area</th>
+    <th>Notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ss_corals.each do |ss_coral| %>
+  <tr>
+	<td><%= link_to ss_coral.fieldtrip.name_code, :controller => :fieldtrips, :action => :show, :id => ss_coral.fieldtrip_id %></td>
+    <td><em><%= ss_coral.species %></em></td>
+    <td><%= ss_coral.species_code %></td>
+    <td><%= ss_coral.dim_1 %></td>
+    <td><%= ss_coral.dim_2 %></td>
+    <td><%= ss_coral.habitat %></td>
+    <td><%= ss_coral.outliner_name %></td>
+    <td><%= ss_coral.outline_filename %></td>
+    <td><% if !ss_coral.area.blank? %><%= '%.2f' % ss_coral.area %><% end %></td>
+    <td><%= ss_coral.notes %></td>
+    <td><%= link_to 'Show colony', ss_coral %> | <%= link_to 'Edit colony', edit_ss_coral_path(ss_coral) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New size structure colony', new_ss_coral_path %>

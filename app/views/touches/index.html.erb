@@ -1,0 +1,39 @@
+<h1>Listing touches</h1>
+
+<table>
+  <tr>
+    <th>Area</th>
+    <th>Outliner name</th>
+    <th>Outline filename</th>
+    <th>Taxon1</th>
+    <th>Taxon2</th>
+    <th>Type</th>
+    <th>Length</th>
+    <th>Flag</th>
+    <th>Notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @touches.each do |touch| %>
+  <tr>
+    <td><%= touch.area %></td>
+    <td><%= touch.outliner_name %></td>
+    <td><%= touch.outline_filename %></td>
+    <td><%= touch.taxon1 %></td>
+    <td><%= touch.taxon2 %></td>
+    <td><%= touch.type %></td>
+    <td><%= touch.length %></td>
+    <td><%= touch.flag %></td>
+    <td><%= touch.notes %></td>
+    <td><%= link_to 'Show', touch %></td>
+    <td><%= link_to 'Edit', edit_touch_path(touch) %></td>
+    <td><%= link_to 'Destroy', touch, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Touch', new_touch_path %>

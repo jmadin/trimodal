@@ -1,0 +1,76 @@
+<h2>Tagged colony observation</h2>
+
+<p id="notice"><%= notice %></p>
+
+<div style="border: dotted 1px grey; padding: 10px;">
+<p>
+  <b>Species:</b> <i><%= @coral.species %></i>
+  , <b>Tag:</b> <%= @coral.species_code %><%= '%04d' % @observation.tag_number %>
+  , <b>Fieldtrip:</b> F<%= @observation.fieldtrip_id %>
+</p>
+
+<p>
+  <b>Action:</b>
+  <%= @observation.action %>
+</p>
+
+<p>
+  <b>Observation notes:</b>
+  <font color="orange"><%= @observation.notes %></font>
+</p>
+
+<%= link_to 'Edit observation', edit_coral_observation_path(@observation.coral, @observation) %> |
+<%= link_to 'Back to coral', coral_path(@observation.coral) %>
+</div>
+
+<h2>Tagged colony observation areas</h2>
+
+
+<a href="javascript:<% @observation.areas.each do |oo| %>jchange('div<%= oo.id %>')<% if oo != @observation.areas.last %>,<% end %><% end %>;">Show/hide all images</a>
+
+<table class='data' width='1320px'>
+<tr>
+	<th></th>
+	<th>Area ID</th>
+	<th>Observation ID</th>
+	<th>Coral ID</th>
+	<th>Photographer</th>
+	<th>Outliner</th>
+	<th>Outline filename</th>
+	<th>Area</th>
+	<th>Marked</th>
+	<th>Acceptable photo</th>
+	<th>Acceptable outline</th>
+	<th>Area notes</th>
+	<th width="250px"></th>
+</tr>
+
+<%= render @observation.areas.sort_by{|e| e[:outline_filename]}  %>
+<tr style='background-color:white;'>
+	<%= form_for([@observation, @observation.areas.build]) do |f| %>
+
+	  <td></td>
+	  <td></td>
+	  <td><%= @observation.id %></td>
+	  <td><%= @observation.coral_id %></td>
+	  <td><%= f.text_field :photographer_name, :style=>'width: 70px;' %></td>
+	  <td><%= f.text_field :outliner_name, :style=>'width: 70px;' %></td>
+	  <td><%= f.text_field :outline_filename, :style=>'width: 70px;' %></td>
+	  <td><%= f.number_field :area, :style=>'width: 80px;' %></td>
+	  <td><%= f.check_box :flag %></td>
+	  <td><%= f.check_box :acceptable %></td>
+	  <td><%= f.check_box :acceptable_outline %></td>
+	  <td><%= f.text_field :notes, :style=>'width: 200px;' %></td>
+
+	  <td><%= f.submit %></td>
+	<% end %>
+</tr>
+</table>
+
+<p id="notice"><%= notice %></p>
+<br/>
+
+
+
+
+

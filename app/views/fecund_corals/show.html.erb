@@ -1,0 +1,68 @@
+<h2>Fecundity coral</h2>
+
+<p id="notice"><%= notice %></p>
+
+<table><tr class='top'>
+<td style='padding:0px; background-color: white;'>
+
+<% thumb = @files.find_all{|item| item.include? @fecund_coral.outline_filename }[0] %>
+
+	<table style="background-color: black;">
+		<tr class='image'><td><%= image_tag @file_path + 'fecundity_thumbs/' + thumb.split('/').last %></td></tr>
+		<tr class='image'><td><font color="white" size=1><%= thumb.split('/').last.split('_tn').first %></font></td></tr>
+		<tr class='image'><td><font color="white"><%= link_to 'IMG', @file_path + 'fecundity_corrected/' + thumb.split('/').last.split('_tn').first + '.JPG', :class => 'image' %> | <%= link_to 'OUTLINE', @file_path + 'fecundity_outlines/' + thumb.split('/').last.split('_tn').first + '.jpeg', :class => 'image' %>
+		</font></td></tr>
+	</table>
+
+
+</td>
+<td class='top'>
+
+<p>
+  <b>Fieldtrip:</b>
+  <%= link_to "F#{@fecund_coral.fieldtrip_id}", :controller => :fieldtrips, :action => :show, :id => @fecund_coral.fieldtrip_id %>
+</p>
+
+<p>
+  <b>Species:</b>
+  <%= @fecund_coral.species %>
+</p>
+
+<p>
+  <b>Species code:</b>
+  <%= @fecund_coral.species_code %>
+</p>
+
+<p>
+  <b>Outliner name:</b>
+  <%= @fecund_coral.outliner_name %>
+</p>
+
+<p>
+  <b>Outline filename:</b>
+  <%= @fecund_coral.outline_filename %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%= @fecund_coral.area %>
+</p>
+
+<p>
+  <b>Marked:</b>
+  <%= @fecund_coral.flag %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @fecund_coral.notes %>
+</p>
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<%= link_to 'Edit coral', edit_fecund_coral_path(@fecund_coral) %> |
+<%= link_to 'Back to fecundity list', fecund_corals_path %>

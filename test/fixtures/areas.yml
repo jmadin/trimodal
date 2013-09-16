@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  observation: 
+  outliner_name: MyString
+  outline_filename: MyString
+  area: 9.99
+  flag: false
+  notes: MyText
+
+two:
+  observation: 
+  outliner_name: MyString
+  outline_filename: MyString
+  area: 9.99
+  flag: false
+  notes: MyText

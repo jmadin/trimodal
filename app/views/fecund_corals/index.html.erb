@@ -1,0 +1,40 @@
+<h1>Fecundity colonies</h1>
+
+<div style="border: dotted 1px grey; padding: 10px;">
+<p>Dataset: <%= link_to 'Export fecundity colony data (csv for Excel or R)', '/export_fecundity', :action => 'export_fecundity' %></p>
+</div>
+
+<table>
+  <tr>
+    <th>Fieldtrip</th>
+    <th>Species</th>
+    <th>Species code</th>
+    <th>Outliner name</th>
+    <th>Outline filename</th>
+    <th>Area</th>
+    <th>Marked</th>
+    <th>Notes</th>
+    <th></th>
+  </tr>
+
+<% @fecund_corals.each do |fecund_coral| %>
+  <tr>
+
+	<td><%= link_to fecund_coral.fieldtrip.name_code, :controller => :fieldtrips, :action => :show, :id => fecund_coral.fieldtrip_id %></td>
+
+
+    <td><%= fecund_coral.species %></td>
+    <td><%= fecund_coral.species_code %></td>
+    <td><%= fecund_coral.outliner_name %></td>
+    <td><%= fecund_coral.outline_filename %></td>
+    <td><% if !fecund_coral.area.blank? %><%= '%.2f' % fecund_coral.area %><% end %></td>
+    <td><%= fecund_coral.flag %></td>
+    <td><%= fecund_coral.notes %></td>
+    <td><%= link_to 'Show colony', fecund_coral %> | <%= link_to 'Edit colony', edit_fecund_coral_path(fecund_coral) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fecund coral', new_fecund_coral_path %>

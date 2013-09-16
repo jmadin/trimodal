@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fieldtrip: 
+  species: MyString
+  species_code: MyString
+  tag_number: 1
+  area: 9.99
+  notes: MyText
+
+two:
+  fieldtrip: 
+  species: MyString
+  species_code: MyString
+  tag_number: 1
+  area: 9.99
+  notes: MyText

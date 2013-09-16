@@ -1,0 +1,65 @@
+<h2>Spawned coral</h2>
+
+<p id="notice"><%= notice %></p>
+
+<table><tr class='top'>
+<td style='padding:0px; background-color: white;'>
+
+<% img = 'F' + "%01d" % @spawner.fieldtrip_id + '_' + @spawner.species_code + "%03d" % @spawner.tag_number + '_T' %>
+<% thumb = @files.find_all{|item| item.include? img }[0] %>
+
+	<table style="background-color: black;">
+		<tr class='image'><td><%= image_tag @file_path + 'spawned_thumbs/' + thumb.split('/').last %></td></tr>
+		<tr class='image'><td><font color="white" size=1><%= thumb.split('/').last.split('_tn').first %></font></td></tr>
+		<tr class='image'><td><font color="white"><%= link_to 'IMG', @file_path + 'spawned_corrected/' + thumb.split('/').last.split('_tn').first + '_C.JPG', :class => 'image' %> | <%= link_to 'OUTLINE', @file_path + 'spawned_outlines/' + thumb.split('/').last.split('_tn').first + '_C.jpeg', :class => 'image' %>
+		</font></td></tr>
+	</table>
+
+
+</td>
+<td class='top'>
+
+<p>
+  <b>Fieldtrip:</b>
+  <%= link_to "F#{@spawner.fieldtrip_id}", :controller => :fieldtrips, :action => :show, :id => @spawner.fieldtrip_id %>
+
+</p>
+
+<p>
+  <b>Species:</b>
+  <%= @spawner.species %>
+</p>
+
+<p>
+  <b>Species code:</b>
+  <%= @spawner.species_code %>
+</p>
+
+<p>
+  <b>Tag number:</b>
+  <%= @spawner.tag_number %>
+</p>
+
+<p>
+  <b>Outliner name:</b>
+  <%= @spawner.outliner_name %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%= @spawner.area %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @spawner.notes %>
+</p>
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<%= link_to 'Edit spawner', edit_spawner_path(@spawner) %> |
+<%= link_to 'Back to spawner list', spawners_path %>

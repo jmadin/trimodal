@@ -1,0 +1,54 @@
+<%= form_for(@area) do |f| %>
+  <% if @area.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@area.errors.count, "error") %> prohibited this area from being saved:</h2>
+
+      <ul>
+      <% @area.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :observation %><br />
+    <!-- <%= f.text_field :observation %> -->
+    <%= @area.observation_id %>
+  </div>
+  <div class="field">
+    <%= f.label :photographer_name %><br />
+    <%= f.text_field :photographer_name %>
+  </div>
+  <div class="field">
+    <%= f.label :outliner_name %><br />
+    <%= f.text_field :outliner_name %>
+  </div>
+  <div class="field">
+    <%= f.label :outline_filename %><br />
+    <%= f.text_field :outline_filename %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br />
+    <%= f.text_field :area %>
+  </div>
+  <div class="field">
+    <%= f.label :flag %><br />
+    <%= f.check_box :flag %>
+  </div>
+  <div class="field">
+    <%= f.label "Acceptable photo" %><br />
+    <%= f.check_box :acceptable %>
+  </div>
+  <div class="field">
+    <%= f.label :acceptable_outline %><br />
+    <%= f.check_box :acceptable_outline %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

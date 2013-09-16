@@ -1,0 +1,58 @@
+<h1>Colony observations</h1>
+
+<div style="border: dotted 1px grey; padding: 10px;">
+<table>
+<%= form_tag corals_path, :method => 'get' do %>
+  <tr style="background-color:white;">
+    <td style="text-align:right;">Search corals:</td><td><%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %></td>
+  </tr>
+<% end %>
+<%= form_tag observations_path, :method => 'get' do %>
+  <tr style="background-color:white;">
+    <td style="text-align:right;">Search observations (tags):</td><td><%= text_field_tag :osearch, params[:osearch] %>
+    <%= submit_tag "Search", :name => nil %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+<br />
+
+<% if @observations.empty? %>
+<p style="background-color:orange;"> No matches</p>
+
+<% else %>
+
+	<table>
+	  <tr>
+	    <th>Coral ID</th>
+	    <th>Observation ID</th>
+	    <th>Fieldtrip</th>
+	    <th>Mother</th>
+	    <th>Tag number (image)</th>
+	    <th>Active tag</th>
+	    <th>Action</th>
+	    <th>Observation notes</th>
+	    <th></th>
+	    <th></th>
+	    <th></th>
+	  </tr>
+
+	<% @observations.each do |observation| %>
+	  <tr>
+	    <td><%= observation.coral_id %></td>
+	    <td><%= observation.id %></td>
+	    <td><%= observation.fieldtrip_id %></td>
+	    <td><%= observation.mother_id %></td>
+	    <td><%= '%03d' % observation.tag_number %></td>
+	    <td><%= observation.active_tag %></td>
+	    <td><%= observation.action %></td>
+	    <td style='text-align:left; max-width:250px;'><%= observation.notes %></td>
+	    <td><%= link_to 'Go to coral', coral_path(observation.coral) %> | <%= link_to 'Go to observation', coral_observation_path(observation.coral, observation) %></td>
+	  </tr>
+	<% end %>
+<% end %>
+</table>
+
+<br />
+<%= link_to 'Back to Corals', corals_path %>
