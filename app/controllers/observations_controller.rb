@@ -20,7 +20,7 @@ class ObservationsController < ApplicationController
     @observation = Observation.find(params[:id])
     @coral = Coral.find(params[:coral_id])
 
-    @files = Dir.glob("/Users/jmadin/Dropbox/web/trimodal/tagged_thumbs_outlines/*")
+    @files = Dir.glob("app/assets/images/tagged_thumbs_outlines/*")
     
     respond_to do |format|
       format.html # show.html.erb

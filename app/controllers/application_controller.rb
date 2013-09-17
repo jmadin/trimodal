@@ -7,7 +7,8 @@ class ApplicationController < ActionController::Base
   ### CHANGE FOR LOCAL USE
   before_filter :set_path
   def set_path
-    @file_path = "http://acropora.bio.mq.edu.au/trimodal/"
+    @file_path = "/assets/"
+    # @file_path = "http://acropora.bio.mq.edu.au/trimodal/"
     # @file_path = "http://montipora.local/trimodal/"
   end  
   

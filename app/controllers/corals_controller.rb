@@ -3,7 +3,6 @@ class CoralsController < ApplicationController
   require 'open-uri'
 
 
-
   # GET /corals.json
   helper_method :sort_column, :sort_direction
   
@@ -26,7 +25,7 @@ class CoralsController < ApplicationController
     @fieldtrips = Fieldtrip.all
     @areas = Area.all
 
-    @files = Dir.glob("/Users/jmadin/Dropbox/web/trimodal/tagged_thumbs/*")
+    @files = Dir.glob("app/assets/images/tagged_thumbs/*")
 
     respond_to do |format|
       format.html # show.html.erb
