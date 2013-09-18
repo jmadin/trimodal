@@ -45,7 +45,7 @@ class FecundCoralsController < ApplicationController
   # POST /fecund_corals
   # POST /fecund_corals.json
   def create
-    @fecund_coral = FecundCoral.new(params[:fecund_coral])
+    @fecund_coral = FecundCoral.new(fecund_coral_params)
     @fieldtrips = Fieldtrip.all
 
     respond_to do |format|
@@ -66,7 +66,7 @@ class FecundCoralsController < ApplicationController
     @fieldtrips = Fieldtrip.all
 
     respond_to do |format|
-      if @fecund_coral.update_attributes(params[:fecund_coral])
+      if @fecund_coral.update_attributes(fecund_coral_params)
         format.html { redirect_to @fecund_coral, notice: 'Fecund coral was successfully updated.' }
         format.json { head :no_content }
       else
@@ -87,4 +87,24 @@ class FecundCoralsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  private
+  
+  def fecund_coral_params
+    params.require(:fecund_coral).permit(:fieldtrip_id, :species, :species_code, :dim_1, :dim_2, :habitat, :outliner_name, :outline_filename, :area, :flag, :notes)
+  end
+  
+    # 
+    # t.integer  "fieldtrip_id"
+    # t.string   "species"
+    # t.string   "species_code"
+    # t.integer  "dim_1"
+    # t.integer  "dim_2"
+    # t.string   "habitat"
+    # t.string   "outliner_name"
+    # t.string   "outline_filename"
+    # t.decimal  "area"
+    # t.boolean  "flag"
+    # t.text     "notes"
+    # 
 end

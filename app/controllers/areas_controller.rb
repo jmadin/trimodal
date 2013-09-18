@@ -57,7 +57,7 @@ class AreasController < ApplicationController
   def create
 
     @observation = Observation.find(params[:observation_id])
-    @area = @observation.areas.create(params[:area])
+    @area = @observation.areas.create(area_params)
 
     respond_to do |format|
       if @area.save
@@ -77,7 +77,7 @@ class AreasController < ApplicationController
     @area = Area.find(params[:id])
 
     respond_to do |format|
-      if @area.update_attributes(params[:area])
+      if @area.update_attributes(area_params)
         format.html { redirect_to coral_observation_path(@area.observation.coral, @area.observation), notice: 'Area was successfully updated.' }
         format.json { head :no_content }
       else
@@ -102,4 +102,23 @@ class AreasController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  private
+  
+  def area_params
+    params.require(:area).permit(:observation_id, :outliner_name, :outline_filename, :area, :flag, :notes, :photographer_name, :acceptable, :acceptable_outline)
+  end
+  
+  # t.integer  "observation_id"
+  # t.string   "outliner_name"
+  # t.string   "outline_filename"
+  # t.decimal  "area"
+  # t.boolean  "flag"
+  # t.text     "notes"
+  # t.datetime "created_at",         :null => false
+  # t.datetime "updated_at",         :null => false
+  # t.string   "photographer_name"
+  # t.boolean  "acceptable"
+  # t.boolean  "acceptable_outline"
+  
 end

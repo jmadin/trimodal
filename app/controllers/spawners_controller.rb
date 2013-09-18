@@ -48,7 +48,7 @@ class SpawnersController < ApplicationController
   # POST /spawners
   # POST /spawners.json
   def create
-    @spawner = Spawner.new(params[:spawner])
+    @spawner = Spawner.new(spawner_params)
     @fieldtrips = Fieldtrip.all
 
     respond_to do |format|
@@ -69,7 +69,7 @@ class SpawnersController < ApplicationController
     @fieldtrips = Fieldtrip.all
 
     respond_to do |format|
-      if @spawner.update_attributes(params[:spawner])
+      if @spawner.update_attributes(spawner_params)
         format.html { redirect_to @spawner, notice: 'Spawner was successfully updated.' }
         format.json { head :no_content }
       else
@@ -90,4 +90,22 @@ class SpawnersController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  private
+  
+  def spawner_params
+    params.require(:spawner).permit(:fieldtrip_id, :species, :species_code, :tag_number, :area, :notes, :outliner_name, :person_id)
+  end
+
+  # t.integer  "fieldtrip_id"
+  # t.string   "species"
+  # t.string   "species_code"
+  # t.integer  "tag_number"
+  # t.decimal  "area"
+  # t.text     "notes"
+  # t.datetime "created_at",    :null => false
+  # t.datetime "updated_at",    :null => false
+  # t.string   "outliner_name"
+  # t.integer  "person_id"
+
 end

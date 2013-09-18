@@ -44,7 +44,7 @@ class FieldtripsController < ApplicationController
   # POST /fieldtrips
   # POST /fieldtrips.json
   def create
-    @fieldtrip = Fieldtrip.new(params[:fieldtrip])
+    @fieldtrip = Fieldtrip.new(fieldtrip_params)
 
     respond_to do |format|
       if @fieldtrip.save
@@ -63,7 +63,7 @@ class FieldtripsController < ApplicationController
     @fieldtrip = Fieldtrip.find(params[:id])
 
     respond_to do |format|
-      if @fieldtrip.update_attributes(params[:fieldtrip])
+      if @fieldtrip.update_attributes(fieldtrip_params)
         format.html { redirect_to @fieldtrip, notice: 'Fieldtrip was successfully updated.' }
         format.json { head :no_content }
       else
@@ -84,4 +84,15 @@ class FieldtripsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+  
+  def fieldtrip_params
+    params.require(:fieldtrip).permit(:name, :name_code, :date, :description)
+  end
+  # t.string   "name"
+  # t.string   "name_code"
+  # t.date     "date"
+  # t.text     "description"
+
 end

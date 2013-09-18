@@ -51,7 +51,7 @@ class ObservationsController < ApplicationController
     # @observation = Observation.new(params[:observation])
 
     @coral = Coral.find(params[:coral_id])
-    @observation = @coral.observations.create(params[:observation])
+    @observation = @coral.observations.create(observation_params)
 
     respond_to do |format|
       if @observation.save
@@ -70,7 +70,7 @@ class ObservationsController < ApplicationController
     @observation = Observation.find(params[:id])
 
     respond_to do |format|
-      if @observation.update_attributes(params[:observation])
+      if @observation.update_attributes(observation_params)
         format.html { redirect_to coral_path(@observation.coral), notice: 'Observation was successfully updated.' }
         format.json { head :no_content }
       else
@@ -96,4 +96,11 @@ class ObservationsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  private
+
+  def observation_params
+    params.require(:observation).permit(:coral_id, :fieldtrip_id, :mother_id, :tag_number, :action, :notes, :active_tag)
+  end
+  
 end

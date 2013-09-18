@@ -45,7 +45,7 @@ class SsCoralsController < ApplicationController
   # POST /ss_corals
   # POST /ss_corals.json
   def create
-    @ss_coral = SsCoral.new(params[:ss_coral])
+    @ss_coral = SsCoral.new(ss_coral_params)
     @fieldtrips = Fieldtrip.all
 
     respond_to do |format|
@@ -66,7 +66,7 @@ class SsCoralsController < ApplicationController
     @fieldtrips = Fieldtrip.all
 
     respond_to do |format|
-      if @ss_coral.update_attributes(params[:ss_coral])
+      if @ss_coral.update_attributes(ss_coral_params)
         format.html { redirect_to @ss_coral, notice: 'Ss coral was successfully updated.' }
         format.json { head :no_content }
       else
@@ -87,4 +87,22 @@ class SsCoralsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  private
+  
+  def ss_coral_params
+    params.require(:ss_coral).permit(:fieldtrip_id, :species, :species_code, :dim_1, :dim_2, :habitat, :outliner_name, :outline_filename, :area, :notes)
+  end
+
+  # t.integer  "fieldtrip_id"
+  # t.string   "species"
+  # t.string   "species_code"
+  # t.integer  "dim_1"
+  # t.integer  "dim_2"
+  # t.string   "habitat"
+  # t.string   "outliner_name"
+  # t.string   "outline_filename"
+  # t.decimal  "area"
+  # t.text     "notes"
+
 end

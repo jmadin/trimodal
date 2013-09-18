@@ -52,7 +52,7 @@ class CoralsController < ApplicationController
   # POST /corals
   # POST /corals.json
   def create
-    @coral = Coral.new(params[:coral])
+    @coral = Coral.new(coral_params)
 
     respond_to do |format|
       if @coral.save
@@ -71,7 +71,7 @@ class CoralsController < ApplicationController
     @coral = Coral.find(params[:id])
 
     respond_to do |format|
-      if @coral.update_attributes(params[:coral])
+      if @coral.update_attributes(coral_params)
         format.html { redirect_to @coral, notice: 'Coral was successfully updated.' }
         format.json { head :no_content }
       else
@@ -102,5 +102,18 @@ class CoralsController < ApplicationController
   def sort_direction
     %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
   end
+
+  def coral_params
+    params.require(:coral).permit(:transect, :map_x, :map_y, :dim_1, :dim_2, :species, :species_code, :notes)
+  end
+
+  # t.integer  "transect"
+  # t.integer  "map_x"
+  # t.integer  "map_y"
+  # t.integer  "dim_1"
+  # t.integer  "dim_2"
+  # t.string   "species"
+  # t.string   "species_code"
+  # t.text     "notes"
   
 end

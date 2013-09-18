@@ -65,7 +65,7 @@ class TouchesController < ApplicationController
   def create
 
     @area = Area.find(params[:area_id])
-    @touch = @area.touches.create(params[:touch])
+    @touch = @area.touches.create(touch_params)
 
     # @touch = Touch.new(params[:touch])
 
@@ -103,7 +103,7 @@ class TouchesController < ApplicationController
     @touch = Touch.find(params[:id])
 
     respond_to do |format|
-      if @touch.update_attributes(params[:touch])
+      if @touch.update_attributes(touch_params)
         format.html { redirect_to coral_observation_area_path(@touch.area.observation.coral, @touch.area.observation, @touch.area), notice: 'Touch was successfully updated.' }
         format.json { head :no_content }
       else
@@ -131,6 +131,27 @@ class TouchesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+  
+  def touch_params
+    params.require(:touch).permit(:area_id, :outliner_name, :outline_filename, :taxon1, :taxon2, :touch_type, :length, :flag, :notes, :touch_number, :growth_form)
+  end
+
+  # t.integer  "area_id"
+  # t.string   "outliner_name"
+  # t.string   "outline_filename"
+  # t.string   "taxon1"
+  # t.string   "taxon2"
+  # t.string   "touch_type"
+  # t.decimal  "length"
+  # t.boolean  "flag"
+  # t.text     "notes"
+  # t.datetime "created_at",       :null => false
+  # t.datetime "updated_at",       :null => false
+  # t.integer  "touch_number"
+  # t.string   "growth_form"
+
 end
 
 
