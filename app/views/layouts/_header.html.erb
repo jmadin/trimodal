@@ -1,0 +1,63 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+
+			<ul class="nav">
+				<li><%= link_to "Home", root_path %></li>
+			</ul>
+	
+		  <%# if signed_in? %>
+			<ul class="nav">
+	    <li id="fat-menu" class="dropdown">
+	       <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	         Data<b class="caret"></b>
+	       </a>
+	       <ul class="dropdown-menu" style="text-align: left;">
+	         <li><%= link_to "Fieldtrips", fieldtrips_path %></li>
+	         <li><%= link_to "Tagged corals", corals_path %></li>
+	         <li><%= link_to "Fecundity", fecund_corals_path %></li>
+	         <li><%= link_to "Spawners", spawners_path %></li>
+	         <li><%= link_to "Size structure", ss_corals_path %></li>
+			     <li class="divider"></li>
+					 <li><%= link_to "Help", help_path %></li>
+	       </ul>
+	     </li>
+			</ul>
+		  <%# end %>
+
+			
+			
+			<ul class="nav pull-right">
+				<% if signed_in? %>
+				  <li id="fat-menu" class="dropdown" style="text-align: left;">
+				    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				      Account <b class="caret"></b>
+				    </a>
+				    <ul class="dropdown-menu">
+				      <li><%= link_to "Profile", current_contributor %></li>
+				      <li><%= link_to "Settings", edit_contributor_path(current_contributor) %></li>
+
+				<% if current_contributor.admin? %>
+				      	<li><%= link_to "New Contributor", signup_path %></li>
+				<% end %>
+
+				      <li class="divider"></li>
+				      <li>
+				        <%= link_to "Sign out", signout_path, method: "delete" %>
+				      </li>
+				    </ul>
+				  </li>
+				<% else %>
+				  <li><%= link_to "Sign in", signin_path %></li>
+				<% end %>
+				</ul>
+
+				<ul class="nav pull-right">
+				  <% if signed_in? && current_contributor.admin? %>
+				    <li><%= link_to "Contributors", contributors_path %></li>
+				  <% end %>
+				</ul>
+			
+		<div>
+	<div>
+</header>

@@ -1,0 +1,161 @@
+<div class="left hero-unit">
+<h1>The Coral Trait Database <font style="color:orange;">beta 1</font></h1>
+
+<h1>Trimodal</h1>
+
+<%= form_tag observations_path, :method => 'get' do %>
+    <p>Search by tag:</td><td><%= text_field_tag :osearch, params[:osearch] %>
+    <%= submit_tag "Search", :name => nil %></p>
+<% end %>
+
+<div style="border: dotted 1px grey; padding: 10px;">
+
+<h2>Mudmaps F6</h2>
+<ul>
+<li><%= link_to "Transect 0", @file_path + "tagged_mudmaps/transect_0.pdf" %></li>
+<li><%= link_to "Transect 1", @file_path + "tagged_mudmaps/transect_1.pdf" %></li>
+<li><%= link_to "Transect 2", @file_path + "tagged_mudmaps/transect_2.pdf" %></li>
+<li><%= link_to "Transect 3", @file_path + "tagged_mudmaps/transect_3.pdf" %></li>
+<li><%= link_to "Transect 4", @file_path + "tagged_mudmaps/transect_4.pdf" %></li>
+<li><%= link_to "Transect 5", @file_path + "tagged_mudmaps/transect_5.pdf" %></li>
+<li><%= link_to "Transect 6", @file_path + "tagged_mudmaps/transect_6.pdf" %></li>
+<li><%= link_to "Transect 7", @file_path + "tagged_mudmaps/transect_7.pdf" %></li>
+</ul>
+
+
+</div>
+<br/>
+
+<div style="border: dotted 1px grey; padding: 10px;">
+<p><font color="orange">*Note to outliners:</font> please don't put "_marked" in the .sq and .lm filenames (only for .ol), similarly as to how you've been doing the "_plus" and "_minus" naming protocol.</p>
+<p><font color="orange">*Note to outliners:</font> stitching software.</p>
+<p>*"_marked" colonies have been flagged throughout database, because I'm not sure how to deal with them yet.  When colonies made up of two _marked outlines, then areas can simply add together.  When more the two images are used for outlines, areas cannot be simply added, because the area calculation for any one image is based on a polygon.  Therefore, a triangle will be missing from within 3-image marked areas; a square from 4-image marked areas; etc.</p>
+<p><font color="orange">*Note to outliners:</font> please look at images (with outlines superimposed from previous fieldtrips) to ensure you are outlining the correct colony.</p>
+<p><font color="orange">*Note to outliners:</font> please don't trace around scale bar.  If the scale bar conceals the edge of a colony, then estimate the colony outline behind the scale plate.</p>
+<p><font color="orange">*Note to outliners:</font> if another colony obscures part of the focal colony (e.g., a branch), follow the outline of the obscuring colony (i.e., the branch(.)</p>
+<p><font color="orange">*Note to outliners:</font> please only use "_minus" for minus'ing areas.</p>
+<p><font color="orange">*Note to outliners:</font> always check previous years outline!  This will help you identify where you should be outlining.</p>
+<p><font color="orange">*Note to photographers:</font> there are issues when colony photographed with previous tag number filename and then colony is retagged.  Because of this, there will be a few cases in which the tag might not match the mudmap.  Check excel file if in doubt.  <font color="orange">NEW RULE:</font> always name images with current (i.e., previous fieldtrip) tag number.  If retagged, this will be used in the next fieldtrip only. </p>
+<p><font color="orange">*Note to photographers:</font> always take "scene" shots (_S), preferably from above and capturing surroundings. </p>
+</div>
+<br/>
+
+
+
+<div style="border: dotted 1px grey; padding: 10px;">
+<h2>Tagged colonies data status (complete)</h2>
+<ul>
+<li>Dataset: <%= link_to 'Export tagged colony data (csv for Excel or R)', '/export_tagged', :action => 'export_tagged' %></li>
+<li>Dataset (observations, no areas): <%= link_to 'Export tagged colony data (csv for Excel or R)', '/export_corals', :action => 'export_corals' %></li>
+</ul>
+
+<p>[<a href="javascript:jchange('tagged');">Issues</a>]</p>
+<div id="tagged" style="display:none;">
+
+<ul>
+<li>The following AM069_F3_T1_C_right.sq file was removed (redundant with AM069_F3_T1_C.sq)</li>
+
+	AM069_F3_T1_C_right.ol</br>
+	AM069_F3_T1_C_right.sq</br>
+	AM069_F3_T1_C.lm</br>
+	AM069_F3_T1_C.ol</br>
+	AM069_F3_T1_C.sq</br>
+
+<li>"_marked" was removed from all .sq and .lm filenames (left on .ol filenames)</li>
+
+<li>No mizue .lm file!! for</li>
+
+	AM589_F4_T2_D_C.ol</br>
+	AM589_F4_T2_D_C.sq</br>
+
+<li>mizue AC to AH not done because of numbering at end of image filename</li>
+
+<li>changed below .sq and .lm -> removed "marked" (left for .ol)</li>
+	AR254_F3_T_C_marked_1.ol</br>
+	AR254_F3_T_C_marked_2.ol</br>
+	AR254_F3_T_C_marked_3.ol</br>
+	AR254_F3_T_C_marked.lm</br>
+	AR254_F3_T_C_marked.sq</br>
+	AR254_F3_T1_C_marked.lm</br>
+	AR254_F3_T1_C_marked.ol</br>
+	AR254_F3_T1_C_marked.sq</br>
+	AR254_F3_T2_C_marked.lm</br>
+	AR254_F3_T2_C_marked.ol</br>
+	AR254_F3_T2_C_marked.sq</br>
+
+<li>mizue split colony... what do A and B after tag number mean?</li>
+
+	2361	NA	mizue	AH435A_F4_T1_D_C_1	272.535344780888	0</br>	
+	2362	NA	mizue	AH435A_F4_T1_D_C_2	275.081163859111	0</br>		
+	2363	NA	mizue	AH435A_F4_T1_D_C_3	273.187930136086	0</br>	
+	2364	NA	mizue	AH435B_F4_T2_D_C_1	545.903289080932	0</br>
+	2365	NA	mizue	AH435B_F4_T2_D_C_2	554.621589506875	0</br>
+	2366	NA	mizue	AH435B_F4_T2_D_C_3	552.770368678074	0</br>
+	
+</ul>
+
+</div>
+
+<p>[<a href="javascript:jchange('term');">Terminology</a>]</p>
+<div id="term" style="display:none;">
+<p>There are four data tables required to keep track of tagged colony data. <i>Coral</i>: the actual colony that is tagged and tracked through time.  <i>Fieldtrip</i>: a fieldtrip during which <i>Observations</i> of a tagged <i>Coral</i> is made. <i>Observation</i>: a record of a visit to the tagged <i>Coral</i> during a given <i>Fieldtrip</i>, resulting in images.  Note that tag numbers are associated with <i>Observations</i> (not <i>Coral</i>), because these can change through time (<i>Fieldtrips</i>).  <i>Area</i>: a calculation of a colonies area for a given <i>Observation</i>, of which there may be many.</p>
+</div>
+
+</div>
+
+<br/>
+<div style="border: dotted 1px grey; padding: 10px;">
+<h2>Spawned colonies data status (complete)</h2>
+<ul>
+<li>Dataset: <%= link_to 'Export spawner data (csv for Excel or R)', '/export_spawners', :action => 'export_spawners' %></li>
+</ul>
+</div>
+
+
+<br/>
+<div style="border: dotted 1px grey; padding: 10px;">
+<h2>Size structure data status (F5 complete, F4 coming)</h2>
+<ul>
+<li>Dataset (F5 only): <%= link_to 'Export size structure data (csv for Excel or R)', '/export_size_structure', :action => 'export_size_structure' %></p></li>
+</ul>
+<ul>
+<li>F5 complete. Not many problems, see [Issues].</li>
+<li>F4 has defeated me... too many issues, rules and exceptions.  I'll try again next week, but can't guarantee by Portugal.</li>
+<li>F3 images run in Portugal.</li>
+</ul>
+
+
+<p>[<a href="javascript:jchange('size');">F5 Issues</a>]</p>
+<div id="size" style="display:none;">
+<ul>
+<li>Missing .lm file for below outline (F5)</li>
+F5_IMG_0783_C.ol<br/>
+F5_IMG_0783_C.sq<br/>
+</ul>
+</div>
+</div>
+
+
+<br/>
+<div style="border: dotted 1px grey; padding: 10px;">
+<h2>Fecundity colonies data status (complete)</h2>
+<ul>
+<li>Dataset (F3, F4, F5 corrected): <%= link_to 'Export fecundity colony data (csv for Excel or R)', '/export_fecundity', :action => 'export_fecundity' %></li>
+<li>F1 and F3 outlines and areas available for <b>uncorrected</b> images [<a href="http://acropora.bio.mq.edu.au/tri/fecundity_analysis/fecundity_areas_uncorrected_F1_F3.txt">here</a>].</li>
+</ul>
+
+<p>[<a href="javascript:jchange('fecundity');">Issues</a>]</p>
+<div id="fecundity" style="display:none;">
+
+<ul>
+<li>F3 spreadsheet [<a href="http://acropora.bio.mq.edu.au/tri/fecundity_analysis/Fecundity_Colony_Issues_Erin.xlsx">here</a>]</li>
+<li>F4 spreadsheet [<a href="http://acropora.bio.mq.edu.au/tri/fecundity_analysis/LIRS_F4_fecudiitycomments.xlsx">here</a>]</li>
+<li>F5 spreadsheet [<a href="http://acropora.bio.mq.edu.au/tri/fecundity_analysis/Fecundity_Colony_Issues_Maddie_Emms.xlsx">here</a>]</li>
+</ul>
+
+</div>
+</div>
+
+
+	
+</div>

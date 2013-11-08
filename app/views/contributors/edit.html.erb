@@ -1,0 +1,47 @@
+<% provide(:title, "Edit contributor") %>
+<div class="row">
+	<div class="span6 offset3">
+<h3>Update your profile</h3>
+
+<%= form_for(@contributor) do |f| %>
+  <%= render 'shared/error_messages', temp: @contributor %>
+
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+
+  <%= f.label :short_name %>
+  <%= f.text_field :short_name %>
+
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+
+  <%= f.label :phone %>
+  <%= f.text_field :phone %>
+
+  <%= f.label :institution %>
+  <%= f.text_field :institution %>
+
+  <%= f.label :country %>
+  <%= f.text_field :country %>
+
+  <%= f.label :contributor_profile %>
+  <%= f.text_area :contributor_profile %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+
+  <%= f.label :password_confirmation, "Confirm Password" %>
+  <%= f.password_field :password_confirmation %>
+
+
+
+  <br/><%= f.submit "Save changes", class: "btn" %>
+<% end %>
+<%= gravatar_for @contributor %>
+<a href="http://gravatar.com/emails">change</a>
+
+</div>
+</div>

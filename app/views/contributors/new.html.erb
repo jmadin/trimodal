@@ -1,0 +1,46 @@
+<% provide(:title, 'Sign up') %>
+<div class="row">
+	<div class="span6 offset3">
+<h3>Sign up</h3>
+
+<%= form_for(@contributor) do |f| %>
+	<%= render 'shared/error_messages', temp: @contributor %>
+
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+
+  <%= f.label :short_name %>
+  <%= f.text_field :short_name %>
+
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+
+  <%= f.label :phone_number %>
+  <%= f.text_field :phone %>
+
+  <%= f.label :institution %>
+  <%= f.text_field :institution %>
+
+  <%= f.label :country %>
+  <%= f.text_field :country %>
+
+  <%= f.label :contributor_profile %>
+  <%= f.text_area :contributor_profile %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+
+  <%= f.label :password_confirmation, "Confirmation" %>
+  <%= f.password_field :password_confirmation %>
+
+  <%= f.label :administrator %>
+  <%= f.check_box :admin %>
+
+  <br/><%= f.submit "Create account", class: "btn" %>
+<% end %>
+
+</div>
+</div>

@@ -1,8 +1,9 @@
 class ApplicationController < ActionController::Base
 
-  http_basic_authenticate_with :name => "trimodal", :password => "acropora"
+  # http_basic_authenticate_with :name => "trimodal", :password => "acropora"
 
   protect_from_forgery
+  include SessionsHelper
 
   ### CHANGE FOR LOCAL USE
   before_filter :set_path

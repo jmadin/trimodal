@@ -1,0 +1,121 @@
+<% if !params[:search].blank? %>
+  <% @traits = Trait.search(params[:search]) %>
+  <% @observations = Observation.where(:orig_contributor_id => @contributor.id, :trait_id => @traits).sort_by{ |h| [h.coral_id, h.trait_id] } %>
+<% else %>
+  <% @observations = Observation.where(:orig_contributor_id => @contributor.id).sort_by{ |h| [h.coral_id, h.trait_id] } %>
+<% end %>
+<% @observations = Kaminari.paginate_array(@observations).page(params[:page]).per(50) %>
+
+
+<div class="container">
+<h3>My observations</h3>
+
+<p>Trait observations that you entered into the database are listed below.  These are your original/new observations only (i.e., not traits observations that you have modified/edited).  You can explore and edit these original observations, and can also make them private.  Making an observation private means that no one except you can see and download the observation.  Private observations are marked with a "<a style="color:red;">•</a>" and public with a "<a style="color:green;">•</a>".  If you only want to make observations for one trait private or not, then search for that trait and then toggle the <code>Check/uncheck all</code> checkbox until the desired privacy state is reached.  Don't forget to <code>Update privacy</code> once you've selected your changes or they won't be saved.</p>
+
+<%= form_tag contributor_path, :method => 'get' do %>
+	<div class="span5">
+	  <p>
+	    Search by trait: <%= text_field_tag :search, params[:search] %>
+	    <%= submit_tag "Search", :name => nil, class: "btn" %> <%= link_to 'Reset', contributor_path(@contributor), class: "label" %>
+	  </p>
+	<% end %>
+		<%= form_tag update_multiple_observations_path do %>
+		<p><input type="checkbox", name="checkall", onclick="checkUncheckAll(this);" />Check/uncheck all</p>
+	</div>
+</div>
+
+<%= link_to 'New Trait Observation', new_observation_path(:contributor => @contributor), class: "btn pull-right" %>
+
+<% if @observations.empty? %>
+	<h2>No results (or you haven't entered an records yet)</h2>
+<% else %>
+
+		<%= submit_tag "Update privacy", class: "btn btn-success pull-right", style: "margin-right: 20px;" %>
+		<%= paginate @observations %>
+
+		<% temp = "" %>
+		<table class="table">
+			<thead>
+				<tr>
+					<th style="text-align: right;">Coral</th>
+					<th>Trait</th>
+					<th>Value</th>
+					<th></th>
+					<th>Private</th>
+					<th></th>
+				</tr>
+			</thead>
+
+			<% mark = "" %>
+			<% mark2 = "" %>
+	
+			<% @observations.each do |grp| %>
+	  
+			<%# Observation.find(:all, :conditions => ["trait_id=? and coral_id=?", @trait.id, grp.coral_id]).each do |ind| %>
+    	
+
+			<tr>
+					<% if grp.coral.coral_name != mark %>
+						<td style="text-align: right;">
+							<em><%= link_to grp.coral.coral_name, "/corals/" + grp.coral_id.to_s %></em>
+						</td>				
+					<% else %>
+						<td style="border:none;">
+						</td>				
+					<% end %>
+
+					<% if grp.trait.trait_name != mark2 || grp.coral.coral_name != mark %>
+						<td style="text-align: right;">
+							<em><%= link_to grp.trait.trait_name, "/traits/" + grp.trait_id.to_s %></em>
+						</td>				
+					<% else %>
+						<td style="border:none;">
+						</td>				
+					<% end %>
+
+					<td>
+						<%= grp.value %> 
+						<% if !grp.standard_id.blank? && grp.standard_id != 0 && [1, 2, 6, 10, 31, 40].all? { |s| grp.standard_id != s } %>
+							<% sta = Standard.find(grp.standard_id).standard_unit %>
+								<%= sta %>
+						<% end %> 
+					</td>	
+						
+					<%#= hidden_field_tag "obs_ids[]", grp.id %>
+					<%= hidden_field_tag "con_id", @contributor.id %>
+					<%= hidden_field_tag "all_ids[]", grp.id %>
+					<%= hidden_field_tag :page, params[:page] %>
+					<%= hidden_field_tag :search, params[:search] %>
+
+					<% if grp.private == true %>
+						<td style="color:red;font-size:30px;text-align:center;">•</td>
+					<% else %>
+						<td style="color:green;font-size:30px;text-align:center;">•</td>
+					<% end %>
+
+					<td>
+						<%= check_box_tag "pri_ids[]", grp.id, grp.private %>
+						<%#= grp.private %>
+					</td>
+
+
+					<td style="text-align:right; min-width: 150px;">
+						<%= link_to 'Show', observation_path(grp, :contributor => @contributor) %> |
+			    	<%= link_to 'Edit', edit_observation_path(grp, :contributor => @contributor) %> |
+			    	<%= link_to 'Delete', observation_path(grp, :contributor => @contributor), method: :delete, data: { confirm: 'Are you sure?' } %>
+					</td>
+				</tr>
+				<% mark = grp.coral.coral_name %>
+				<% mark2 = grp.trait.trait_name %>
+			<%# end %>
+
+
+		<% end %>
+	<% end %>
+<% end %>
+
+</table>
+<%= paginate @observations %>
+
+</div>
+

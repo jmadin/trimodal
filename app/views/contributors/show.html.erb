@@ -1,0 +1,39 @@
+<% provide(:title, @contributor.short_name) %>
+
+<h3>
+  <%= gravatar_for @contributor %>
+  <%= @contributor.first_name %> <%= @contributor.last_name %>
+</h3>
+
+
+<p>
+  <strong>Short name:</strong>
+  <%= @contributor.short_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @contributor.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @contributor.phone %>
+</p>
+
+<p>
+  <strong>Institution:</strong>
+  <%= @contributor.institution %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @contributor.country %>
+</p>
+
+<p>
+  <strong>Profile:</strong>
+  <%= @contributor.contributor_profile %>
+</p>
+
+

@@ -1,5 +1,7 @@
 Trimodal::Application.routes.draw do
 
+  resources :contributors
+
   resources :fecund_corals
 
   resources :ss_corals
@@ -35,13 +37,22 @@ Trimodal::Application.routes.draw do
     end
   end
 
+  resources :sessions, only: [:new, :create, :destroy]
+  root  'static_pages#home'
+  match '/signup',  to: 'contributors#new',      via: 'get'
+  match '/signin',  to: 'sessions#new',         via: 'get'
+  match '/signout', to: 'sessions#destroy',     via: 'delete'
+
+  match '/home', to: 'static_pages#home', via: 'get'
+  match '/help', to: 'static_pages#help', via: 'get'
+
+
   match 'export_tagged' => 'home#export_tagged', via: 'get'
   match 'export_corals' => 'home#export_corals', via: 'get'
   match 'export_spawners' => 'home#export_spawners', via: 'get'
   match 'export_size_structure' => 'home#export_size_structure', via: 'get'
   match 'export_fecundity' => 'home#export_fecundity', via: 'get'
 
-  get "home/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -92,7 +103,7 @@ Trimodal::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'home#index'
+  # root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"
 
