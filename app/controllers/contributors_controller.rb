@@ -1,7 +1,7 @@
 class ContributorsController < ApplicationController
-  # before_action :signed_in_contributor, only: [:index, :edit, :update, :show]
-  # before_action :correct_contributor,   only: [:edit, :update]
-  # before_action :admin_contributor,     only: [:destroy, :new]
+  before_action :signed_in_contributor, only: [:index, :edit, :update, :show]
+  before_action :correct_contributor,   only: [:edit, :update]
+  before_action :admin_contributor,     only: [:destroy, :new]
 
   def index
     @contributors = Contributor.all.sort_by{ |h| h.last_name }
@@ -49,7 +49,7 @@ class ContributorsController < ApplicationController
   private
 
     def contributor_params
-      params.require(:contributor).permit(:first_name, :last_name, :short_name, :email, :phone, :contributor_profile, :institution, :country, :password, :password_confirmation)
+      params.require(:contributor).permit(:first_name, :last_name, :short_name, :email, :phone, :contributor_profile, :institution, :country, :password, :password_confirmation, :admin)
     end
 
     # Before filters

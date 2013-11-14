@@ -85,6 +85,25 @@ class ApplicationController < ActionController::Base
                   :type => 'text/csv; charset=iso-8859-1; header=present', 
                   :disposition => "attachment; filename=fecundity_#{Date.today.strftime('%Y%m%d')}.csv" 
   end
+
+  # Before filters
+
+  def signed_in_contributor
+    unless signed_in?
+      store_location
+      redirect_to signin_url, notice: "Please sign in."
+    end
+  end
+
+  def correct_contributor
+    @contributor = Contributor.find(params[:id])
+    redirect_to(root_url) unless current_contributor?(@contributor)
+  end
+
+  def admin_contributor
+    redirect_to(root_url) unless current_contributor.admin?
+  end
+
   
   
 end

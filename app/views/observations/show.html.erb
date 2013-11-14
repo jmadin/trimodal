@@ -1,8 +1,5 @@
-<h2>Tagged colony observation</h2>
+<h3>Tagged colony observation</h3>
 
-<p id="notice"><%= notice %></p>
-
-<div style="border: dotted 1px grey; padding: 10px;">
 <p>
   <b>Species:</b> <i><%= @coral.species %></i>
   , <b>Tag:</b> <%= @coral.species_code %><%= '%04d' % @observation.tag_number %>
@@ -21,27 +18,29 @@
 
 <%= link_to 'Edit observation', edit_coral_observation_path(@observation.coral, @observation) %> |
 <%= link_to 'Back to coral', coral_path(@observation.coral) %>
-</div>
 
-<h2>Tagged colony observation areas</h2>
+<br>
+<br>
 
+<h3>Tagged colony observation areas</h3>
 
 <a href="javascript:<% @observation.areas.each do |oo| %>jchange('div<%= oo.id %>')<% if oo != @observation.areas.last %>,<% end %><% end %>;">Show/hide all images</a>
 
-<table class='data' width='1320px'>
+<table class="table">
 <tr>
 	<th></th>
-	<th>Area ID</th>
-	<th>Observation ID</th>
-	<th>Coral ID</th>
+	<th>AID</th>
+	<th>OID</th>
+	<th>CID</th>
 	<th>Photographer</th>
 	<th>Outliner</th>
-	<th>Outline filename</th>
+  <!-- <th>Outline filename</th> -->
 	<th>Area</th>
 	<th>Marked</th>
-	<th>Acceptable photo</th>
-	<th>Acceptable outline</th>
-	<th>Area notes</th>
+	<th>Photo okay?</th>
+	<th>Outline okay?</th>
+	<th>Touches</th>
+  <!-- <th>Area notes</th> -->
 	<th width="250px"></th>
 </tr>
 
@@ -55,20 +54,18 @@
 	  <td><%= @observation.coral_id %></td>
 	  <td><%= f.text_field :photographer_name, :style=>'width: 70px;' %></td>
 	  <td><%= f.text_field :outliner_name, :style=>'width: 70px;' %></td>
-	  <td><%= f.text_field :outline_filename, :style=>'width: 70px;' %></td>
+    <!-- <td><%#= f.text_field :outline_filename, :style=>'width: 70px;' %></td> -->
 	  <td><%= f.number_field :area, :style=>'width: 80px;' %></td>
 	  <td><%= f.check_box :flag %></td>
 	  <td><%= f.check_box :acceptable %></td>
 	  <td><%= f.check_box :acceptable_outline %></td>
-	  <td><%= f.text_field :notes, :style=>'width: 200px;' %></td>
+    <!-- <td><%#= f.text_field :notes, :style=>'width: 200px;' %></td> -->
 
-	  <td><%= f.submit %></td>
+	  <td><%= f.submit class: "btn" %></td>
 	<% end %>
 </tr>
 </table>
 
-<p id="notice"><%= notice %></p>
-<br/>
 
 
 

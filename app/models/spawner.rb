@@ -4,5 +4,5 @@ class Spawner < ActiveRecord::Base
   validates :tag_number, :presence => true
 
   belongs_to :fieldtrip
-  belongs_to :person
+  belongs_to :contributor
 end

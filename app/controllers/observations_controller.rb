@@ -1,5 +1,6 @@
 class ObservationsController < ApplicationController
 
+  before_action :signed_in_contributor
 
   
   # GET /observations

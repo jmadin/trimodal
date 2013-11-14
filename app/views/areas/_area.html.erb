@@ -1,11 +1,11 @@
 <tr>
 	<td><a href="javascript:jchange('div<%= area.id %>');">Outlines</a></td>
-	<td><%= area.id %></td>
-	<td><%= area.observation_id %></td>
-	<td><%= area.observation.coral_id %></td>
+	<td style="color:lightgrey;"><%= area.id %></td>
+	<td style="color:lightgrey;"><%= area.observation_id %></td>
+	<td style="color:lightgrey;"><%= area.observation.coral_id %></td>
 	<td><%= area.photographer_name %></td>
 	<td><%= area.outliner_name %></td>
-	<td><%= area.outline_filename %></td>
+  <!-- <td><%#= area.outline_filename %></td> -->
 	<td><% if !area.area.blank? %><%= '%.2f' % area.area %><% end %></td>
 	<td><%= area.flag %></td>
 	<% if area.acceptable == true %>
@@ -18,8 +18,10 @@
 	<% else %>
 	<td style="background-color: red;" ><%= area.acceptable_outline %></td>
 	<% end %>
-	<td><%= area.notes %></td>
-	<td><%= link_to 'Show touches', coral_observation_area_path(area.observation.coral, area.observation, area) %> | <%= link_to 'Edit area', edit_coral_observation_area_path(area.observation.coral, area.observation, area) %> | <%= link_to 'Delete', coral_observation_area_path(area.observation.coral, area.observation, area), confirm: 'Are you sure?', method: :delete %></td>
+  <!-- <td><%#= area.notes %></td> -->
+	<td><%= area.touches.count %></td>
+  
+	<td><%= link_to 'Touches', coral_observation_area_path(area.observation.coral, area.observation, area) %> | <%= link_to 'Edit area', edit_coral_observation_area_path(area.observation.coral, area.observation, area) %> | <%= link_to 'Delete', coral_observation_area_path(area.observation.coral, area.observation, area), confirm: 'Are you sure?', method: :delete %></td>
 </tr>
 
 <tr>
@@ -32,17 +34,17 @@
 	    <% @thumbs = @files.find_all{|item| item.include? img } %>
 	<% end %>
 	
-    <td colspan=9 style="background-color:white;">
+    <td colspan=12>
 
 	<table id="div<%= area.id %>" style="display:none;"><tr>
 
 		<% @thumbs.each do |aa| %>
 
-			<td style='padding:0px; background-color: white;'>
-			<table style="background-color: black;">
+			<td style='padding:5px; background-color: white;'>
+			<table style="background-color: #444;">
 				<tr class='image'><td><%= image_tag @file_path + 'tagged_thumbs_outlines/' + aa.split('/').last %></td></tr>
-				<tr class='image'><td><font color="white" size=1><%= aa.split('/').last.split('_tn').first %></font></td></tr>
-				<tr class='image'><td><font color="white"><%= link_to 'OUTLINE', @file_path + 'tagged_outlines/' + aa.split('/').last.split('_tn').first + '.jpeg', :class => 'image' %></font></td></tr>
+				<tr class='image'><td style="text-align:center;color:white;"><%= aa.split('/').last.split('_tn').first %></font></td></tr>
+				<tr class='image'><td style="text-align:center;color:white;"><%= link_to 'OUTLINE', @file_path + 'tagged_outlines/' + aa.split('/').last.split('_tn').first + '.jpeg', :class => 'image' %></td></tr>
 			
 		</table>
 		</td>		
@@ -52,3 +54,4 @@
 	</tr></table></td>
 
 </tr>
+

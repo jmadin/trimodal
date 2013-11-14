@@ -1,4 +1,5 @@
 class FecundCoralsController < ApplicationController
+  before_action :signed_in_contributor
   # GET /fecund_corals
   # GET /fecund_corals.json
   def index

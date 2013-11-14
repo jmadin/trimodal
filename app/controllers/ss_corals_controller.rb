@@ -1,4 +1,5 @@
 class SsCoralsController < ApplicationController
+  before_action :signed_in_contributor
   # GET /ss_corals
   # GET /ss_corals.json
   def index

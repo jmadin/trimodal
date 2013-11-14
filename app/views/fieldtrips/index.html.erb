@@ -1,6 +1,7 @@
-<h1>Fieldtrips</h1>
+<h3>Fieldtrips</h3>
+<br>
 
-<table>
+<table class="table">
   <tr>
     <th>ID</th>
     <th>Name</th>
@@ -14,16 +15,16 @@
 
 <% @fieldtrips.each do |fieldtrip| %>
   <tr>
-    <td style="background-color:white;"><%= fieldtrip.id %></td>
+    <td style="color: lightgrey;"><%= fieldtrip.id %></td>
     <td><%= fieldtrip.name %></td>
     <td><%= fieldtrip.name_code %></td>
     <td><%= fieldtrip.date %></td>
-    <td style='text-align:left; max-width:500px;'><%= fieldtrip.description %></td>
-    <td style="background-color:white;"><%= link_to 'Show progress', fieldtrip %> | <%= link_to 'Edit', edit_fieldtrip_path(fieldtrip) %></td>
+    <td style='text-align:left; max-width:400px;'><%= fieldtrip.description %></td>
+    <td style="background-color:white;"><%= link_to 'Progress', fieldtrip %> | <%= link_to 'Edit', edit_fieldtrip_path(fieldtrip) %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Fieldtrip', new_fieldtrip_path %>
+<%= link_to 'New Fieldtrip', new_fieldtrip_path, class: "btn" %>

@@ -1,4 +1,8 @@
 class FieldtripsController < ApplicationController
+  before_action :signed_in_contributor
+  before_action :admin_contributor, only: :destroy
+  # before_action :set_location, only: [:show, :edit, :update, :destroy]
+
   # GET /fieldtrips
   # GET /fieldtrips.json
   def index

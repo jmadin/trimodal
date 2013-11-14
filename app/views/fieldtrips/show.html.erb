@@ -1,18 +1,4 @@
-<h2>Field trip</h2>
-
-<p id="notice"><%= notice %></p>
-
-<div style="border: dotted 1px grey; padding: 10px;">
-
-<p>
-  <b>Name:</b>
-  <%= @fieldtrip.name %>
-</p>
-
-<p>
-  <b>Name code:</b>
-  <%= @fieldtrip.name_code %>
-</p>
+<h3><%= @fieldtrip.name %> (<%= @fieldtrip.name_code %>)</h3>
 
 <p>
   <b>Date:</b>
@@ -28,16 +14,16 @@
 <%= link_to 'Edit', edit_fieldtrip_path(@fieldtrip) %> |
 <%= link_to 'Back', fieldtrips_path %>
 
-</div>
+
 <br/>
-<h2>Tagged colony status for <%= @fieldtrip.name %></h2>
+<h3>Tagged colony status for <%= @fieldtrip.name %></h3>
 
 <table>
 <tr><td style="border:green 2px solid;background-color:white;font-size:80%;padding:0px;">XXX</td><td style="text-align:left;background-color:white;">Found</td></tr>
 <tr><td style="border:red 2px solid;background-color:white;font-size:80%;padding:0px;">XXX</td><td style="text-align:left;background-color:white;">Not found</td></tr>
 <tr><td style="border:black 1px dotted;background-color:white;font-size:80%;padding:0px;"></td><td style="text-align:left;background-color:white;">Reported lost or dead in earlier trip (or if in earlier fieldtrips, future new colony)</td></tr>
 </table>
-<p style="color:red">*Downloadable mudmaps (in parentheses) are generated manually with an R script, and so will not reflect database mudmap following updates until the script is re-run.</p>
+<small style="color:red">Downloadable mudmaps (in parentheses) are generated manually with an R script, and so will not reflect database mudmap following updates until the script is re-run.</small>
 
 <% if params[:id] == "11" %>
 <% before = 5 %>
@@ -46,7 +32,7 @@
 <% end %>
 
 <% (0..7).each do |t| %>
-	<h3>Transect <%= t %> (<%= link_to "mudmap", @file_path + "tagged_mudmaps/transect_" + t.to_s + ".pdf" %>)</h3>
+	<h2>Transect <%= t %> (<%= link_to "mudmap", @file_path + "tagged_mudmaps/transect_" + t.to_s + ".pdf" %>)</h2>
 	<table>
 	<% 13.downto(1).each do |y| %>
 		<tr>

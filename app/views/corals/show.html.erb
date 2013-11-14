@@ -1,11 +1,8 @@
-<h2>Tagged colony</h2>
+<h3>Tagged colony</h3>
 
-<p id="notice"><%= notice %></p>
-
-<div style="border: dotted 1px grey; padding: 10px;">
-<table>
+<table class="table">
 	<tr class='top'>
-	<td><table style="background-color: black;"><tr class='image'>
+	<td><table style="background-color: #444;"><tr class='image'>
 		<% if !@coral.observations.blank? %>
 			<% img = @coral.species_code + "%04d" % @coral.observations.last.tag_number + '_' + @coral.observations.last.fieldtrip.name_code + '_T' %>
 			<% imgS = @coral.species_code + "%04d" % @coral.observations.last.tag_number + '_' + @coral.observations.last.fieldtrip.name_code + '_S' %>
@@ -15,7 +12,7 @@
 			<% if !@temp.nil? %>
 				<td><%= link_to image_tag(@file_path + 'tagged_thumbs/' + @temp.split('/').last), @file_path + 'tagged_raw/' + @temp.split('/').last.split('_tn').first + '.JPG' %>
 				</td></tr>
-				<tr class='image'><td>
+				<tr><td style="text-align:center;">
 				<font color="white">(Latest image)</font>
 			<% else %>
 				<% if !@tempS.nil? %>
@@ -54,37 +51,29 @@
 		  <b>Colony notes:</b>
 		  <font color="orange"><%= @coral.notes %></font>
 		</p>
+    <br>
+    <%= link_to 'Edit coral', edit_coral_path(@coral) %>
 	</td></tr>
 </table>
 
-<p>
-<%= link_to 'Edit coral', edit_coral_path(@coral) %> | <a href="javascript:jchange('div0');">Show mudmap and tag search</a>
-</p>
 
+<br>
 <%= form_tag observations_path, :method => 'get' do %>
-  <p>
-    Tag search: <%= text_field_tag :osearch, params[:osearch] %>
-    <%= submit_tag "Search", :name => nil %></td>
-  </p>
+<p>Tag search :</p>
+<div class="input-append">
+  <%= text_field_tag :osearch, params[:osearch] %>
+  <%= submit_tag "Search", :name => nil, class: "btn" %>
+  <%= link_to 'Reset', observations_path, class: "btn" %>
+</div>
 <% end %>
 
-<div id="div0" style="display:none;">
-	<p>*You can click on the mudmap colonies.</p>
-	<p style="color:red;">*Note that the mudmap is static and might not necessarily reflect the current state of the transect.</p>
-	<% map = "#{@coral.species_code}#{@coral.id}.png" %>
-	<%= image_tag @file_path + 'tagged_maps/' + map, :usemap => "#transect#{@coral.transect}", :style => "border:1px solid #333;" %>
-	<%= render :file => "public/transect#{@coral.transect }.html" %>	
-</div>
+<br>
 
-
-</div>
-
-
-<h2>Tagged colony observations</h2>
+<h3>Tagged colony observations</h3>
 
 <a href="javascript:<% @coral.observations.each do |oo| %>jchange('div<%= oo.id %>')<% if oo != @coral.observations.last %>,<% end %><% end %>;">Show/hide all images</a>
 
-<table class='data'>
+<table class="table">
 <tr>
 	<th></th>
 	<th>Observation ID</th>
@@ -112,7 +101,7 @@
 	<%= form_for([@coral, @coral.observations.build]) do |f| %>
 	  <td></td>
 	  <td></td>
-	  <td><%= @coral.id %></td>
+	  <td style="color:lightgrey;"><%= @coral.id %></td>
 	  <td><%= collection_select :observation, :fieldtrip_id, @fieldtrips, :id, :name_code, { :selected => @fieldtrips.last.id } %> </td>
 	  <td><%= f.text_field :mother_id, :size => 6 %></td>
 	  <td><%= f.text_field :tag_number, :value => temp, :size => 6 %></td>
@@ -120,11 +109,10 @@
 	  <td><%= f.select :action, ['', 'photographed', 'not found', 'no scale', 'not real', 'dead', 'gone'] %></td>
 	  <td><%= f.text_field :notes %></td>
 	  <td></td>
-	  <td><%= f.submit %></td>
+	  <td><%= f.submit class: "btn" %></td>
 	<% end %>
 </tr>
 </table>
-<p id="notice"><%= notice %></p>
 
 <br/>
 
