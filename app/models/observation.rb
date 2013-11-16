@@ -19,5 +19,17 @@ class Observation < ActiveRecord::Base
       end
   end  
   
+  def self.to_csv
+    CSV.generate do |csv|
+      
+      @all = Observation.find_by_sql("SELECT *, observations.id as obs_id, corals.notes as coral_notes, observations.notes as observation_notes FROM observations, corals WHERE corals.id = observations.coral_id")  
+      
+      # csv << column_names
+      @all.each do |obs|
+        csv << obs.attributes.values_at(*column_names)
+      end
+    end
+  end
+  
 end
 

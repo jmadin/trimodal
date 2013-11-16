@@ -11,6 +11,7 @@ class ObservationsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @observations }
+      format.csv { send_data @observations.to_csv }
     end
   end
 

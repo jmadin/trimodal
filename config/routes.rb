@@ -48,7 +48,7 @@ Trimodal::Application.routes.draw do
 
 
   match 'export_tagged' => 'home#export_tagged', via: 'get'
-  match 'export_corals' => 'home#export_corals', via: 'get'
+  match 'export_corals' => 'corals#export_corals', via: 'get'
   match 'export_spawners' => 'home#export_spawners', via: 'get'
   match 'export_size_structure' => 'home#export_size_structure', via: 'get'
   match 'export_fecundity' => 'home#export_fecundity', via: 'get'
