@@ -11,36 +11,31 @@
     </div>
   <% end %>
 
+  <p>Coral: <%= @observation.coral_id %></p>
+  <p>Fieldtrip: <%= @observation.fieldtrip_id %></p>
+
   <div class="field">
-    <%= f.label :coral %><br />
-    <%= @observation.coral_id %>
-  </div>
-  <div class="field">
-    <%= f.label :fieldtrip %><br />
-    <%= @observation.fieldtrip_id %>
-  </div>
-  <div class="field">
-    <%= f.label :mother_id %><br />
+    <%= f.label :mother_id %>
     <%= f.number_field :mother_id %>
   </div>
   <div class="field">
-    <%= f.label :tag_number %><br />
+    <%= f.label :tag_number %>
     <%= f.number_field :tag_number %>
   </div>
   <div class="field">
-    <%= f.label :active_tag %><br />
+    <%= f.label :active_tag %>
     <%= f.number_field :active_tag %>
   </div>
   <div class="field">
-    <%= f.label :action %><br />
+    <%= f.label :action %>
 	<%= f.select :action, ['', 'photographed', 'not found', 'no scale', 'not real', 'dead', 'gone'] %>
   </div>
 
   <div class="field">
-    <%= f.label :notes %><br />
+    <%= f.label :notes %>
     <%= f.text_area :notes %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn" %>
   </div>
 <% end %>

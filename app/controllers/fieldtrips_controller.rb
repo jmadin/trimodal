@@ -21,7 +21,7 @@ class FieldtripsController < ApplicationController
     # @observations = Observation.
     @corals = Coral.all
 
-    @files = Dir.glob("/Users/jmadin/Dropbox/web/trimodal/tagged_thumbs/*")
+    @files = Dir.glob("app/assets/images/tagged_thumbs/*")
 
     respond_to do |format|
       format.html # show.html.erb

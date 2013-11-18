@@ -21,3 +21,7 @@ bundle exec rake db:migrate
   t.string   "institution"
   t.string   "country"
 end -->
+
+.mode tabs
+.import area_table_F6.txt areas
+

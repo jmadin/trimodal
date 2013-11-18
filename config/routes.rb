@@ -47,7 +47,7 @@ Trimodal::Application.routes.draw do
   match '/help', to: 'static_pages#help', via: 'get'
 
 
-  match 'export_tagged' => 'home#export_tagged', via: 'get'
+  match 'export_tagged' => 'corals#export_tagged', via: 'get'
   match 'export_corals' => 'corals#export_corals', via: 'get'
   match 'export_spawners' => 'home#export_spawners', via: 'get'
   match 'export_size_structure' => 'home#export_size_structure', via: 'get'
