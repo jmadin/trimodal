@@ -55,7 +55,7 @@
 	  <td><%= f.text_field :photographer_name, :style=>'width: 70px;' %></td>
 	  <td><%= f.text_field :outliner_name, :style=>'width: 70px;' %></td>
     <td><%= f.text_field :outline_filename, :style=>'width: 140px;' %></td>
-	  <td><%= f.number_field :area, :style=>'width: 80px;' %></td>
+	  <td><%= f.number_field :area, :style=>'width: 80px;', :step => 'any' %></td>
 	  <td><%= f.check_box :flag %></td>
 	  <td><%= f.check_box :acceptable %></td>
 	  <td><%= f.check_box :acceptable_outline %></td>
