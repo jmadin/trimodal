@@ -5,7 +5,7 @@
 	<td style="color:lightgrey;"><%= area.observation.coral_id %></td>
 	<td><%= area.photographer_name %></td>
 	<td><%= area.outliner_name %></td>
-  <!-- <td><%#= area.outline_filename %></td> -->
+  <td><%= area.outline_filename %></td>
 	<td><% if !area.area.blank? %><%= '%.2f' % area.area %><% end %></td>
 	<td><%= area.flag %></td>
 	<% if area.acceptable == true %>
@@ -21,7 +21,7 @@
   <!-- <td><%#= area.notes %></td> -->
 	<td><%= area.touches.count %></td>
   
-	<td><%= link_to 'Touches', coral_observation_area_path(area.observation.coral, area.observation, area) %> | <%= link_to 'Edit area', edit_coral_observation_area_path(area.observation.coral, area.observation, area) %> | <%= link_to 'Delete', coral_observation_area_path(area.observation.coral, area.observation, area), confirm: 'Are you sure?', method: :delete %></td>
+	<td><%= link_to 'Touches', coral_observation_area_path(area.observation.coral, area.observation, area) %> | <%= link_to 'Edit', edit_coral_observation_area_path(area.observation.coral, area.observation, area) %> | <%= link_to 'Delete', coral_observation_area_path(area.observation.coral, area.observation, area), confirm: 'Are you sure?', method: :delete %></td>
 </tr>
 
 <tr>
