@@ -11,44 +11,40 @@
     </div>
   <% end %>
 
+  <p>Observation: <%= @area.observation_id %></p>
   <div class="field">
-    <%= f.label :observation %><br />
-    <!-- <%= f.text_field :observation %> -->
-    <%= @area.observation_id %>
-  </div>
-  <div class="field">
-    <%= f.label :photographer_name %><br />
+    <%= f.label :photographer_name %>
     <%= f.text_field :photographer_name %>
   </div>
   <div class="field">
-    <%= f.label :outliner_name %><br />
+    <%= f.label :outliner_name %>
     <%= f.text_field :outliner_name %>
   </div>
   <div class="field">
-    <%= f.label :outline_filename %><br />
+    <%= f.label :outline_filename %>
     <%= f.text_field :outline_filename %>
   </div>
   <div class="field">
-    <%= f.label :area %><br />
+    <%= f.label :area %>
     <%= f.text_field :area %>
   </div>
   <div class="field">
-    <%= f.label :flag %><br />
+    <%= f.label :flag %>
     <%= f.check_box :flag %>
   </div>
   <div class="field">
-    <%= f.label "Acceptable photo" %><br />
+    <%= f.label "Acceptable photo" %>
     <%= f.check_box :acceptable %>
   </div>
   <div class="field">
-    <%= f.label :acceptable_outline %><br />
+    <%= f.label :acceptable_outline %>
     <%= f.check_box :acceptable_outline %>
   </div>
   <div class="field">
-    <%= f.label :notes %><br />
+    <%= f.label :notes %>
     <%= f.text_area :notes %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn" %>
   </div>
 <% end %>
