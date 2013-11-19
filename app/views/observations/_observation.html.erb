@@ -10,7 +10,7 @@
 	<td><%= observation.action %></td>
 	<td><%= observation.notes %></td>
 	<% if observation.areas.any? { |i| (i.acceptable_outline == false || i.acceptable == false) } %><td style="background-color:red;"><% else %><td><% end %><%= observation.areas.count %></td>
-	<td style="background-color:white;"><%= link_to 'Show areas', coral_observation_path(observation.coral, observation) %> | <%= link_to 'Edit observation', edit_coral_observation_path(observation.coral, observation) %> | <%= link_to 'Delete', coral_observation_path(observation.coral, observation), confirm: 'Are you sure?', method: :delete %></td>
+	<td style="background-color:white;"><%= link_to 'Areas', coral_observation_path(observation.coral, observation) %> | <%= link_to 'Edit', edit_coral_observation_path(observation.coral, observation) %> | <%= link_to 'Delete', coral_observation_path(observation.coral, observation), confirm: 'Are you sure?', method: :delete %></td>
 </tr>
 
 <tr>

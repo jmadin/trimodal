@@ -30,7 +30,7 @@
 		<% end %>
 	</table></td>
 	
-	<td class='top'>
+	<td>
 		<p>
 		  <b>Species:</b> <i><%= @coral.species %></i>
 		</p>
@@ -52,12 +52,11 @@
 		  <font color="orange"><%= @coral.notes %></font>
 		</p>
     <br>
-    <%= link_to 'Edit coral', edit_coral_path(@coral) %>
+    <%= link_to 'Edit coral', edit_coral_path(@coral), class: "btn" %>
 	</td></tr>
 </table>
 
 
-<br>
 <%= form_tag observations_path, :method => 'get' do %>
 <p>Tag search :</p>
 <div class="input-append">
@@ -65,8 +64,6 @@
   <%= submit_tag "Search", :name => nil, class: "btn" %>
 </div>
 <% end %>
-
-<br>
 
 <h3>Tagged colony observations</h3>
 
