@@ -1,19 +1,17 @@
-<h2>Fecundity coral</h2>
+<h3>Fecundity coral</h3>
 
-<p id="notice"><%= notice %></p>
 
-<table><tr class='top'>
-<td style='padding:0px; background-color: white;'>
+<table class="table"><tr>
+<td>
 
-<% thumb = @files.find_all{|item| item.include? @fecund_coral.outline_filename }[0] %>
+  <% thumb = @files.find_all{|item| item.include? @fecund_coral.outline_filename }[0] %>
 
-	<table style="background-color: black;">
+	<table style="background-color: #444;">
 		<tr class='image'><td><%= image_tag @file_path + 'fecundity_thumbs/' + thumb.split('/').last %></td></tr>
-		<tr class='image'><td><font color="white" size=1><%= thumb.split('/').last.split('_tn').first %></font></td></tr>
-		<tr class='image'><td><font color="white"><%= link_to 'IMG', @file_path + 'fecundity_corrected/' + thumb.split('/').last.split('_tn').first + '.JPG', :class => 'image' %> | <%= link_to 'OUTLINE', @file_path + 'fecundity_outlines/' + thumb.split('/').last.split('_tn').first + '.jpeg', :class => 'image' %>
-		</font></td></tr>
+		<tr class='image'><td style="text-align:center;color:white;"><%= thumb.split('/').last.split('_tn').first %></font></td></tr>
+		<tr class='image'><td style="text-align:center;color:white;"><%= link_to 'IMG', @file_path + 'fecundity_corrected/' + thumb.split('/').last.split('_tn').first + '.JPG', :class => 'image' %> | <%= link_to 'OUTLINE', @file_path + 'fecundity_outlines/' + thumb.split('/').last.split('_tn').first + '.jpeg', :class => 'image' %>
+		</td></tr>
 	</table>
-
 
 </td>
 <td class='top'>

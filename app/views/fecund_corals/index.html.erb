@@ -11,7 +11,7 @@
     <th>Outline filename</th>
     <th>Area</th>
     <th>Marked</th>
-    <th>Notes</th>
+    <!-- <th>Notes</th> -->
     <th></th>
   </tr>
 
@@ -27,8 +27,8 @@
     <td><%= fecund_coral.outline_filename %></td>
     <td><% if !fecund_coral.area.blank? %><%= '%.2f' % fecund_coral.area %><% end %></td>
     <td><%= fecund_coral.flag %></td>
-    <td><%= fecund_coral.notes %></td>
-    <td><%= link_to 'Show colony', fecund_coral %> | <%= link_to 'Edit colony', edit_fecund_coral_path(fecund_coral) %></td>
+    <!-- <td><%#= fecund_coral.notes %></td> -->
+    <td><%= link_to 'Show', fecund_coral %> | <%= link_to 'Edit', edit_fecund_coral_path(fecund_coral) %></td>
   </tr>
 <% end %>
 </table>
