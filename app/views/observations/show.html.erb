@@ -1,72 +1,76 @@
-<h3>Tagged colony observation</h3>
+<div class="row">
+  <div class="col-md-12">
 
-<p>
-  <b>Species:</b> <i><%= @coral.species %></i>
-  , <b>Tag:</b> <%= @coral.species_code %><%= '%04d' % @observation.tag_number %>
-  , <b>Fieldtrip:</b> F<%= @observation.fieldtrip_id %>
-</p>
+		<h3>Tagged colony observation</h3>
 
-<p>
-  <b>Action:</b>
-  <%= @observation.action %>
-</p>
+		<p>
+		  <b>Species:</b> <i><%= @coral.species %></i>
+		  , <b>Tag:</b> <%= @coral.species_code %><%= '%04d' % @observation.tag_number %>
+		  , <b>Fieldtrip:</b> F<%= @observation.fieldtrip_id %>
+		</p>
 
-<p>
-  <b>Observation notes:</b>
-  <font color="orange"><%= @observation.notes %></font>
-</p>
+		<p>
+		  <b>Action:</b>
+		  <%= @observation.action %>
+		</p>
 
-<%= link_to 'Edit observation', edit_coral_observation_path(@observation.coral, @observation) %> |
-<%= link_to 'Back to coral', coral_path(@observation.coral) %>
+		<p>
+		  <b>Observation notes:</b>
+		  <font color="orange"><%= @observation.notes %></font>
+		</p>
 
-<br>
-<br>
+		<%= link_to 'Edit observation', edit_coral_observation_path(@observation.coral, @observation) %> |
+		<%= link_to 'Back to coral', coral_path(@observation.coral) %>
 
-<h3>Tagged colony observation areas</h3>
+		<br>
+		<br>
 
-<a href="javascript:<% @observation.areas.each do |oo| %>jchange('div<%= oo.id %>')<% if oo != @observation.areas.last %>,<% end %><% end %>;">Show/hide all images</a>
+		<h3>Tagged colony observation areas</h3>
 
-<table class="table">
-<tr>
-	<th></th>
-	<th>AID</th>
-	<th>OID</th>
-	<th>CID</th>
-	<th>Photographer</th>
-	<th>Outliner</th>
-  <th>Outline filename</th>
-	<th>Area</th>
-	<th>Marked</th>
-	<th>Photo okay?</th>
-	<th>Outline okay?</th>
-	<th>Touches</th>
-  <!-- <th>Area notes</th> -->
-	<th width="250px"></th>
-</tr>
+		<a href="javascript:<% @observation.areas.each do |oo| %>jchange('div<%= oo.id %>')<% if oo != @observation.areas.last %>,<% end %><% end %>;">Show/hide all images</a>
 
-<%= render @observation.areas.sort_by{|e| e[:outline_filename]}  %>
-<tr style='background-color:white;'>
-	<%= form_for([@observation, @observation.areas.build]) do |f| %>
+		<table class="table table-condensed">
+		<tr>
+			<th></th>
+			<th>AID</th>
+			<th>OID</th>
+			<th>CID</th>
+			<th>Photographer</th>
+			<th>Outliner</th>
+		  <th>Outline filename</th>
+			<th>Area</th>
+			<th>Marked</th>
+			<th>Photo okay?</th>
+			<th>Outline okay?</th>
+			<th>Touches</th>
+		  <!-- <th>Area notes</th> -->
+			<th></th>
+		</tr>
 
-	  <td></td>
-	  <td></td>
-	  <td><%= @observation.id %></td>
-	  <td><%= @observation.coral_id %></td>
-	  <td><%= f.text_field :photographer_name, :style=>'width: 70px;' %></td>
-	  <td><%= f.text_field :outliner_name, :style=>'width: 70px;' %></td>
-    <td><%= f.text_field :outline_filename, :style=>'width: 140px;' %></td>
-	  <td><%= f.number_field :area, :style=>'width: 80px;', :step => 'any' %></td>
-	  <td><%= f.check_box :flag %></td>
-	  <td><%= f.check_box :acceptable %></td>
-	  <td><%= f.check_box :acceptable_outline %></td>
-    <!-- <td><%#= f.text_field :notes, :style=>'width: 200px;' %></td> -->
+		<%= render @observation.areas.sort_by{|e| e[:outline_filename]}  %>
+		<tr style='background-color:white;'>
+			<%= form_for([@observation, @observation.areas.build]) do |f| %>
 
-	  <td><%= f.submit class: "btn" %></td>
-	<% end %>
-</tr>
-</table>
+			  <td></td>
+			  <td></td>
+			  <td><%= @observation.id %></td>
+			  <td><%= @observation.coral_id %></td>
+			  <td><%= f.text_field :photographer_name, :style=>'width: 70px;' %></td>
+			  <td><%= f.text_field :outliner_name, :style=>'width: 70px;' %></td>
+		    <td><%= f.text_field :outline_filename, :style=>'width: 140px;' %></td>
+			  <td><%= f.number_field :area, :style=>'width: 80px;', :step => 'any' %></td>
+			  <td><%= f.check_box :flag %></td>
+			  <td><%= f.check_box :acceptable %></td>
+			  <td><%= f.check_box :acceptable_outline %></td>
+		    <!-- <td><%#= f.text_field :notes, :style=>'width: 200px;' %></td> -->
 
+			  <td><%= f.submit class: "btn" %></td>
+			<% end %>
+		</tr>
+		</table>
 
+	</div>
+</div>
 
 
 

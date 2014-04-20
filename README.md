@@ -1,5 +1,15 @@
 
 
+.mode insert
+.out touches.sql
+select * from touches;
+
+.mode csv 
+.header on 
+.out touches.csv 
+select * from touches;
+
+
 rails generate model Contributor first_name:string last_name:string short_name:string email:string phone:string institution:string country:string contributor_profile:text password_digest:string remember_token:string admin:boolean
 
 bundle exec rake db:migrate
@@ -25,3 +35,6 @@ end -->
 .mode tabs
 .import area_table_F6.txt areas
 
+
+delete from touches;
+delete from sqlite_sequence where name='touches';

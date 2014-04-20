@@ -1,43 +1,46 @@
-<% provide(:title, @contributor.short_name) %>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <% provide(:title, @contributor.short_name) %>
 
-<h3>
-  <%= gravatar_for @contributor %>
-  <%= @contributor.first_name %> <%= @contributor.last_name %>
-</h3>
+    <h3>
+      <%= gravatar_for @contributor %>
+      <%= @contributor.first_name %> <%= @contributor.last_name %>
+    </h3>
 
 
-<p>
-  <strong>Short name:</strong>
-  <%= @contributor.short_name %>
-</p>
+    <p>
+      <strong>Short name:</strong>
+      <%= @contributor.short_name %>
+    </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @contributor.email %>
-</p>
+    <p>
+      <strong>Email:</strong>
+      <%= @contributor.email %>
+    </p>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @contributor.phone %>
-</p>
+    <p>
+      <strong>Phone:</strong>
+      <%= @contributor.phone %>
+    </p>
 
-<p>
-  <strong>Institution:</strong>
-  <%= @contributor.institution %>
-</p>
+    <p>
+      <strong>Institution:</strong>
+      <%= @contributor.institution %>
+    </p>
 
-<p>
-  <strong>Country:</strong>
-  <%= @contributor.country %>
-</p>
+    <p>
+      <strong>Country:</strong>
+      <%= @contributor.country %>
+    </p>
 
-<p>
-  <strong>Profile:</strong>
-  <%= @contributor.contributor_profile %>
-</p>
+    <p>
+      <strong>Profile:</strong>
+      <%= @contributor.contributor_profile %>
+    </p>
 
-<p>
-  <strong>Administrator:</strong>
-  <%= @contributor.admin %>
-</p>
-
+    <p>
+      <strong>Administrator:</strong>
+      <%= @contributor.admin %>
+    </p>
+  </div>
+</div>

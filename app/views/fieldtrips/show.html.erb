@@ -1,28 +1,37 @@
-<h3><%= @fieldtrip.name %> (<%= @fieldtrip.name_code %>)</h3>
+<h3><%= @fieldtrip.name %></h3>
 
-<p>
-  <b>Date:</b>
-  <%= @fieldtrip.date %>
-</p>
+<div class="well">
+	<p>
+	  <b>Date:</b>
+	  <%= @fieldtrip.date %>
+	</p>
 
-<p>
-  <b>Description:</b>
-  <%= @fieldtrip.description %>
-</p>
+	<p>
+	  <b>Code:</b>
+	  <%= @fieldtrip.name_code %>
+	</p>
+
+	<p>
+	  <b>Description:</b>
+	  <%= @fieldtrip.description %>
+	</p>
 
 
-<%= link_to 'Edit', edit_fieldtrip_path(@fieldtrip) %> |
-<%= link_to 'Back', fieldtrips_path %>
+	<%= link_to 'Edit', edit_fieldtrip_path(@fieldtrip) %> |
+	<%= link_to 'Back', fieldtrips_path %>
 
+</div>
 
-<br/>
 <h3>Tagged colony status for <%= @fieldtrip.name %></h3>
 
-<table>
-<tr><td style="border:green 2px solid;background-color:white;font-size:80%;padding:0px;">XXX</td><td style="text-align:left;background-color:white;">Found</td></tr>
-<tr><td style="border:red 2px solid;background-color:white;font-size:80%;padding:0px;">XXX</td><td style="text-align:left;background-color:white;">Not found</td></tr>
-<tr><td style="border:lightgrey 2px solid;background-color:white;font-size:80%;padding:0px;"></td><td style="text-align:left;background-color:white;">Reported lost or dead in earlier trip (or if in earlier fieldtrips, future new colony)</td></tr>
-</table>
+<div class="well">
+
+	<table>
+	<tr><td style="border:green 2px solid;background-color:white;font-size:80%;padding:0px;">XXX</td><td style="text-align:left;background-color:white;">Found</td></tr>
+	<tr><td style="border:red 2px solid;background-color:white;font-size:80%;padding:0px;">XXX</td><td style="text-align:left;background-color:white;">Not found</td></tr>
+	<tr><td style="border:lightgrey 2px solid;background-color:white;font-size:80%;padding:0px;"></td><td style="text-align:left;background-color:white;">Reported lost or dead in earlier trip (or if in earlier fieldtrips, future new colony)</td></tr>
+	</table>
+</div>
 
 <% if params[:id] == "11" %>
   <% before = 5 %>

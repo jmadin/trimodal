@@ -1,77 +1,72 @@
-<h3>Tagged colonies</h3>
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
 
-<p>Dataset (observations, no areas): <%= link_to 'Export tagged colony data (csv for Excel or R)', '/export_corals', :action => 'export_corals' %></p>
-<p>Dataset (areas): <%= link_to 'Export tagged colony data (csv for Excel or R)', '/export_tagged', :action => 'export_tagged' %></p>
+    <h3>Tagged colonies</h3>
 
+    <div class="well">
+      <div class="row">
+        <div class="col-md-6">
+          <%= form_tag observations_path, :method => 'get' do %>
+            <div class="input-group">
+              <%= text_field_tag :osearch, params[:osearch], :placeholder => "Search observations (including tags)...", class: "form-control" %>
+              <span class="input-group-btn">
+                <%= submit_tag "Search", :name => nil, class: "btn btn-default" %>
+              </span>
+            </div>
+          <% end %>
+        </div>
+      </div>
+      	
+      <br/>
 
-<div style="row">
-  <%= form_tag corals_path, :method => 'get' do %>
-	<div class="span6">
-    <p>Search corals (not tags):</p>
-    <div class="input-append">
-      <%= text_field_tag :search, params[:search] %>
-      <%= submit_tag "Search", :name => nil, class: "btn" %>
-      <%= link_to 'Reset', corals_path, class: "btn" %>
-  	</div>
-	</div>
-  <% end %>
+      <%= link_to 'New Coral', new_coral_path, class: "btn btn-primary btn-md pull-right" %>
 
-  <%= form_tag observations_path, :method => 'get' do %>
-	<div class="span6">
-    <p>Search observations (including tags):</p>
-    <div class="input-append">
-      <%= text_field_tag :osearch, params[:osearch] %>
-      <%= submit_tag "Search", :name => nil, class: "btn" %>
-      <%= link_to 'Reset', observations_path, class: "btn" %>
-  	</div>
-  </div>
-  <% end %>
-	
-  <div class="span2 offset10">
-    <p><%= link_to 'New Coral', new_coral_path, class: "btn" %></p>
-  </div>
+      <p>Download full dataset as <%= link_to 'CSV', '/export_tagged', :action => 'export_tagged' %></p>
+    </div>
 
+    <div class="row">
+      <div class="col-md-12">
 
-  <div class="span12">
+        <% if @corals.empty? %>
+          <h2> No matches</h2>
+        <% else %>
 
-    <% if @corals.empty? %>
-      <h2> No matches</h2>
-    <% else %>
+        	<table class="table table-condensed">
+            <thead>
+          	  <tr>
+          	    <th><%= sortable "id" %></th>
+          	    <th><%= sortable "transect" %></th>
+          	    <th>Species</th>
+          	    <th><%= sortable "species_code" %></th>
+          	    <th>Last tag</th>
+          	    <th><%= sortable "notes" %></th>
+          	    <th></th>
+          	  </tr>
+          </thead>
 
-    	<table class="table">
-    	  <tr>
-    	    <th><%= sortable "id" %></th>
-    	    <th><%= sortable "transect" %></th>
-    	    <th>Species</th>
-    	    <th><%= sortable "species_code" %></th>
-    	    <th>Last tag</th>
-    	    <th><%= sortable "notes" %></th>
-    	    <th></th>
-    	  </tr>
+        	<% @corals.each do |coral| %>
+        	  <tbody>
+              <tr>
+          	    <td style="color:lightgrey"><%= coral.id %></td>
+          	    <td><%= coral.transect %></td>
+          	    <td><i><%= coral.species %></i></td>
+          	    <!-- <td><%= coral.species %></td> -->
+          	    <td><%= coral.species_code %></td>
+      		
+          		<td><% if !coral.observations.empty? %>
+          			<%= '%03d' % coral.observations.last.tag_number %>
+          		<% end %></td>
+      	
+          	    <td style='text-align:left; max-width:250px;'><%= coral.notes %></td>
 
-    	<% @corals.each do |coral| %>
-    	  <tr>
-    	    <td style="color:lightgrey"><%= coral.id %></td>
-    	    <td><%= coral.transect %></td>
-    	    <td><i><%= coral.species %></i></td>
-    	    <!-- <td><%= coral.species %></td> -->
-    	    <td><%= coral.species_code %></td>
-		
-    		<td><% if !coral.observations.empty? %>
-    			<%= '%03d' % coral.observations.last.tag_number %>
-    		<% end %></td>
-	
-    	    <td style='text-align:left; max-width:250px;'><%= coral.notes %></td>
+          	    <td style="background-color:white;"><%= link_to 'Show observations', coral %> | <%= link_to 'Edit colony', edit_coral_path(coral) %></td>
+          	  </tr>
+            </tbody>
+        	<% end %>
+        	</table>
 
-    	    <td style="background-color:white;"><%= link_to 'Show observations', coral %> | <%= link_to 'Edit colony', edit_coral_path(coral) %></td>
-    	  </tr>
-    	<% end %>
-    	</table>
-
-    <% end %>
-  </div>
-  
-  <div class="span2 offset10">
-    <p><%= link_to 'New Coral', new_coral_path, class: "btn" %></p>
+        <% end %>
+      </div>      
+    </div>
   </div>
 </div>

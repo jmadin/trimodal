@@ -1,46 +1,69 @@
-<% provide(:title, 'Sign up') %>
 <div class="row">
-	<div class="span6 offset3">
-<h3>Sign up</h3>
+  <div class="col-md-6 col-md-offset-3">
 
-<%= form_for(@contributor) do |f| %>
-	<%= render 'shared/error_messages', temp: @contributor %>
+    <% provide(:title, 'Sign up') %>
+    <%= render 'shared/error_messages', temp: @contributor %>
+    <h3>Sign up</h3>
 
-  <%= f.label :first_name %>
-  <%= f.text_field :first_name %>
+    <%= form_for(@contributor) do |f| %>
 
-  <%= f.label :last_name %>
-  <%= f.text_field :last_name %>
+    <div class="form-group">
+      <%= f.label :first_name %>
+      <%= f.text_field :first_name, class: "form-control" %>
+    </div>
 
-  <%= f.label :short_name %>
-  <%= f.text_field :short_name %>
+    <div class="form-group">
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name, class: "form-control" %>
+    </div>
 
-  <%= f.label :email %>
-  <%= f.text_field :email %>
+     <div class="form-group">
+      <%= f.label :short_name %>
+      <%= f.text_field :short_name, class: "form-control" %>
+    </div>
 
-  <%= f.label :phone_number %>
-  <%= f.text_field :phone %>
+     <div class="form-group">
+      <%= f.label :email %>
+      <%= f.text_field :email, class: "form-control" %>
+    </div>
 
-  <%= f.label :institution %>
-  <%= f.text_field :institution %>
+     <div class="form-group">
+      <%= f.label :phone_number %>
+      <%= f.text_field :phone, class: "form-control" %>
+    </div>
 
-  <%= f.label :country %>
-  <%= f.text_field :country %>
+     <div class="form-group">
+      <%= f.label :institution %>
+      <%= f.text_field :institution, class: "form-control" %>
+    </div>
 
-  <%= f.label :contributor_profile %>
-  <%= f.text_area :contributor_profile %>
+     <div class="form-group">
+      <%= f.label :country %>
+      <%= f.text_field :country, class: "form-control" %>
+    </div>
 
-  <%= f.label :password %>
-  <%= f.password_field :password %>
+     <div class="form-group">
+      <%= f.label :contributor_profile %>
+      <%= f.text_area :contributor_profile, class: "form-control" %>
+    </div>
 
-  <%= f.label :password_confirmation, "Confirmation" %>
-  <%= f.password_field :password_confirmation %>
+     <div class="form-group">
+      <%= f.label :password %>
+      <%= f.password_field :password, class: "form-control" %>
+    </div>
 
-  <%= f.label :administrator %>
-  <%= f.check_box :admin %>
+     <div class="form-group">
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+    </div>
 
-  <br/><%= f.submit "Create account", class: "btn" %>
-<% end %>
+     <div class="form-group">
+      <%= f.label :administrator %>
+      <%= f.check_box :admin, class: "form-control" %>
+    </div>
 
-</div>
+      <br/><%= f.submit "Create account", class: "btn" %>
+    <% end %>
+
+  </div>
 </div>

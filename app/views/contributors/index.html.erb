@@ -1,35 +1,46 @@
-<% provide(:title, 'Contributors') %>
-<h3>Listing contributors</h3>
-<br>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
 
-<table class="table">
-	<thead>
-	  <tr>
-	    <th></th>
-	    <!-- <th style="color: lightgrey;">ID</th> -->
-	    <th>First</th>
-	    <th>Last</th>
-	    <th>Short name</th>
-	    <th></th>
-	  </tr>
-	</thead>
-	
-  <tbody>
-		<% @contributors.each do |contributor| %>
-			<tr>
-			  <td><%= gravatar_for contributor, size: 30 %></td>
-			  <!-- <td style="color: lightgrey;"><%#= contributor.id %></td> -->
-			  <td><%= contributor.first_name %></td>
-			  <td><%= contributor.last_name %></td>
-			  <td><%= contributor.short_name %></td>
-			  <td style="text-align:right; min-width: 150px;"><%= link_to 'Show', contributor %>      
-			  <% if current_contributor.admin? && !current_contributor?(contributor) %> |
-			    <%= link_to "Delete", contributor, method: :delete, data: { confirm: "You sure?" } %></td>
-				<% else %>
-					</td>
-			  <% end %>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
+		<% provide(:title, 'Contributors') %>
+		<h3>Listing contributors</h3>
+		<br>
 
+		<table class="table table-condensed">
+			<thead>
+			  <tr>
+			    <!-- <th></th> -->
+			    <!-- <th style="color: lightgrey;">ID</th> -->
+			    <th>First</th>
+			    <th>Last</th>
+			    <th>Short name</th>
+	  	    <th style="text-align:center;">Admin</th>
+			    <th></th>
+			  </tr>
+			</thead>
+			
+		  <tbody>
+				<% @contributors.each do |contributor| %>
+					<tr>
+					  <!-- <td><%#= gravatar_for contributor, size: 30 %></td> -->
+					  <!-- <td style="color: lightgrey;"><%#= contributor.id %></td> -->
+					  <td><%= contributor.first_name %></td>
+					  <td><%= contributor.last_name %></td>
+					  <td><%= contributor.short_name %></td>
+					  <% if !contributor.admin? %>
+							<td style="color:red;text-align:center;"><span class="glyphicon glyphicon-remove-circle"></span></td>
+						<% else %>
+							<td style="color:green;text-align:center;"><span class="glyphicon glyphicon-ok-circle"></span></td>
+						<% end %>
+
+					  <td style="text-align:right; min-width: 150px;"><%= link_to 'Show', contributor %>      
+					  <% if current_contributor.admin? && !current_contributor?(contributor) %> |
+					    <%= link_to "Delete", contributor, method: :delete, data: { confirm: "You sure?" } %></td>
+						<% else %>
+							</td>
+					  <% end %>
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
+	</div>
+</div>

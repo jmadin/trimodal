@@ -16,6 +16,55 @@ class TouchesController < ApplicationController
     end
   end
 
+
+  # def export
+      
+  #   if signed_in?
+  #     @touches = Touch.joins{measurements}.where{measurements.trait_id.in my{params[:checked]}}
+  #   end        
+    
+  #   csv_string = CSV.generate do |csv|
+  #     csv << ["observation_id", "access", "enterer", "coral", "location_name", "latitude", "longitude", "resource_id", "measurement_id", "trait_name", "standard_unit", "value", "precision", "precision_type", "precision_upper", "replicates"]
+  #     @observations.each do |obs|
+  #       if params[:global].blank? || obs.location_id == 1
+  #         obs.measurements.each do |mea|
+  #           if !params[:ancillary].blank? | params[:checked].include?(mea.trait_id.to_s)
+  #             if obs.location.present?
+  #               loc = obs.location.location_name
+  #               lat = obs.location.latitude
+  #               lon = obs.location.longitude
+  #               if obs.location.id == 1
+  #                 lat = ""
+  #                 lon = ""
+  #               end
+  #             else
+  #               loc = ""
+  #               lat = ""
+  #               lon = ""
+  #             end
+  #             if obs.private == true
+  #               acc = 0
+  #             else
+  #               acc = 1
+  #             end
+  #             csv << [obs.id, acc, obs.user_id, obs.coral.coral_name, loc, lat, lon, obs.resource_id, mea.id, mea.trait.trait_name, mea.standard.standard_unit, mea.value, mea.precision, mea.precision_type, mea.precision_upper, mea.replicates]
+  #           end
+  #         end
+  #       end
+        
+  #     end
+  #   end
+
+  #   send_data csv_string, 
+  #     :type => 'text/csv; charset=iso-8859-1; header=present', :stream => true,
+  #     :disposition => "attachment; filename=ctdb_#{Date.today.strftime('%Y%m%d')}.csv"
+          
+  # end
+
+
+
+
+
   # GET /touches/1
   # GET /touches/1.json
   def show
