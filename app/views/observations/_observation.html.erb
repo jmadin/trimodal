@@ -25,12 +25,12 @@
 		<td style='padding:5px; background-color: white;'>
 			<% if aa.match(/_T/) %>
 				<table style="background-color: #444;">
-				<tr><td><%= image_tag @file_path + 'tagged_thumbs/' + aa.split('/').last %></td></tr>
+				<tr><td><%= image_tag @file_path + 'tagged_raw_thumbs/' + aa.split('/').last %></td></tr>
 				<tr><td style="text-align:center;color:white;"><%= aa.split('/').last.split('_tn').first %></td></tr>
 				<tr><td style="text-align:center;color:white;">
 			<% else %>
 				<table style="background-color: blue;">
-				<tr><td><%= image_tag @file_path + 'tagged_thumbs/' + aa.split('/').last %></td></tr>
+				<tr><td><%= image_tag @file_path + 'tagged_raw_thumbs/' + aa.split('/').last %></td></tr>
 				<tr><td style="text-align:center;color:white;"><%= aa.split('/').last.split('_tn').first %></font></td></tr>
 				<tr><td style="text-align:center;color:white;">
 			<% end %>

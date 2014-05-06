@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131107230108) do
+ActiveRecord::Schema.define(version: 20140421202709) do
 
   create_table "areas", force: true do |t|
     t.integer  "observation_id"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20131107230108) do
     t.string   "photographer_name"
     t.boolean  "acceptable"
     t.boolean  "acceptable_outline"
+    t.decimal  "perimeter"
   end
 
   add_index "areas", ["observation_id"], name: "index_areas_on_observation_id"

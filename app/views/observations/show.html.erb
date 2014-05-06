@@ -30,43 +30,46 @@
 		<a href="javascript:<% @observation.areas.each do |oo| %>jchange('div<%= oo.id %>')<% if oo != @observation.areas.last %>,<% end %><% end %>;">Show/hide all images</a>
 
 		<table class="table table-condensed">
-		<tr>
-			<th></th>
-			<th>AID</th>
-			<th>OID</th>
-			<th>CID</th>
-			<th>Photographer</th>
-			<th>Outliner</th>
-		  <th>Outline filename</th>
-			<th>Area</th>
-			<th>Marked</th>
-			<th>Photo okay?</th>
-			<th>Outline okay?</th>
-			<th>Touches</th>
-		  <!-- <th>Area notes</th> -->
-			<th></th>
-		</tr>
+			<tr>
+				<th></th>
+				<th>AID</th>
+				<th>OID</th>
+				<th>CID</th>
+				<th>Photographer</th>
+				<th>Outliner</th>
+			  <th>Outline filename</th>
+				<th>Area</th>
+				<th>Perimeter</th>
+				<th>Marked</th>
+				<th>Photo okay?</th>
+				<th>Outline okay?</th>
+				<th>Touches</th>
+			  <!-- <th>Area notes</th> -->
+				<th></th>
+			</tr>
 
-		<%= render @observation.areas.sort_by{|e| e[:outline_filename]}  %>
-		<tr style='background-color:white;'>
-			<%= form_for([@observation, @observation.areas.build]) do |f| %>
+			<%= render @observation.areas.sort_by{|e| e[:outline_filename]}  %>
 
-			  <td></td>
-			  <td></td>
-			  <td><%= @observation.id %></td>
-			  <td><%= @observation.coral_id %></td>
-			  <td><%= f.text_field :photographer_name, :style=>'width: 70px;' %></td>
-			  <td><%= f.text_field :outliner_name, :style=>'width: 70px;' %></td>
-		    <td><%= f.text_field :outline_filename, :style=>'width: 140px;' %></td>
-			  <td><%= f.number_field :area, :style=>'width: 80px;', :step => 'any' %></td>
-			  <td><%= f.check_box :flag %></td>
-			  <td><%= f.check_box :acceptable %></td>
-			  <td><%= f.check_box :acceptable_outline %></td>
-		    <!-- <td><%#= f.text_field :notes, :style=>'width: 200px;' %></td> -->
+			<tr style='background-color:white;'>
+				<%= form_for([@observation, @observation.areas.build]) do |f| %>
 
-			  <td><%= f.submit class: "btn" %></td>
-			<% end %>
-		</tr>
+				  <td></td>
+				  <td></td>
+				  <td><%= @observation.id %></td>
+				  <td><%= @observation.coral_id %></td>
+				  <td><%= f.text_field :photographer_name, :style=>'width: 70px;' %></td>
+				  <td><%= f.text_field :outliner_name, :style=>'width: 70px;' %></td>
+			    <td><%= f.text_field :outline_filename, :style=>'width: 140px;' %></td>
+				  <td><%= f.number_field :area, :style=>'width: 80px;', :step => 'any' %></td>
+				  <td><%= f.number_field :perimeter, :style=>'width: 80px;', :step => 'any' %></td>
+				  <td><%= f.check_box :flag %></td>
+				  <td><%= f.check_box :acceptable %></td>
+				  <td><%= f.check_box :acceptable_outline %></td>
+			    <!-- <td><%#= f.text_field :notes, :style=>'width: 200px;' %></td> -->
+
+				  <td><%= f.submit class: "btn" %></td>
+				<% end %>
+			</tr>
 		</table>
 
 	</div>

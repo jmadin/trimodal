@@ -7,16 +7,17 @@
 	<td><%= area.outliner_name %></td>
   <td><%= area.outline_filename %></td>
 	<td><% if !area.area.blank? %><%= '%.2f' % area.area %><% end %></td>
+	<td><% if !area.perimeter.blank? %><%= '%.2f' % area.perimeter %><% end %></td>
 	<td><%= area.flag %></td>
-	<% if area.acceptable == true %>
-	<td><%= area.acceptable %></td>
-	<% else %>
+	<% if area.acceptable == false %>
 	<td style="background-color: red;" ><%= area.acceptable %></td>
-	<% end %>
-	<% if area.acceptable_outline == true %>
-	<td><%= area.acceptable_outline %></td>
 	<% else %>
+	<td><%= area.acceptable %></td>
+	<% end %>
+	<% if area.acceptable_outline == false %>
 	<td style="background-color: red;" ><%= area.acceptable_outline %></td>
+	<% else %>
+	<td><%= area.acceptable_outline %></td>
 	<% end %>
   <!-- <td><%#= area.notes %></td> -->
 	<td><%= area.touches.count %></td>
@@ -25,16 +26,16 @@
 </tr>
 
 <tr>
-	<% if area.flag %>
-		<% mid = area.outline_filename[(area.outline_filename.length-4)..area.outline_filename.length] %>
-		<% img = area.outline_filename[0..7] + "\.*_" + area.outliner_name %>
-	    <% @thumbs = @files.find_all{|item| item =~ /#{area.outline_filename[0..7]}.*#{mid}.*#{area.outliner_name}*/ } %>
-	<% else %>
+	<%# if area.flag %>
+		<%# mid = area.outline_filename[(area.outline_filename.length-4)..area.outline_filename.length] %>
+		<%# img = area.outline_filename[0..7] + "\.*_" + area.outliner_name %>
+	    <%# @thumbs = @files.find_all{|item| item =~ /#{area.outline_filename[0..7]}.*#{mid}.*#{area.outliner_name}*/ } %>
+	<%# else %>
 		<% img = area.outline_filename + "_" + area.outliner_name %>
 	    <% @thumbs = @files.find_all{|item| item.include? img } %>
-	<% end %>
+	<%# end %>
 	
-    <td colspan=12>
+    <td colspan=14>
 
 	<table id="div<%= area.id %>" style="display:none;"><tr>
 
@@ -42,7 +43,7 @@
 
 			<td style='padding:5px; background-color: white;'>
 			<table style="background-color: #444;">
-				<tr class='image'><td><%= image_tag @file_path + 'tagged_thumbs_outlines/' + aa.split('/').last %></td></tr>
+				<tr class='image'><td><%= image_tag @file_path + 'tagged_outlines_thumbs/' + aa.split('/').last %></td></tr>
 				<tr class='image'><td style="text-align:center;color:white;"><%= aa.split('/').last.split('_tn').first %></font></td></tr>
 				<tr class='image'><td style="text-align:center;color:white;"><%= link_to 'OUTLINE', @file_path + 'tagged_outlines/' + aa.split('/').last.split('_tn').first + '.jpeg', :class => 'image' %></td></tr>
 			

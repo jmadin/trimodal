@@ -10,7 +10,7 @@
 					<% img = @area.outline_filename + '_' + @area.outliner_name %>
 					<% @temp = @files.find_all{|item| item.include? img }.last %>
 					<% if !@temp.nil? %>
-					<td><%= link_to image_tag(@file_path + 'tagged_thumbs_touch/' + @temp.split('/').last), @file_path + 'tagged_touch/' + @temp.split('/').last.split('jpg').first + 'jpeg' %>
+					<td><%= link_to image_tag(@file_path + 'tagged_touch_thumbs/' + @temp.split('/').last), @file_path + 'tagged_touch/' + @temp.split('/').last.split('_tn').first + '.jpeg' %>
 					</td></tr>
 					<tr class='image'><td>
 					<font color="white">(Latest image)</font>
@@ -35,8 +35,15 @@
 
 				<p>
 				  <b>Outliner name:</b> <%= @area.outliner_name %>
-				  , <b>Outline filename:</b> <%= @area.outline_filename %>
-				  , <b>Area:</b> <%= @area.area %>
+				</p>
+				<p>
+					<b>Outline filename:</b> <%= @area.outline_filename %>
+				</p>
+				<p>
+				  <b>Area:</b> <%= @area.area %>
+				</p>
+				<p>
+				  <b>Perimeter:</b> <%= @area.perimeter %>
 				</p>
 
 				<p>
@@ -63,12 +70,12 @@
 			<th>Observation ID</th>
 			<th>Coral ID</th>
 			<th>Outliner</th>
-			<th>Outline filename</th>
+			<!-- <th>Outline filename</th> -->
 			<th>Touch Length</th>
 			<th>Taxon</th>
 			<th>Growth form</th>
 			<th>Interaction type</th>
-			<th>Taxon ID</th>
+			<!-- <th>Taxon ID</th> -->
 			<th>Touch notes</th>
 			<th width="250px"></th>
 		</tr>
@@ -84,12 +91,12 @@
 			  <td><%= @area.observation_id %></td>
 			  <td><%= @area.observation.coral_id %></td>
 			  <td><%= f.text_field :outliner_name, :style=>'width: 70px;' %></td>
-			  <td><%= f.text_field :outline_filename, :style=>'width: 150px;', :value=> @area.outline_filename + '_' + @area.outliner_name + '.cp' %></td>
+			  <!-- <td><%#= f.text_field :outline_filename, :style=>'width: 150px;', :value=> @area.outline_filename + '_' + @area.outliner_name + '.cp' %></td> -->
 			  <td><%= f.number_field :length, :style=>'width: 80px;' %></td>
-			  <td><%= f.select :taxon1, ['', 'Acropora', 'Montipora', '"Isopora"', 'Pocilloporid', 'Poritid', 'Favid', 'Mussid', 'Other hard coral', 'Soft coral', 'Fleshy macroalga', 'Erect calcareous macroalga', 'Hydrocoral', 'Hydroid', 'Uncertain'] %></td>
+			  <td><%= f.select :taxon1, ['', 'Acropora', 'Montipora', 'Isopora', 'Pocilloporid', 'Poritid', 'Favid', 'Mussid', 'Other hard coral', 'Soft coral', 'Fleshy macroalga', 'Erect calcareous macroalga', 'Hydrocoral', 'Hydroid', 'Uncertain'] %></td>
 			  <td><%= f.select :growth_form, ['', 'Massive', 'Branching', 'Corymbose', 'Cuneiform', 'Encrusting', 'Tabular', 'Digitate', 'Foliose', 'Non-coral', 'Uncertain'] %></td>
 			  <td><%= f.select :touch_type, ['', 'Digested', 'Digesting', 'Mutual digestion', 'Overtopped', 'Overtopping', 'Overgrown', 'Overgrowing', 'Other direct contact', 'Uncertain'] %></td>
-			  <td><%= f.select :taxon2, ['', 'TBD'] %></td>
+			  <!-- <td><%#= f.select :taxon2, ['', 'TBD'] %></td> -->
 			  <td><%= f.text_field :notes, :style=>'width: 200px;' %></td>
 
 			  <td><%= f.submit %></td>

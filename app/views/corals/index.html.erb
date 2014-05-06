@@ -19,7 +19,10 @@
       	
       <br/>
 
+      <%= link_to 'New Coral', new_coral_path, class: "btn btn-default pull-right" %>
       <p>Download full dataset as <%= link_to 'CSV', '/export_tagged', :action => 'export_tagged' %></p>
+      <p>Download corals only as <%= link_to 'CSV', '/export_corals', :action => 'export_corals' %></p>
+      <p>Test <%= link_to 'image', 'assets/tagged_corrected/AC0030_F2_T1_C.JPG' %></p>
     </div>
 
     <div class="row">
@@ -52,7 +55,7 @@
           	    <td><%= coral.species_code %></td>
       		
           		<td><% if !coral.observations.empty? %>
-          			<%= '%03d' % coral.observations.last.tag_number %>
+          			<%= '%04d' % coral.observations.last.tag_number %>
           		<% end %></td>
       	
           	    <td style='text-align:left; max-width:250px;'><%= coral.notes %></td>

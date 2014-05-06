@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
  ### EXPORT TOUCHED DATASET
   def export_tagged  
     @all = Observation.find_by_sql("
-      SELECT *, corals.id as cor_id, observations.id as obs_id, areas.id as are_id, touches.id as tou_id, corals.notes as coral_notes, observations.notes as observation_notes, areas.notes as area_notes, touches.notes as touch_notes, touches.outliner_name as tou_outliner_name, touches.outline_filename as tou_outline_filename
+      SELECT *, corals.id as cor_id, observations.id as obs_id, areas.id as are_id, touches.id as tou_id, corals.notes as coral_notes, observations.notes as observation_notes, areas.notes as area_notes, touches.notes as touch_notes, areas.outliner_name as are_outliner_name, areas.outline_filename as are_outline_filename, touches.outliner_name as tou_outliner_name, touches.outline_filename as tou_outline_filename, areas.flag as marked, touches.flag as tou_flag
       FROM corals 
       LEFT OUTER JOIN observations ON corals.id = observations.coral_id
       LEFT OUTER JOIN areas ON observations.id = areas.observation_id
@@ -29,8 +29,8 @@ class ApplicationController < ActionController::Base
       csv << [
         "colony_id", "transect", "map_x", "map_y", "species", "species_code", 
         "observation_id", "fieldtrip_db_id", "fieldtrip_id", "mother_id", "image_tag", "active_tag", "action", 
-        "area_id", "photographer_name", "outliner_name", "photo_acceptable", "outline_acceptable", "outline_filename", "area_cm2", "marked", 
-        "touch_id", "touch_number", "touch_outliner_name", "touch_filename", "taxon1", "taxon2", "growthform", "touch_type", "touch_length_cm", "touch_flag",
+        "area_id", "photographer_name", "photo_acceptable", "area_outliner_name", "area_outline_acceptable", "area_cm2", "perimeter_cm", "marked", 
+        "touch_id", "touch_number", "touch_outliner_name", "touch_taxon", "touch_growthform", "touch_type", "touch_length_cm", "touch_flag",
         "colony_notes", "observation_notes", "area_notes", "touch_notes"]      
       @all.each do |i|
         fid = i.fieldtrip_id
@@ -40,8 +40,8 @@ class ApplicationController < ActionController::Base
         csv << [
           i.cor_id, i.transect, i.map_x, i.map_y, i.species, i.species_code, 
           i.obs_id, i.fieldtrip_id, "F#{fid}", i.mother_id, i.tag_number, i.active_tag, i.action, 
-          i.area_id, i.photographer_name, i.outliner_name, i.acceptable, i.acceptable_outline , i.outline_filename, i.area, i.flag, 
-          i.tou_id, i.touch_number, i.tou_outliner_name, i.tou_outline_filename, i.taxon1, i.taxon2, i.growth_form, i.touch_type, i.length, i.flag,
+          i.are_id, i.photographer_name, i.acceptable, i.are_outliner_name, i.acceptable_outline, i.area, i.perimeter, i.marked, 
+          i.tou_id, i.touch_number, i.tou_outliner_name, i.taxon1, i.growth_form, i.touch_type, i.length, i.tou_flag,
           i.coral_notes, i.observation_notes, i.area_notes, i.touch_notes]
         end 
     end 
@@ -71,22 +71,22 @@ class ApplicationController < ActionController::Base
   
   
   # ### EXPORT CORALS ONLY
-  # def export_corals
-  #   @all = Observation.find_by_sql("SELECT *, observations.id as obs_id, corals.notes as coral_notes, observations.notes as observation_notes FROM observations, corals WHERE corals.id = observations.coral_id")  
-  #   csv_string = CSV.generate do |csv|   
-  #     csv << ["colony_id", "transect", "map_x", "map_y", "species", "species_code", "observation_id", "fieldtrip_id", "mother_id", "tag_number", "active_tag", "action", "colony_notes", "observation_notes"]      
-  #     @all.each do |cor|
-  #       fid = cor.fieldtrip_id
-  #       if fid > 5
-  #         fid = fid - 5
-  #       end
-  #       csv << [cor.coral_id, cor.transect, cor.map_x, cor.map_y, cor.species, cor.species_code, cor.obs_id, "F#{fid}", cor.mother_id, cor.tag_number, cor.active_tag, cor.action, cor.coral_notes, cor.observation_notes]
-  #       end 
-  #   end 
-  #   send_data csv_string, 
-  #       :type => 'text/csv; charset=iso-8859-1; header=present', :stream => true,
-  #       :disposition => "attachment; filename=corals_#{Date.today.strftime('%Y%m%d')}.csv" 
-  # end
+  def export_corals
+    @all = Observation.find_by_sql("SELECT *, observations.id as obs_id, corals.notes as coral_notes, observations.notes as observation_notes FROM observations, corals WHERE corals.id = observations.coral_id")  
+    csv_string = CSV.generate do |csv|   
+      csv << ["colony_id", "transect", "map_x", "map_y", "species", "species_code", "observation_id", "fieldtrip_id", "mother_id", "tag_number", "active_tag", "action", "colony_notes", "observation_notes"]      
+      @all.each do |cor|
+        fid = cor.fieldtrip_id
+        if fid > 5
+          fid = fid - 5
+        end
+        csv << [cor.coral_id, cor.transect, cor.map_x, cor.map_y, cor.species, cor.species_code, cor.obs_id, "F#{fid}", cor.mother_id, cor.tag_number, cor.active_tag, cor.action, cor.coral_notes, cor.observation_notes]
+        end 
+    end 
+    send_data csv_string, 
+        :type => 'text/csv; charset=iso-8859-1; header=present', :stream => true,
+        :disposition => "attachment; filename=corals_#{Date.today.strftime('%Y%m%d')}.csv" 
+  end
     
   ### EXPORT SPAWNER DATASET
   def export_spawners

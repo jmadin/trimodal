@@ -1,5 +1,10 @@
 
 
+
+rails generate migration add_perimeter_to_areas perimeter:decimal
+bundle exec rake db:migrate
+
+
 .mode insert
 .out touches.sql
 select * from touches;

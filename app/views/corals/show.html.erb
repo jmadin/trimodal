@@ -13,13 +13,13 @@
 					<% @tempS = @files.find_all{|item| item.include? imgS }.last %>
 					
 					<% if !@temp.nil? %>
-						<td><%= link_to image_tag(@file_path + 'tagged_thumbs/' + @temp.split('/').last), @file_path + 'tagged_raw/' + @temp.split('/').last.split('_tn').first + '.JPG' %>
+						<td><%= link_to image_tag(@file_path + 'tagged_raw_thumbs/' + @temp.split('/').last), @file_path + 'tagged_raw/' + @temp.split('/').last.split('_tn').first + '.JPG' %>						
 						</td></tr>
 						<tr><td style="text-align:center;">
 						<font color="white">(Latest image)</font>
 					<% else %>
 						<% if !@tempS.nil? %>
-							<td><%= link_to image_tag(@file_path + 'tagged_thumbs/' + @tempS.split('/').last), @file_path + 'tagged_raw/' + @tempS.split('/').last.split('_tn').first + '.JPG' %>
+							<td><%= link_to image_tag(@file_path + 'tagged_raw_thumbs/' + @tempS.split('/').last), @file_path + 'tagged_raw/' + @tempS.split('/').last.split('_tn').first + '.JPG' %>
 							</td></tr>
 							<tr class='image'><td>
 							<font color="white">(Latest image)</font>
@@ -65,7 +65,7 @@
       <div class="col-md-6">
         <%= form_tag observations_path, :method => 'get' do %>
           <div class="input-group">
-            <%= text_field_tag :search, params[:osearch], :placeholder => "Tag search...", class: "form-control" %>
+            <%= text_field_tag :osearch, params[:osearch], :placeholder => "Tag search...", class: "form-control" %>
             <span class="input-group-btn">
               <%= submit_tag "Search", :name => nil, class: "btn btn-default" %>
             </span>
@@ -82,14 +82,14 @@
 		<table class="table table-condensed">
 		<tr>
 			<th></th>
-			<th>Observation ID</th>
-			<th>Coral ID</th>
-			<th>Fieldtrip ID</th>
-			<th>Mother</th>
+			<th>OID</th>
+			<th>CID</th>
+			<th>FID</th>
+			<th>Mum</th>
 			<th>Image tag</th>
 			<th>Active tag</th>
 			<th>Action</th>
-			<th>Observation notes</th>
+			<th>Notes</th>
 			<th>Areas</th>
 			<th></th>
 		</tr>

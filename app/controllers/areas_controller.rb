@@ -22,7 +22,7 @@ class AreasController < ApplicationController
     @observation = Observation.find(params[:observation_id])
     @coral = Coral.find(params[:coral_id])
 
-    @files = Dir.glob("app/assets/images/tagged_thumbs_touch/*")
+    @files = Dir.glob("app/assets/images/tagged_touch_thumbs/*")
 
     respond_to do |format|
       format.html # show.html.erb
