@@ -26,5 +26,5 @@ doc/
 .DS_Store
 .idea
 .secret
-/app/assets/images/*
+/app/assets/images*
 
