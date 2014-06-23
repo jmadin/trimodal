@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(version: 20140421202709) do
     t.decimal  "area"
     t.boolean  "flag"
     t.text     "notes"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.string   "photographer_name"
     t.boolean  "acceptable"
     t.boolean  "acceptable_outline"
@@ -55,8 +55,8 @@ ActiveRecord::Schema.define(version: 20140421202709) do
     t.string   "species"
     t.string   "species_code"
     t.text     "notes"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "fecund_corals", force: true do |t|
@@ -71,8 +71,8 @@ ActiveRecord::Schema.define(version: 20140421202709) do
     t.decimal  "area"
     t.boolean  "flag"
     t.text     "notes"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "fecund_corals", ["fieldtrip_id"], name: "index_fecund_corals_on_fieldtrip_id"
@@ -82,8 +82,8 @@ ActiveRecord::Schema.define(version: 20140421202709) do
     t.string   "name_code"
     t.date     "date"
     t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "observations", force: true do |t|
@@ -92,8 +92,8 @@ ActiveRecord::Schema.define(version: 20140421202709) do
     t.integer  "mother_id"
     t.integer  "tag_number"
     t.string   "action"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.text     "notes"
     t.integer  "active_tag"
   end
@@ -110,8 +110,8 @@ ActiveRecord::Schema.define(version: 20140421202709) do
     t.string   "phone"
     t.string   "role"
     t.text     "notes"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "spawners", force: true do |t|
@@ -121,8 +121,8 @@ ActiveRecord::Schema.define(version: 20140421202709) do
     t.integer  "tag_number"
     t.decimal  "area"
     t.text     "notes"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.string   "outliner_name"
     t.integer  "person_id"
   end
@@ -141,8 +141,8 @@ ActiveRecord::Schema.define(version: 20140421202709) do
     t.string   "outline_filename"
     t.decimal  "area"
     t.text     "notes"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "ss_corals", ["fieldtrip_id"], name: "index_ss_corals_on_fieldtrip_id"
@@ -157,9 +157,8 @@ ActiveRecord::Schema.define(version: 20140421202709) do
     t.decimal  "length"
     t.boolean  "flag"
     t.text     "notes"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-    t.integer  "touch_number"
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.string   "growth_form"
   end
 
