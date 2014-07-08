@@ -6,12 +6,12 @@ class ApplicationController < ActionController::Base
   include SessionsHelper
 
   ### CHANGE FOR LOCAL USE
-  before_filter :set_path
-  def set_path
-    @file_path = "/assets/"
-    # @file_path = "http://acropora.bio.mq.edu.au/trimodal/"
-    # @file_path = "http://montipora.local/trimodal/"
-  end  
+  # before_filter :set_path
+  # def set_path
+  #   @file_path = "/assets/"
+  #   # @file_path = "http://acropora.bio.mq.edu.au/trimodal/"
+  #   # @file_path = "http://montipora.local/trimodal/"
+  # end  
   
   require 'csv'
 

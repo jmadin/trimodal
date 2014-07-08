@@ -6,7 +6,7 @@ class CreateTouches < ActiveRecord::Migration
       t.string :outline_filename
       t.string :taxon1
       t.string :taxon2
-      t.string :type
+      t.string :touch_type
       t.decimal :length
       t.boolean :flag
       t.text :notes
