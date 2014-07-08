@@ -1,10 +1,10 @@
 <tr>
 	<td>Touch:</td>
 	<td><%= touch.touch_number %></td>
-	<td><%= touch.area_id %></td>
-	<td><%= touch.area.observation_id %></td>
-	<td><%= touch.area.observation.coral_id %></td>
-	<td><%= touch.outliner_name %></td>
+<!-- 	<td><%#= touch.area_id %></td>
+	<td><%#= touch.area.observation_id %></td>
+	<td><%#= touch.area.observation.coral_id %></td>
+ -->	<td><%= touch.outliner_name %></td>
 	<!-- <td><%#= link_to touch.outline_filename, @file_path + 'tagged_touch_files/' + touch.outline_filename %></td> -->
 	<td><% if !touch.length.blank? %><%= '%.2f' % touch.length %><% end %></td>
 	<td><%= touch.taxon1 %></td>
@@ -12,6 +12,13 @@
 	<td><%= touch.touch_type %></td>
 	<!-- <td><%#= touch.taxon2 %></td> -->
 	<td><%= touch.notes %></td>
-	<td><%= link_to 'Edit touch', edit_coral_observation_area_touch_path(touch.area.observation.coral, touch.area.observation, touch.area, touch) %> | <%= link_to 'Delete', coral_observation_area_touch_path(touch.area.observation.coral, touch.area.observation, touch.area, touch), confirm: 'Are you sure?', method: :delete %></td>
+
+  <td>
+    <div class="btn-group">
+      <%= link_to 'Edit', edit_coral_observation_area_touch_path(touch.area.observation.coral, touch.area.observation, touch.area, touch), class: "btn btn-default" %>
+      <%= link_to 'Delete', coral_observation_area_touch_path(touch.area.observation.coral, touch.area.observation, touch.area, touch), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default btn-danger" %>
+    </div>
+  </td>
+
 </tr>
 

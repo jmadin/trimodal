@@ -1,9 +1,9 @@
 <tr>
 	<td><a href="javascript:jchange('div<%= area.id %>');">Outlines</a></td>
-	<td style="color:lightgrey;"><%= area.id %></td>
-	<td style="color:lightgrey;"><%= area.observation_id %></td>
-	<td style="color:lightgrey;"><%= area.observation.coral_id %></td>
-	<td><%= area.photographer_name %></td>
+<!-- 	<td style="color:lightgrey;"><%#= area.id %></td>
+	<td style="color:lightgrey;"><%#= area.observation_id %></td>
+	<td style="color:lightgrey;"><%#= area.observation.coral_id %></td>
+ -->	<!-- <td><%#= area.photographer_name %></td> -->
 	<td><%= area.outliner_name %></td>
   <td><%= area.outline_filename %></td>
 	<td><% if !area.area.blank? %><%= '%.2f' % area.area %><% end %></td>
@@ -22,7 +22,14 @@
   <!-- <td><%#= area.notes %></td> -->
 	<td><%= area.touches.count %></td>
   
-	<td><%= link_to 'Touches', coral_observation_area_path(area.observation.coral, area.observation, area) %> | <%= link_to 'Edit', edit_coral_observation_area_path(area.observation.coral, area.observation, area) %> | <%= link_to 'Delete', coral_observation_area_path(area.observation.coral, area.observation, area), confirm: 'Are you sure?', method: :delete %></td>
+  <td>
+    <div class="btn-group">
+      <%= link_to 'Contacts', coral_observation_area_path(area.observation.coral, area.observation, area), class: "btn btn-default" %>
+      <%= link_to 'Edit', edit_coral_observation_area_path(area.observation.coral, area.observation, area), class: "btn btn-default" %>
+      <%= link_to 'Delete', coral_observation_area_path(area.observation.coral, area.observation, area), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default btn-danger" %>
+    </div>
+  </td>
+
 </tr>
 
 <tr>

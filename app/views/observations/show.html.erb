@@ -32,11 +32,11 @@
 		<table class="table table-condensed">
 			<tr>
 				<th></th>
-				<th>AID</th>
+<!-- 				<th>AID</th>
 				<th>OID</th>
 				<th>CID</th>
 				<th>Photographer</th>
-				<th>Outliner</th>
+ -->				<th>Outliner</th>
 			  <th>Outline filename</th>
 				<th>Area</th>
 				<th>Perimeter</th>
@@ -54,11 +54,11 @@
 				<%= form_for([@observation, @observation.areas.build]) do |f| %>
 
 				  <td></td>
-				  <td></td>
-				  <td><%= @observation.id %></td>
-				  <td><%= @observation.coral_id %></td>
-				  <td><%= f.text_field :photographer_name, :style=>'width: 70px;' %></td>
-				  <td><%= f.text_field :outliner_name, :style=>'width: 70px;' %></td>
+<!-- 				  <td></td>
+				  <td><%#= @observation.id %></td>
+				  <td><%#= @observation.coral_id %></td>
+				  <td><%#= f.text_field :photographer_name, :style=>'width: 70px;' %></td>
+ -->				  <td><%= f.text_field :outliner_name, :style=>'width: 70px;' %></td>
 			    <td><%= f.text_field :outline_filename, :style=>'width: 140px;' %></td>
 				  <td><%= f.number_field :area, :style=>'width: 80px;', :step => 'any' %></td>
 				  <td><%= f.number_field :perimeter, :style=>'width: 80px;', :step => 'any' %></td>
