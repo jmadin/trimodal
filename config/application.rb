@@ -25,5 +25,9 @@ module Trimodal
     # config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
 
     # config.assets.paths << "#{Rails.root}/app/assets/pdfs"
+    I18n.enforce_available_locales = true
+
+    config.assets.precompile += %w(*.tif *.png *.jpg *.jpeg *.gif)
+
   end
 end
