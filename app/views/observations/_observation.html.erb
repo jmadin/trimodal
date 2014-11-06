@@ -1,8 +1,5 @@
 <tr>
 	<td><a href="javascript:jchange('div<%= observation.id %>');">Images</a></td>
-	<td style="color:lightgrey;"><%= observation.id %></td>
-	<td style="color:lightgrey;"><%= observation.coral_id %></td>
-	<!-- <td>F<%= observation.fieldtrip_id %></td> -->
 	<td><%= link_to observation.fieldtrip.name_code, :controller => :fieldtrips, :action => :show, :id => observation.fieldtrip_id %></td>
 	<td><% if observation.mother_id != 0 %><%= observation.mother_id %><% end %></td>
 	<td><%= '%04d' % observation.tag_number %></td>
@@ -15,7 +12,7 @@
     <div class="btn-group">
       <%= link_to 'Outlines', coral_observation_path(observation.coral, observation), class: "btn btn-default" %>
       <%= link_to 'Edit', edit_coral_observation_path(observation.coral, observation), class: "btn btn-default" %>
-      <%= link_to 'Delete', coral_observation_path(observation.coral, observation), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default btn-danger" %>
+      <%= link_to 'Delete', coral_observation_path(observation.coral, observation), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
     </div>
   </td>
 
@@ -25,7 +22,7 @@
 	<% img = @coral.species_code + "%04d" % observation.tag_number + '_' + observation.fieldtrip.name_code + '_T' %>
 	<% imgS = @coral.species_code + "%04d" % observation.tag_number + '_' + observation.fieldtrip.name_code + '_S' %>
     <% @thumbs = @files.find_all{|item| item.include? img } + @files.find_all{|item| item.include? imgS } %>
-    <td colspan=11>
+    <td colspan=9>
 	    <table id="div<%= observation.id %>" style="display:none;"><tr>
 	<% mark = 0 %>
 	<% @thumbs.each do |aa| %>

@@ -60,7 +60,7 @@ class ObservationsController < ApplicationController
         format.html { redirect_to coral_path(@coral), notice: 'The observation was successfully created.' }
         format.json { render json: @observation, status: :created, location: @observation }
       else
-        format.html { redirect_to coral_path(@coral), notice: '*The observation was NOT created. Please make sure the fieldtrip ID is a number and unique.' }
+        format.html { redirect_to coral_path(@coral), flash: {danger: "The observation was NOT created. Please make sure the fieldtrip ID is a number and unique." } }
         format.json { render json: @observation.errors, status: :unprocessable_entity }
       end
     end

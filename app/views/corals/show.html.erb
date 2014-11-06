@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-md-12">
 
-		<h3>Tagged colony</h3>
-
+		<h2>Tagged colony</h2>
+		
 		<table class="table">
 			<tr class='top'>
 			<td><table style="background-color: #444;"><tr class='image'>
@@ -82,9 +82,7 @@
 		<table class="table table-condensed">
 		<tr>
 			<th></th>
-			<th>OID</th>
-			<th>CID</th>
-			<th>FID</th>
+			<th>Fieldtrip</th>
 			<th>Mum</th>
 			<th>Image tag</th>
 			<th>Active tag</th>
@@ -106,8 +104,6 @@
 			
 			<%= form_for([@coral, @coral.observations.build]) do |f| %>
 			  <td></td>
-			  <td></td>
-			  <td style="color:lightgrey;"><%= @coral.id %></td>
 			  <td><%= collection_select :observation, :fieldtrip_id, @fieldtrips, :id, :name_code, { :selected => @fieldtrips.last.id } %> </td>
 			  <td><%= f.text_field :mother_id, :size => 6 %></td>
 			  <td><%= f.text_field :tag_number, :value => temp, :size => 6 %></td>
@@ -115,7 +111,7 @@
 			  <td><%= f.select :action, ['', 'photographed', 'not found', 'no scale', 'not real', 'dead', 'gone'] %></td>
 			  <td><%= f.text_field :notes %></td>
 			  <td></td>
-			  <td><%= f.submit class: "btn" %></td>
+			  <td><%= f.submit class: "btn btn-primary" %></td>
 			<% end %>
 		</tr>
 		</table>
