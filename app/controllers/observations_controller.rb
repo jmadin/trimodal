@@ -8,10 +8,14 @@ class ObservationsController < ApplicationController
   def index
     @observations = Observation.search(params[:osearch])
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @observations }
-      format.csv { send_data @observations.to_csv }
+    if  @observations.map(&:coral_id).uniq.size == 1
+      redirect_to coral_path(@observations.first.coral_id)
+    else
+
+      respond_to do |format|
+        format.html # index.html.erb
+        format.csv { send_data @observations.to_csv }
+      end
     end
   end
 
@@ -57,10 +61,10 @@ class ObservationsController < ApplicationController
 
     respond_to do |format|
       if @observation.save
-        format.html { redirect_to coral_path(@coral), notice: 'The observation was successfully created.' }
+        format.html { redirect_to coral_path(@coral), flash: {success: 'The observation was successfully created.' } }
         format.json { render json: @observation, status: :created, location: @observation }
       else
-        format.html { redirect_to coral_path(@coral), notice: '*The observation was NOT created. Please make sure the fieldtrip ID is a number and unique.' }
+        format.html { redirect_to coral_path(@coral), flash: {danger: "The observation was NOT created. Please make sure the fieldtrip ID is a number and unique." } }
         format.json { render json: @observation.errors, status: :unprocessable_entity }
       end
     end
@@ -73,7 +77,7 @@ class ObservationsController < ApplicationController
 
     respond_to do |format|
       if @observation.update_attributes(observation_params)
-        format.html { redirect_to coral_path(@observation.coral), notice: 'Observation was successfully updated.' }
+        format.html { redirect_to coral_path(@observation.coral), flash: {success: 'Observation was successfully updated.' } }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

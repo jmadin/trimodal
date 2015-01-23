@@ -1,33 +1,25 @@
 <%= form_for(@fieldtrip) do |f| %>
-  <% if @fieldtrip.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@fieldtrip.errors.count, "error") %> prohibited this fieldtrip from being saved:</h2>
 
-      <ul>
-      <% @fieldtrip.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <%= render 'shared/error_messages', temp: @fieldtrip %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :name_code %><br />
-    <%= f.text_field :name_code %>
+  <div class="form-group">
+    <%= f.label :name_code %>
+    <%= f.text_field :name_code, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :date %><br />
-    <%= f.date_select :date %>
+  <div class="form-group">
+    <%= f.label :date %>
+    <%= f.date_select :date, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description, rows: 10 %>
+  <div class="form-group">
+    <%= f.label :description %>
+    <%= f.text_area :description, rows: 10, class: "form-control" %>
   </div>
-  <div class="actions">
-    <%= f.submit class: "btn" %>
-  </div>
+
+  <%= f.submit class: "btn btn-primary" %>
+
 <% end %>
+

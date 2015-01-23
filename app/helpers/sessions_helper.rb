@@ -29,7 +29,7 @@ module SessionsHelper
   end
 
   def redirect_back_or(default)
-    redirect_to(session[:return_to] || default, :notice => 'Successfully signed in')
+    redirect_to(session[:return_to] || default, flash: {success: "Successfully signed in" })
     session.delete(:return_to)
   end
 

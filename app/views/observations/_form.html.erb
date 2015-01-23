@@ -14,28 +14,29 @@
   <p>Coral: <%= @observation.coral_id %></p>
   <p>Fieldtrip: <%= @observation.fieldtrip_id %></p>
 
-  <div class="field">
+
+  <div class="form-group">
     <%= f.label :mother_id %>
-    <%= f.number_field :mother_id %>
+    <%= f.number_field :mother_id, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :tag_number %>
-    <%= f.number_field :tag_number %>
+    <%= f.number_field :tag_number, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :active_tag %>
-    <%= f.number_field :active_tag %>
+    <%= f.number_field :active_tag, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :action %>
-	<%= f.select :action, ['', 'photographed', 'not found', 'no scale', 'not real', 'dead', 'gone'] %>
+	<%= f.select :action, ['', 'photographed', 'not found', 'no scale', 'not real', 'dead', 'gone'], class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :notes %>
-    <%= f.text_area :notes %>
+    <%= f.text_area :notes, class: "form-control" %>
   </div>
   <div class="actions">
-    <%= f.submit class: "btn" %>
+    <%= f.submit class: "btn btn-primary" %>
   </div>
 <% end %>

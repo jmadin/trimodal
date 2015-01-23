@@ -8,6 +8,7 @@ gem 'bcrypt-ruby'#, '3.0.1'
 gem 'will_paginate'#, '3.0.4'
 gem 'bootstrap-will_paginate'#, '0.0.9'
 # gem "squeel"
+gem 'redcarpet'
 
 gem 'sqlite3'
 

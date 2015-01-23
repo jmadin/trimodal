@@ -135,7 +135,7 @@ class ApplicationController < ActionController::Base
   def signed_in_contributor
     unless signed_in?
       store_location
-      redirect_to signin_url, notice: "Please sign in."
+      redirect_to signin_url, flash: {danger: "Please sign in" }
     end
   end
 

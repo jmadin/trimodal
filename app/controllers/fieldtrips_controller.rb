@@ -21,7 +21,7 @@ class FieldtripsController < ApplicationController
     # @observations = Observation.
     @corals = Coral.all
 
-    @files = Dir.glob("app/assets/images/tagged_corrected_thumbs/*")
+    @files = Dir.glob("app/assets/images/tagged_raw_thumbs/*")
 
     respond_to do |format|
       format.html # show.html.erb
@@ -68,7 +68,7 @@ class FieldtripsController < ApplicationController
 
     respond_to do |format|
       if @fieldtrip.update_attributes(fieldtrip_params)
-        format.html { redirect_to @fieldtrip, notice: 'Fieldtrip was successfully updated.' }
+        format.html { redirect_to @fieldtrip, flash: {success: 'Fieldtrip was successfully updated.' } }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

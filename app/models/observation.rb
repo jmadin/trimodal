@@ -2,7 +2,9 @@ class Observation < ActiveRecord::Base
 
   # validates :fieldtrip_id, :uniqueness => true, :on => :create
   validates :fieldtrip_id, :presence => true
+  # validates :fieldtrip_id, :uniqueness => true
   validates :tag_number, :presence => true
+  validates :action, :presence => true
 
   validates_numericality_of :tag_number, :only_integer =>true, :greater_than_or_equal_to => 0
 

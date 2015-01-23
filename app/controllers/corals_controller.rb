@@ -57,7 +57,7 @@ class CoralsController < ApplicationController
 
     respond_to do |format|
       if @coral.save
-        format.html { redirect_to @coral, notice: 'Coral was successfully created.' }
+        format.html { redirect_to @coral, flash: {success: 'Coral was successfully created.' } }
         format.json { render json: @coral, status: :created, location: @coral }
       else
         format.html { render action: "new" }
@@ -73,7 +73,7 @@ class CoralsController < ApplicationController
 
     respond_to do |format|
       if @coral.update_attributes(coral_params)
-        format.html { redirect_to @coral, notice: 'Coral was successfully updated.' }
+        format.html { redirect_to @coral, flash: {success: 'Coral was successfully updated.' } }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

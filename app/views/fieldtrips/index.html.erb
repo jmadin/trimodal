@@ -1,36 +1,28 @@
 <div class="row">
   <div class="col-md-10 col-md-offset-1">
-    <h3>Fieldtrips</h3>
-    <br>
+    <h1>Fieldtrips</h1>
+    
 
-    <table class="table table-condensed">
-      <thead>
+    <table class="table">
+      <% @fieldtrips.each do |fieldtrip| %>
         <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Name code</th>
-          <th>Date</th>
-          <th>Description</th>
-          <th></th>
-        </tr>
-      </thead>
+          <td><%= fieldtrip.id %></td>
+          <td><%= fieldtrip.name %></td>
+          <td><%= fieldtrip.name_code %></td>
+          <td><%= fieldtrip.date %></td>
+          <td style="width:500px;"><%= fieldtrip.description %></td>
 
-      <tbody>
-        <% @fieldtrips.each do |fieldtrip| %>
-          <tr>
-            <td style="color: lightgrey;"><%= fieldtrip.id %></td>
-            <td><%= fieldtrip.name %></td>
-            <td><%= fieldtrip.name_code %></td>
-            <td><%= fieldtrip.date %></td>
-            <td style='text-align:left; max-width:400px;'><%= fieldtrip.description %></td>
-            <td style="background-color:white;"><%= link_to 'Progress', fieldtrip %> | <%= link_to 'Edit', edit_fieldtrip_path(fieldtrip) %></td>
-          </tr>
-        <% end %>
-      </tbody>
+          <td>
+            <div class="btn-group">
+              <%= link_to 'Progress', fieldtrip, class: "btn btn-sm btn-default" %>
+              <%= link_to 'Edit', edit_fieldtrip_path(fieldtrip), class: "btn btn-sm btn-default" %>
+            </div>
+          </td>
+        </tr>
+      <% end %>
     </table>
 
-    <br />
+    <%= link_to 'New Fieldtrip', new_fieldtrip_path, class: "btn btn-primary" %>
 
-    <%= link_to 'New Fieldtrip', new_fieldtrip_path, class: "btn btn-large btn-primary" %>
   </div>
 </div>
