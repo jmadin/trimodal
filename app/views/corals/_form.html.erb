@@ -1,49 +1,39 @@
 <%= form_for(@coral) do |f| %>
-  <% if @coral.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@coral.errors.count, "error") %> prohibited this coral from being saved:</h2>
+  <%= render 'shared/error_messages', temp: @coral %>
 
-      <ul>
-      <% @coral.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
+  <div class="form-group">
     <%= f.label :transect %>
-    <%= f.number_field :transect %>
+    <%= f.number_field :transect, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :map_x %>
-    <%= f.number_field :map_x %>
+    <%= f.number_field :map_x, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :map_y %>
-    <%= f.number_field :map_y %>
+    <%= f.number_field :map_y, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :dim_1 %>
-    <%= f.number_field :dim_1 %>
+    <%= f.number_field :dim_1, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :dim_2 %>
-    <%= f.number_field :dim_2 %>
+    <%= f.number_field :dim_2, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :species %>
-	<%= f.select :species, ['', 'Acropora cytheria', 'Acropora fat dig', 'Acropora humilis', 'Acropora hyacinthus', 'Acropora intermedia', 'Acropora millepora', 'Acropora nasuta', 'Acropora spathulata', 'Acropora robusta', 'Goniastrea pectinata', 'Goniastrea retiformis'] %>
+	<%= f.select :species, ['', 'Acropora cytheria', 'Acropora fat dig', 'Acropora humilis', 'Acropora hyacinthus', 'Acropora intermedia', 'Acropora millepora', 'Acropora nasuta', 'Acropora spathulata', 'Acropora robusta', 'Goniastrea pectinata', 'Goniastrea retiformis'], class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :species_code %>
-	<%= f.select :species_code, ['', 'AC', 'AD', 'AS', 'AH', 'AI', 'AM', 'AN', 'AL', 'AR', 'GP', 'GR'] %>
+	<%= f.select :species_code, ['', 'AC', 'AD', 'AS', 'AH', 'AI', 'AM', 'AN', 'AL', 'AR', 'GP', 'GR'], class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :notes %>
-    <%= f.text_area :notes %>
+    <%= f.text_area :notes, class: "form-control" %>
   </div>
-  <div class="actions">
+
     <%= f.submit class: "btn btn-primary" %>
-  </div>
+
 <% end %>

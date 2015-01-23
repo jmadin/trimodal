@@ -39,7 +39,7 @@
 				</p>
 
 				<p><% if !@coral.observations.blank? %>
-					<b>Current tag:</b> <%= @coral.species_code %><%= '%04d' % @coral.observations.last.tag_number %>
+					<b>Current tag:</b> <span class="label label-primary"><%= @coral.species_code %><%= '%04d' % @coral.observations.last.tag_number %></span>
 				</p><% end %>
 				<p>
 				  <b>Transect:</b>

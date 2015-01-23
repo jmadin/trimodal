@@ -26,11 +26,11 @@
 
 <div class="well">
 
-	<table>
-	<tr><td style="border:green 2px solid;background-color:white;font-size:80%;padding:0px;">XXX</td><td style="text-align:left;background-color:white;">Found</td></tr>
-	<tr><td style="border:red 2px solid;background-color:white;font-size:80%;padding:0px;">XXX</td><td style="text-align:left;background-color:white;">Not found</td></tr>
-	<tr><td style="border:lightgrey 2px solid;background-color:white;font-size:80%;padding:0px;"></td><td style="text-align:left;background-color:white;">Reported lost or dead in earlier trip (or if in earlier fieldtrips, future new colony)</td></tr>
-	</table>
+<span class="label label-success">Found and Photographed</span>
+<span class="label label-danger">Not found</span>
+<span class="label label-warning">Dead or Gone</span>
+<span class="label label-primary">Photographer</span>
+<p>Also showing colonies reported lost or dead in earlier trip (or if in earlier fieldtrips, future new colony)</p>
 </div>
 
 <% if params[:id] == "11" %>
@@ -49,30 +49,32 @@
 				<% temp = Coral.where('transect == ? AND map_x == ? AND map_y == ?', t, x, y) %>
 				<% if temp.count > 0 %>
 					<% obs = Observation.where('coral_id == ? AND fieldtrip_id == ?', temp.first.id, params[:id]) %>
+					<td>
 					<% if !obs.empty? %>
-						<td style="border:green 2px solid; background-color:white;font-size:80%;padding:0px;">
-						<%= link_to temp.first.species_code.to_s + obs.first.tag_number.to_s, coral_path(obs.first.coral_id) %><br/>
-						
+						<% if obs.first.action == "photographed" %>
+							<%= link_to temp.first.species_code.to_s + obs.first.tag_number.to_s, coral_path(obs.first.coral_id), class: "label label-success" %>
+						<% else %>
+							<%= link_to temp.first.species_code.to_s + obs.first.tag_number.to_s, coral_path(obs.first.coral_id), class: "label label-warning" %>
+						<% end %>
 						<% img = temp.first.species_code + "%04d" % obs.last.tag_number + '_' + obs.last.fieldtrip.name_code %>
 						
 						<% @thumbs = @files.find_all{|item| item.include? img } %>
 						<% @observers = [] %>
 						<% @thumbs.each do |tn| %>
-							<% @observers << tn.split('_')[4] %>
+							<% @observers << tn.split('_')[5] %>
 						<% end %>
 						<% @observers.uniq.each do |oo| %>
-							<%= oo %>
+							<span class="label label-primary"><%= oo %></span>
 						<% end %>
+						
 						
 					<% else %>
 						<% obsx = Observation.where('coral_id == ? AND fieldtrip_id == ?', temp.first.id, before.to_s) %>
 						<% if !obsx.empty? && obsx.first.action != "dead" && obsx.first.action != "gone" %>
-							<td style="border:red 2px solid;background-color:white;font-size:80%;padding:0px;">
-							<%= link_to temp.first.species_code.to_s + obsx.first.tag_number.to_s, coral_path(obsx.first.coral_id) %>
+							<%= link_to temp.first.species_code.to_s + obsx.first.tag_number.to_s, coral_path(obsx.first.coral_id), class: "label label-danger" %>
 						<% else %>
 							<% obsa = Observation.where('coral_id == ?', temp.first.id) %>
-							<td style="border:lightgrey 2px solid;background-color:white;font-size:80%;padding:0px;">
-							<%= link_to temp.last.species_code + obsa.last.tag_number.to_s, coral_path(obsa.last.coral_id) %>
+							<%#= link_to temp.last.species_code + obsa.last.tag_number.to_s, coral_path(obsa.last.coral_id) %>
 						<% end %>
 					<% end %>
 				
