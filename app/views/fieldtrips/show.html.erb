@@ -56,6 +56,7 @@
 						<% else %>
 							<%= link_to temp.first.species_code.to_s + obs.first.tag_number.to_s, coral_path(obs.first.coral_id), class: "label label-warning" %>
 						<% end %>
+						<br>
 						<% img = temp.first.species_code + "%04d" % obs.last.tag_number + '_' + obs.last.fieldtrip.name_code %>
 						
 						<% @thumbs = @files.find_all{|item| item.include? img } %>
