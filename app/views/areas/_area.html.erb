@@ -52,7 +52,7 @@
 			<table style="background-color: #444;">
 				<tr class='image'><td><%= image_tag 'tagged_outlines_thumbs/' + aa.split('/').last %></td></tr>
 				<tr class='image'><td style="text-align:center;color:white;"><%= aa.split('/').last.split('_tn').first %></font></td></tr>
-				<tr class='image'><td style="text-align:center;color:white;"><%= link_to 'OUTLINE', '/images/tagged_outlines/' + aa.split('/').last.split('_tn').first + '.jpeg', :class => 'image' %></td></tr>
+				<tr class='image'><td style="text-align:center;color:white;"><%= link_to 'OUTLINE', image_path('tagged_outlines/' + aa.split('/').last.split('_tn').first + '.jpeg'), :class => 'image' %></td></tr>
 			
 		</table>
 		</td>		
