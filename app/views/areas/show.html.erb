@@ -10,7 +10,7 @@
 					<% img = @area.outline_filename + '_' + @area.outliner_name %>
 					<% @temp = @files.find_all{|item| item.include? img }.last %>
 					<% if !@temp.nil? %>
-					<td><%= link_to image_tag('tagged_touch_thumbs/' + @temp.split('/').last), '/images/tagged_touch/' + @temp.split('/').last.split('_tn').first + '.jpeg' %>
+					<td><%= link_to image_tag('tagged_touch_thumbs/' + @temp.split('/').last), image_path('tagged_touch/' + @temp.split('/').last.split('_tn').first + '.jpeg') %>
 					</td></tr>
 					<tr class='image'><td>
 					<font color="white">(Latest image)</font>
