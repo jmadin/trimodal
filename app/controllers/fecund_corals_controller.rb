@@ -18,7 +18,7 @@ class FecundCoralsController < ApplicationController
     @fieldtrips = Fieldtrip.all
 
     # @files = Dir.glob("/Users/jmadin/Dropbox/web/trimodal/fecundity_thumbs/*")
-    @files = Dir.glob("app/assets/images/fecundity_thumbs/*")
+    @files = Dir.glob("app/assets/images/fecundity_outlines_thumbs/*")
 
     respond_to do |format|
       format.html # show.html.erb

@@ -16,10 +16,10 @@
           <% end %>
         </div>
       </div>
-      	
+
       <br/>
 
-      <p>Download full dataset as <%= link_to 'CSV', '/export_tagged', :action => 'export_tagged' %></p>
+      <p>Download full dataset as <%= link_to 'CSV', '/export_tagged', :action => 'export_tagged', data: {turbolinks: false} %></p>
       <%= link_to 'New Coral', new_coral_path, class: "btn btn-default pull-right" %>
       <p>Download corals only as <%= link_to 'CSV', '/export_corals', :action => 'export_corals' %></p>
     </div>
@@ -53,11 +53,11 @@
           	    <td><i><%= coral.species %></i></td>
           	    <!-- <td><%= coral.species %></td> -->
           	    <td><%= coral.species_code %></td>
-      		
+
           		<td><% if !coral.observations.empty? %>
           			<%= '%04d' % coral.observations.last.tag_number %>
           		<% end %></td>
-      	
+
           	    <td style='text-align:left; max-width:250px;'><%= coral.notes %></td>
 
                 <td><%= coral.observations.size %></td>
@@ -74,7 +74,7 @@
         	</table>
 
         <% end %>
-      </div>      
+      </div>
     </div>
   </div>
 </div>

@@ -7,11 +7,13 @@
   <% thumb = @files.find_all{|item| item.include? @fecund_coral.outline_filename }[0] %>
 
 	<table style="background-color: #444;">
-		<tr class='image'><td><%= image_tag @file_path + 'fecundity_thumbs/' + thumb.split('/').last %></td></tr>
+		<tr class='image'><td><%= image_tag('fecundity_outlines_thumbs/' + thumb.split('/').last) %></td></tr>
 		<tr class='image'><td style="text-align:center;color:white;"><%= thumb.split('/').last.split('_tn').first %></font></td></tr>
-		<tr class='image'><td style="text-align:center;color:white;"><%= link_to 'IMG', @file_path + 'fecundity_corrected/' + thumb.split('/').last.split('_tn').first + '.JPG', :class => 'image' %> | <%= link_to 'OUTLINE', @file_path + 'fecundity_outlines/' + thumb.split('/').last.split('_tn').first + '.jpeg', :class => 'image' %>
+		<tr class='image'><td style="text-align:center;color:white;"><%= link_to 'IMG', image_path('fecundity_corrected/' + thumb.split('/').last.split('.').first + '.JPG'), :class => 'image' %> | <%= link_to 'OUTLINE', image_path('fecundity_outlines/' + thumb.split('/').last), :class => 'image' %>
 		</td></tr>
 	</table>
+
+
 
 </td>
 <td class='top'>

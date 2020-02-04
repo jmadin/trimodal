@@ -11,21 +11,20 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery-ui
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
 //= require jquery.turbolinks
 //= require_tree .
 
-function checkUncheckAll(theElement) { 
-	var theForm = theElement.form, z = 0; 
-		for(z=0; z<theForm.length;z++){ 
-		if(theForm[z].type == 'checkbox' && theForm[z].name != 'checkall'){ 
-			theForm[z].checked = theElement.checked; 
-		} 
-	} 
-} 
+function checkUncheckAll(theElement) {
+	var theForm = theElement.form, z = 0;
+		for(z=0; z<theForm.length;z++){
+		if(theForm[z].type == 'checkbox' && theForm[z].name != 'checkall'){
+			theForm[z].checked = theElement.checked;
+		}
+	}
+}
 
 function jchange(o) {
 	var fold_image = new Array();
